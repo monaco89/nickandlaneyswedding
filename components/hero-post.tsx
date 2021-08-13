@@ -1,6 +1,7 @@
+import React from 'react';
+import Link from 'next/link';
 import DateFormatter from './date-formatter';
 import CoverImage from './cover-image';
-import Link from 'next/link';
 import Author from '../types/author';
 
 type Props = {
@@ -12,14 +13,14 @@ type Props = {
   slug: string;
 };
 
-const HeroPost = ({
+function HeroPost({
   title,
   coverImage,
   date,
   excerpt,
   author,
   slug,
-}: Props) => {
+}: Props): JSX.Element {
   return (
     <section>
       <div className="mb-8 md:mb-16">
@@ -39,6 +40,6 @@ const HeroPost = ({
       </div>
     </section>
   );
-};
+}
 
 export default HeroPost;

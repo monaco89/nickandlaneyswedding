@@ -1,11 +1,11 @@
-import { ReactNode, FunctionComponent } from 'react'
+import React from 'react';
 
 type Props = {
-  children?: ReactNode
+  children?: React.ReactNode;
+};
+
+function Container({ children }: Props): JSX.Element {
+  return <div className="container mx-auto px-5">{children}</div>;
 }
 
-const Container: FunctionComponent = ({ children }: Props) => {
-  return <div className="container mx-auto px-5">{children}</div>
-}
-
-export default Container
+export default Container;

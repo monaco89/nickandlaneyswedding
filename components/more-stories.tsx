@@ -1,11 +1,12 @@
-import PostPreview from './post-preview'
-import Post from '../types/post'
+import React from 'react';
+import PostPreview from './post-preview';
+import Post from '../types/post';
 
 type Props = {
-  posts: Post[]
-}
+  posts: Post[];
+};
 
-const MoreStories = ({ posts }: Props) => {
+function MoreStories({ posts }: Props): JSX.Element {
   return (
     <section>
       <h2 className="mb-8 text-6xl md:text-7xl font-bold tracking-tighter leading-tight">
@@ -25,7 +26,7 @@ const MoreStories = ({ posts }: Props) => {
         ))}
       </div>
     </section>
-  )
+  );
 }
 
-export default MoreStories
+export default MoreStories;

@@ -1,3 +1,4 @@
+import React from 'react';
 import DateFormatter from './date-formatter';
 import CoverImage from './cover-image';
 import PostTitle from './post-title';
@@ -10,7 +11,7 @@ type Props = {
   author: Author;
 };
 
-const PostHeader = ({ title, coverImage, date, author }: Props) => {
+function PostHeader({ title, coverImage, date, author }: Props): JSX.Element {
   return (
     <>
       <PostTitle>{title}</PostTitle>
@@ -24,6 +25,6 @@ const PostHeader = ({ title, coverImage, date, author }: Props) => {
       </div>
     </>
   );
-};
+}
 
 export default PostHeader;

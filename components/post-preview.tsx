@@ -1,6 +1,7 @@
+import React from 'react';
+import Link from 'next/link';
 import DateFormatter from './date-formatter';
 import CoverImage from './cover-image';
-import Link from 'next/link';
 import Author from '../types/author';
 
 type Props = {
@@ -12,14 +13,14 @@ type Props = {
   slug: string;
 };
 
-const PostPreview = ({
+function PostPreview({
   title,
   coverImage,
   date,
   excerpt,
   author,
   slug,
-}: Props) => {
+}: Props): JSX.Element {
   return (
     <div>
       <div className="mb-5">
@@ -36,6 +37,6 @@ const PostPreview = ({
       <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
     </div>
   );
-};
+}
 
 export default PostPreview;
