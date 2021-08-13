@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const line1 = 'To Laney,';
+const line1 = 'Dear Laney,';
 const line2 = "Can't wait until 2023.";
 const line3 = 'Forever - Nick';
 
