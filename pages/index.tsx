@@ -14,7 +14,7 @@ function Index(): JSX.Element {
       </Head>
       <Container>
         <Intro />
-        <section className="text-center mt-16 mb-16 md:mb-12">
+        <section className="mt-16 mb-16 md:mb-12">
           <div className="lg:px-32">
             <CoverImage title="The Wedding" src={HOME_OG_IMAGE_URL} />
           </div>

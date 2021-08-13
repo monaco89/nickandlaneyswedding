@@ -10,7 +10,8 @@ type Props = {
 };
 
 const transition = {
-  duration: 1,
+  // Dont animate for now...
+  duration: 0,
   ease: [0.43, 0.13, 0.23, 0.96],
 };
 
