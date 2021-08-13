@@ -1,7 +1,8 @@
-import Head from 'next/head'
-import { CMS_NAME, HOME_OG_IMAGE_URL } from '../lib/constants'
+import React from 'react';
+import Head from 'next/head';
+import { HOME_OG_IMAGE_URL } from '../lib/constants';
 
-const Meta = () => {
+function Meta(): JSX.Element {
   return (
     <Head>
       <link
@@ -32,13 +33,10 @@ const Meta = () => {
       <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
       <meta name="theme-color" content="#000" />
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
-      <meta
-        name="description"
-        content={`A statically generated blog example using Next.js and ${CMS_NAME}.`}
-      />
+      <meta name="description" content="Nick and Laney's Wedding Website" />
       <meta property="og:image" content={HOME_OG_IMAGE_URL} />
     </Head>
-  )
+  );
 }
 
-export default Meta
+export default Meta;

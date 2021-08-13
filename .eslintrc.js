@@ -26,6 +26,7 @@ module.exports = {
   rules: {
     'react/jsx-filename-extension': [1, { extensions: ['.ts', '.tsx'] }],
     'import/extensions': 'off',
+    'import/prefer-default-export': 'off',
     'react/prop-types': 'off',
     'jsx-a11y/anchor-is-valid': 'off',
     'react/jsx-props-no-spreading': ['error', { custom: 'ignore' }],
