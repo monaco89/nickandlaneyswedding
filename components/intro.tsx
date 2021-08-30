@@ -1,7 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import Image from 'next/image';
-import stamp from '../public/assets/stamp.jpeg';
 
 const line1 = 'Dear Laney,';
 const line2 = "Can't wait until 2023.";
@@ -53,9 +51,6 @@ function Intro(): JSX.Element {
           </motion.span>
         ))}
       </motion.h1>
-      <span className="w-32 hidden md:block">
-        <Image src={stamp} alt="Postcard stamp" />
-      </span>
       {/* <h1 className="text-4xl md:text-6xl font-bold tracking-tighter leading-tight md:pr-8">
           Nick and Laney's Wedding
         </h1>

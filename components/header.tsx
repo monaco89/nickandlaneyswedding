@@ -1,14 +1,45 @@
 import React from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
+import Logo from '../public/assets/MonacoLogoDraft.png';
 
 function Header(): JSX.Element {
   return (
-    <h2 className="text-2xl md:text-4xl font-bold tracking-tight md:tracking-tighter leading-tight mb-20 mt-8">
+    <div className="text-center mb-20 m-8 md:mx-32">
       <Link href="/">
-        <a className="hover:underline">Nick and Laney's Wedding</a>
+        <a>
+          <Image
+            src={Logo}
+            alt="Monaco crest"
+            className="logo"
+            height={150}
+            width={150}
+          />
+        </a>
       </Link>
-      .
-    </h2>
+      <h2 className="text-2xl font-light tracking-normal md:tracking-tight leading-tight my-8 flex justify-evenly flex-wrap font-sans">
+        <span className="mb-4 md:mb-0">
+          <Link href="/the-story">
+            <a className="hover:underline">the story</a>
+          </Link>
+        </span>
+        <span className="mb-4 md:mb-0">
+          <Link href="/the-proposal">
+            <a className="hover:underline">the proposal</a>
+          </Link>
+        </span>
+        <span className="mb-4 md:mb-0">
+          <Link href="/the-registry">
+            <a className="hover:underline">the registry</a>
+          </Link>
+        </span>
+        <span className="mb-4 md:mb-0">
+          <Link href="/the-wedding">
+            <a className="hover:underline">the wedding</a>
+          </Link>
+        </span>
+      </h2>
+    </div>
   );
 }
 

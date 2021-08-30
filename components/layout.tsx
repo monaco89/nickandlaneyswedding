@@ -1,7 +1,8 @@
 import React from 'react';
-import Alert from './alert';
-import Footer from './footer';
+// import Alert from './alert';
+// import Footer from './footer';
 import Meta from './meta';
+import Header from './header';
 
 type Props = {
   children: React.ReactNode;
@@ -12,6 +13,7 @@ function Layout({ children }: Props): JSX.Element {
     <>
       <Meta />
       <div className="min-h-screen">
+        <Header />
         {/* <Alert /> */}
         <main>{children}</main>
       </div>
