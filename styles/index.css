@@ -14,4 +14,10 @@
 @tailwind utilities;
 /* Stop purging. */
 
-/* Your own custom utilities */
+/* custom utilities */
+mark {
+  display: inline-block;
+  line-height: 0em;
+  padding-bottom: 0.5em;
+  background-color: white;
+}

@@ -37,6 +37,7 @@ module.exports = {
         '6xl': '2.75rem',
         '7xl': '4.5rem',
         '8xl': '6.25rem',
+        '10xl': '16rem',
       },
       fontFamily: {
         sans: ['orpheuspro', 'ui-sans-serif', 'system-ui'],
