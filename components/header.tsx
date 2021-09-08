@@ -28,11 +28,11 @@ function Header(): JSX.Element {
             <a className="hover:underline">the proposal</a>
           </Link>
         </span>
-        <span className="mb-4 md:mb-0">
+        {/* <span className="mb-4 md:mb-0">
           <Link href="/the-registry">
             <a className="hover:underline">the registry</a>
           </Link>
-        </span>
+        </span> */}
         <span className="mb-4 md:mb-0">
           <Link href="/the-wedding">
             <a className="hover:underline">the wedding</a>
