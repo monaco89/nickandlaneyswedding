@@ -4,7 +4,7 @@ import Container from '../components/container';
 import Intro from '../components/intro';
 import Layout from '../components/layout';
 import CoverImage from '../components/cover-image';
-import { HOME_OG_IMAGE_URL } from '../lib/constants';
+import { HOME_OG_IMAGE_URL } from '../utils/constants';
 
 function Index(): JSX.Element {
   return (

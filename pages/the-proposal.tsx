@@ -2,6 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import Container from '../components/container';
+import PageHeader from '../components/PageHeader';
 import Layout from '../components/layout';
 import pic1 from '../public/assets/1.jpg';
 import pic2 from '../public/assets/2.jpg';
@@ -29,21 +30,15 @@ function TheProposal(): JSX.Element {
           }
         `}</style>
         <section className="mt-16 mb-16 md:mb-12">
-          <h1 className="text-center text-6xl font-light text-white tracking-wide my-8">
-            the proposal
-          </h1>
-          <div className="grid grid-rows-2 grid-cols-3 gap-8">
+          <PageHeader text="the proposal" />
+          <div className="grid grid-rows-2 grid-cols-2 gap-8">
             <div className="h-auto w-full relative">
               <Image
                 src={pic1}
                 alt="Castle Hill Inn"
                 layout="fill"
                 objectFit="contain"
-                // className="rounded-full"
               />
-            </div>
-            <div className="row-span-2">
-              <Image src={pic2} alt="The ring" />
             </div>
             <div className="h-auto w-full relative">
               <Image
@@ -62,18 +57,24 @@ function TheProposal(): JSX.Element {
               />
             </div>
             <div className="h-auto w-full relative">
-              <Image
-                src={pic5}
-                alt="Nick and Laney"
-                layout="fill"
-                objectFit="contain"
-              />
+              <Image src={pic5} alt="Nick and Laney close up" />
             </div>
           </div>
-          <h2 className="text-center text-7xl md:text-10xl text-white tracking-wide left-0 right-0 font-light absolute z-10">
-            08.02.21
+          <h2 className="text-center text-7xl md:text-8xl lg:text-9xl text-black tracking-wide left-0 right-0 font-thin absolute z-10 font-system">
+            08.02.2021
           </h2>
           <div className="grid grid-rows-1 grid-cols-3 gap-4 mt-12 md:mt-48">
+            <div className="h-auto w-full relative">
+              <Image src={pic2} alt="Sailboat" />
+            </div>
+            <div className="h-auto w-full relative">
+              <Image src={pic7} alt="Sailboat" />
+            </div>
+            <div className="h-auto w-full relative">
+              <Image src={pic2} alt="Sailboat" />
+            </div>
+          </div>
+          <div className="grid grid-rows-3 grid-cols-2 gap-8 mt-8">
             <div className="h-auto w-full relative">
               <Image
                 src={pic6}
@@ -83,9 +84,6 @@ function TheProposal(): JSX.Element {
               />
             </div>
             <div className="h-auto w-full relative">
-              <Image src={pic7} alt="Sailboat" />
-            </div>
-            <div className="h-auto w-full relative">
               <Image
                 src={pic8}
                 alt="Laney showing off her ring"
@@ -93,8 +91,6 @@ function TheProposal(): JSX.Element {
                 objectFit="contain"
               />
             </div>
-          </div>
-          <div className="grid grid-rows-2 grid-cols-2 gap-8 mt-8">
             <div className="h-auto w-full relative">
               <Image
                 src={pic9}

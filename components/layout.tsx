@@ -1,5 +1,4 @@
 import React from 'react';
-// import Alert from './alert';
 // import Footer from './footer';
 import Meta from './meta';
 import Header from './header';
@@ -14,7 +13,6 @@ function Layout({ children }: Props): JSX.Element {
       <Meta />
       <div className="min-h-screen">
         <Header />
-        {/* <Alert /> */}
         <main>{children}</main>
       </div>
       {/* <Footer /> */}

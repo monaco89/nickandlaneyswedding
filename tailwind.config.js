@@ -37,14 +37,24 @@ module.exports = {
         '6xl': '2.75rem',
         '7xl': '4.5rem',
         '8xl': '6.25rem',
-        '10xl': '16rem',
+        '9xl': '12rem',
       },
       fontFamily: {
-        sans: ['orpheuspro', 'ui-sans-serif', 'system-ui'],
+        sans: ['orpheuspro', 'ui-sans', 'system-ui'],
+        serif: ['mina', 'ui-sans-serif', 'system-ui'],
+        system: ['system-ui'],
       },
       boxShadow: {
         small: '0 5px 10px rgba(0, 0, 0, 0.12)',
         medium: '0 8px 30px rgba(0, 0, 0, 0.12)',
+      },
+      screens: {
+        xs: { max: '575px' }, // Mobile (iPhone 3 - iPhone XS Max).
+        sm: { min: '576px', max: '897px' }, // Mobile (matches max: iPhone 11 Pro Max landscape @ 896px).
+        md: { min: '898px', max: '1199px' }, // Tablet (matches max: iPad Pro @ 1112px).
+        lg: { min: '1200px' }, // Desktop smallest.
+        xl: { min: '1159px' }, // Desktop wide.
+        xxl: { min: '1359px' }, // Desktop widescreen.
       },
     },
   },
