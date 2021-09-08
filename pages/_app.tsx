@@ -2,6 +2,7 @@ import React from 'react';
 import { AppProps } from 'next/app';
 import { useRouter } from 'next/router';
 import * as gtag from '../lib/gtag';
+import '../styles/index.css';
 
 const isProduction = process.env.NODE_ENV === 'production';
 
