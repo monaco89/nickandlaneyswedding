@@ -31,6 +31,9 @@ function TheProposal(): JSX.Element {
         `}</style>
         <section className="mt-16 mb-16 md:mb-12">
           <PageHeader text="the proposal" />
+          <h2 className="text-center xs:text-3xl lg:text-6xl font-light text-black my-8 font-sans">
+            Newport, Rhode Island
+          </h2>
           <div className="grid grid-rows-2 grid-cols-2 gap-8">
             <div className="h-auto w-full relative">
               <Image
