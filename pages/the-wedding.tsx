@@ -1,9 +1,9 @@
 import React from 'react';
 import Head from 'next/head';
+import { motion } from 'framer-motion';
 import Container from '../components/container';
 import Layout from '../components/layout';
 import PageHeader from '../components/PageHeader';
-import { motion } from 'framer-motion';
 
 const transition = {
   duration: 2,
@@ -24,7 +24,7 @@ function TheProposal(): JSX.Element {
     <motion.div className="single" initial="exit" animate="enter" exit="exit">
       <motion.h2
         variants={variants}
-        className="text-center xs:text-3xl lg:text-6xl font-light text-black my-8 font-sans"
+        className="my-8 text-center text-black font-sans xs:text-3xl font-light lg:text-6xl"
       >
         Coming 2023.
       </motion.h2>
@@ -42,7 +42,7 @@ function TheProposal(): JSX.Element {
             background-color: #d3d7be;
           }
         `}</style>
-        <section className="mt-16 mb-16 md:mb-12">
+        <section className="mb-16 mt-16 md:mb-12">
           <PageHeader text="the wedding" />
           {copy}
         </section>

@@ -5,7 +5,7 @@ import Logo from '../public/assets/MonacoLogoDraft.png';
 
 function Header(): JSX.Element {
   return (
-    <div className="text-center m-8 md:mx-32">
+    <div className="m-8 text-center md:mx-32">
       <Link href="/">
         <a>
           <Image
@@ -17,7 +17,7 @@ function Header(): JSX.Element {
           />
         </a>
       </Link>
-      <h2 className="text-2xl font-light tracking-normal md:tracking-tight leading-tight my-8 flex justify-evenly flex-wrap font-sans xs:flex-col lg:flex-row">
+      <h2 className="flex xs:flex-col flex-wrap justify-evenly my-8 font-sans text-2xl font-light tracking-normal leading-tight md:tracking-tight lg:flex-row">
         <span className="mb-4 md:mb-0">
           <Link href="/the-story">
             <a className="hover:underline">the story</a>
