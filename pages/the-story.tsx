@@ -17,28 +17,91 @@ function TheProposal(): JSX.Element {
             background-color: #d3d7be;
           }
         `}</style>
-        <section className="mt-16 mb-16 md:mb-12">
+        <section className="mb-16 mt-16 md:mb-12">
           <PageHeader text="the story" />
-          <div className="lg:w-full sticky">
+          <div className="sticky lg:w-full">
             <div className="container mx-auto w-full h-full">
-              <div className="relative wrap overflow-hidden p-10 h-full">
-                <div className="lg:block xs:hidden absolute h-full right-2/4 border-2 border-black" />
-                <div className="lg:block xs:hidden absolute h-full left-2/4 border-2 border-black" />
+              <div className="wrap relative p-10 h-full overflow-hidden">
+                <div className="absolute right-2/4 xs:hidden h-full border-2 border-black lg:block" />
+                <div className="absolute left-2/4 xs:hidden h-full border-2 border-black lg:block" />
+                <StoryMessage right title="The early years..." />
                 <StoryMessage
-                  date="1-6 May, 2021"
-                  title="Omelet du fromage"
-                  body="Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                  right
+                  date="AUGUST 2012"
+                  body={
+                    <p>
+                      Nick and Delaney <mark>first met</mark> in their freshmen
+                      dorm building. This is where Delaney's crush began.
+                    </p>
+                  }
+                />
+                <StoryMessage right date="JANUARY 2015" body="Kiss" />
+                <StoryMessage right date="FEBURARY 2016" body="V-day" />
+                <StoryMessage
+                  right
+                  date="MARCH 2016"
+                  body={
+                    <p>
+                      They decided to follow different paths and{' '}
+                      <mark>said goodbye.</mark>
+                    </p>
+                  }
+                />
+                <StoryMessage right title="The relationship..." />
+                <StoryMessage
+                  right
+                  date="NOVEMBER 27, 2017"
+                  body={
+                    <p>
+                      Nick <mark>friend requested</mark> Delaney on Facebook.{' '}
+                      Delaney was too impatient to wait for him to say
+                      something, so she sent him a message.
+                    </p>
+                  }
                 />
                 <StoryMessage
-                  date="1-6 May, 2021"
-                  title="Omelet du fromage"
-                  body="Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                  right
+                  date="DECEMBER 28, 2018"
+                  body={
+                    <p>
+                      After all this time, Nick FINALLY asked Delaney to
+                      <mark>be his girlfriend.</mark>
+                    </p>
+                  }
+                />
+                <StoryMessage
+                  right
+                  date="AUGUST 17, 2018"
+                  body={
+                    <p>
+                      Delaney moved to DC and they get their{' '}
+                      <mark>first apartment</mark> together.
+                    </p>
+                  }
+                />
+                <StoryMessage
+                  right
+                  date="AUGUST 24, 2019"
+                  body={
+                    <p>
+                      Their family grew by four paws.{' '}
+                      <mark>Welcome home Captain.</mark>
+                    </p>
+                  }
+                />
+                <StoryMessage
+                  right
+                  date="AUGUST 2, 2021"
+                  body={
+                    <p>
+                      Nick asked, and <mark>Delaney said YES!</mark>
+                    </p>
+                  }
+                />
+                <StoryMessage
+                  right
+                  date="TBD 2023"
+                  body={<mark>They say I DO.</mark>}
                 />
               </div>
             </div>

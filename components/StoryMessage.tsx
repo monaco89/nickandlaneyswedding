@@ -1,35 +1,39 @@
 import React from 'react';
 
 type Props = {
-  date: string;
-  title: string;
-  body: string;
+  date?: string;
+  title?: string;
+  body?: any;
   right?: boolean;
 };
 
 function StoryMessage({ date, title, body, right }: Props): JSX.Element {
   if (right) {
-    <div className="mb-8 flex justify-between items-center w-full right-timeline">
-      <div className="order-1 w-5/12" />
-      <div className="order-1  w-5/12 px-1 py-4 text-left">
-        <p className="mb-3 text-base text-black-300">{date}</p>
-        <h4 className="mb-3 font-bold text-lg md:text-2xl">{title}</h4>
-        <p className="text-sm md:text-base leading-snug text-black-300 text-opacity-100">
-          {body}
-        </p>
+    return (
+      <div className="right-timeline flex items-center justify-between mb-8 w-full">
+        <div className="order-1 w-5/12" />
+        <div className="order-1 px-1 py-4 w-5/12 text-left">
+          <p className="text-black-300 mb-3 text-xl font-bold">{date}</p>
+          {title && <h4 className="mb-3 text-2xl md:text-2xl">{title}</h4>}
+          <p className="text-black-300 w-4/6 text-opacity-100 text-lg leading-snug">
+            {body}
+          </p>
+        </div>
       </div>
-    </div>;
+    );
   }
 
   return (
-    <div className="mb-8 flex justify-between xs:flex-col sm:flex-row-reverse md:flex-row-reverse lg:flex-row-reverse items-center w-full left-timeline">
-      <div className="order-1 w-5/12" />
-      <div className="order-1 lg:w-5/12 sm:w-5/12 md:w-5/12 xs:w-full px-1 py-4 text-right">
-        <p className="mb-3 text-base text-black-300">{date}</p>
-        <h4 className="mb-3 font-bold text-lg md:text-2xl">
-          <mark>{title}</mark>
-        </h4>
-        <p className="text-sm md:text-base leading-snug text-black-300 text-opacity-100">
+    <div className="left-timeline flex xs:flex-col items-center justify-between mb-8 w-full sm:flex-row-reverse md:flex-row-reverse lg:flex-row-reverse">
+      <div className="order-1 w-4/12" />
+      <div className="order-1 px-1 py-4 xs:w-full text-right sm:w-4/12 md:w-4/12 lg:w-4/12">
+        <p className="text-black-300 mb-3 text-lg font-bold">{date}</p>
+        {title && (
+          <h4 className="mb-3 text-2xl md:text-2xl">
+            <mark>{title}</mark>
+          </h4>
+        )}
+        <p className="text-black-300 text-opacity-100 text-base leading-snug">
           {body}
         </p>
       </div>
