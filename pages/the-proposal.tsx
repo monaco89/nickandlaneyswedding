@@ -29,13 +29,13 @@ function TheProposal(): JSX.Element {
             background-color: #d3d7be;
           }
         `}</style>
-        <section className="mt-16 mb-16 md:mb-12">
+        <section className="mb-16 xs:mt-10 mt-16 md:mb-12">
           <PageHeader text="the proposal" />
-          <h2 className="text-center xs:text-3xl lg:text-6xl font-light text-black my-8 font-sans">
+          <h2 className="my-8 text-center text-black font-sans xs:text-3xl font-light lg:text-6xl">
             Newport, Rhode Island
           </h2>
-          <div className="grid grid-rows-2 grid-cols-2 gap-8">
-            <div className="h-auto w-full relative">
+          <div className="grid gap-8 grid-cols-2 grid-rows-2">
+            <div className="relative w-full h-auto">
               <Image
                 src={pic1}
                 alt="Castle Hill Inn"
@@ -43,7 +43,7 @@ function TheProposal(): JSX.Element {
                 objectFit="contain"
               />
             </div>
-            <div className="h-auto w-full relative">
+            <div className="relative w-full h-auto">
               <Image
                 src={pic3}
                 alt="Castle Hill Inn Lighthouse"
@@ -51,7 +51,7 @@ function TheProposal(): JSX.Element {
                 objectFit="contain"
               />
             </div>
-            <div className="h-auto w-full relative">
+            <div className="relative w-full h-auto">
               <Image
                 src={pic4}
                 alt="Nick and Laney and the lighthouse"
@@ -59,26 +59,26 @@ function TheProposal(): JSX.Element {
                 objectFit="contain"
               />
             </div>
-            <div className="h-auto w-full relative">
+            <div className="relative w-full h-auto">
               <Image src={pic5} alt="Nick and Laney close up" />
             </div>
           </div>
-          <h2 className="text-center text-7xl md:text-8xl lg:text-9xl text-black tracking-wide left-0 right-0 font-thin absolute z-10 font-system">
+          <h2 className="absolute z-10 left-0 right-0 text-center text-black font-system text-7xl font-thin tracking-wide md:text-8xl lg:text-9xl">
             08.02.2021
           </h2>
-          <div className="grid grid-rows-1 grid-cols-3 gap-4 mt-12 md:mt-48">
-            <div className="h-auto w-full relative">
+          <div className="grid gap-4 grid-cols-3 grid-rows-1 mt-12 md:mt-48">
+            <div className="relative w-full h-auto">
               <Image src={pic2} alt="Sailboat" />
             </div>
-            <div className="h-auto w-full relative">
+            <div className="relative w-full h-auto">
               <Image src={pic7} alt="Sailboat" />
             </div>
-            <div className="h-auto w-full relative">
+            <div className="relative w-full h-auto">
               <Image src={pic2} alt="Sailboat" />
             </div>
           </div>
-          <div className="grid grid-rows-3 grid-cols-2 gap-8 mt-8">
-            <div className="h-auto w-full relative">
+          <div className="grid gap-8 grid-cols-2 grid-rows-3 mt-8">
+            <div className="relative w-full h-auto">
               <Image
                 src={pic6}
                 alt="Nick and Laney sitting in lawn chairs"
@@ -86,7 +86,7 @@ function TheProposal(): JSX.Element {
                 objectFit="contain"
               />
             </div>
-            <div className="h-auto w-full relative">
+            <div className="relative w-full h-auto">
               <Image
                 src={pic8}
                 alt="Laney showing off her ring"
@@ -94,7 +94,7 @@ function TheProposal(): JSX.Element {
                 objectFit="contain"
               />
             </div>
-            <div className="h-auto w-full relative">
+            <div className="relative w-full h-auto">
               <Image
                 src={pic9}
                 alt="Nick taking a drink"
@@ -102,10 +102,10 @@ function TheProposal(): JSX.Element {
                 objectFit="contain"
               />
             </div>
-            <div className="h-auto w-full relative">
+            <div className="relative w-full h-auto">
               <Image src={pic10} alt="Newport bay" />
             </div>
-            <div className="h-auto w-full relative">
+            <div className="relative w-full h-auto">
               <Image
                 src={pic11}
                 alt="Nick and laney smiling"
@@ -113,7 +113,7 @@ function TheProposal(): JSX.Element {
                 objectFit="contain"
               />
             </div>
-            <div className="h-auto w-full relative opacity-40">
+            <div className="relative w-full h-auto opacity-40">
               <Image
                 src={pic12}
                 alt="Map of Newport"

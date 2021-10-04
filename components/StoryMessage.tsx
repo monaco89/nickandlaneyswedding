@@ -10,11 +10,13 @@ type Props = {
 function StoryMessage({ date, title, body, right }: Props): JSX.Element {
   if (right) {
     return (
-      <div className="right-timeline flex items-center justify-between mb-8 w-full">
-        <div className="order-1 w-5/12" />
-        <div className="order-1 px-1 py-4 w-5/12 text-left">
+      <div className="right-timeline flex xs:flex-col items-center justify-between mb-8 w-full">
+        <div className="order-1" />
+        <div className="order-1 px-1 py-4 w-5/12 xs:w-full text-left">
           <p className="text-black-300 mb-3 text-xl font-bold">{date}</p>
-          {title && <h4 className="mb-3 text-2xl md:text-2xl">{title}</h4>}
+          {title && (
+            <h4 className="mb-3 text-white text-3xl md:text-2xl">{title}</h4>
+          )}
           <p className="text-black-300 w-4/6 text-opacity-100 text-lg leading-snug">
             {body}
           </p>

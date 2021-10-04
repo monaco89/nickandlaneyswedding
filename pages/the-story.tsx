@@ -17,11 +17,11 @@ function TheProposal(): JSX.Element {
             background-color: #d3d7be;
           }
         `}</style>
-        <section className="mb-16 mt-16 md:mb-12">
+        <section className="mb-16 xs:mt-10 mt-16 md:mb-12">
           <PageHeader text="the story" />
           <div className="sticky lg:w-full">
-            <div className="container mx-auto w-full h-full">
-              <div className="wrap relative p-10 h-full overflow-hidden">
+            <div className="container mx-auto w-4/5 h-full">
+              <div className="wrap relative p-10 xs:p-5 h-full overflow-hidden">
                 <div className="absolute right-2/4 xs:hidden h-full border-2 border-black lg:block" />
                 <div className="absolute left-2/4 xs:hidden h-full border-2 border-black lg:block" />
                 <StoryMessage right title="The early years..." />
@@ -64,7 +64,7 @@ function TheProposal(): JSX.Element {
                   date="DECEMBER 28, 2018"
                   body={
                     <p>
-                      After all this time, Nick FINALLY asked Delaney to
+                      After all this time, Nick FINALLY asked Delaney to{' '}
                       <mark>be his girlfriend.</mark>
                     </p>
                   }
@@ -84,8 +84,8 @@ function TheProposal(): JSX.Element {
                   date="AUGUST 24, 2019"
                   body={
                     <p>
-                      Their family grew by four paws.{' '}
-                      <mark>Welcome home Captain.</mark>
+                      Their family <mark>grew by four paws.</mark> Welcome home
+                      Captain!
                     </p>
                   }
                 />

@@ -21,3 +21,21 @@ mark {
   padding-bottom: 0.5em;
   background-color: white;
 }
+
+path {
+  fill: transparent;
+}
+
+.curved-text text {
+  fill: currentColor;
+  text-anchor: middle;
+}
+
+.curved-text {
+  /* left: 50%; */
+  /* I think this works for centering? */
+  /* top: calc(50% - 64px);
+  -webkit-transform: translate(-50%, calc(-50% - 64px));
+  -ms-transform: translate(-50%, calc(-50% - 64px));
+  transform: translate(-50%, calc(-50% - 64px)); */
+}

@@ -1,10 +1,10 @@
 import React from 'react';
 import Head from 'next/head';
+import Image from 'next/image';
 import Container from '../components/container';
-import Intro from '../components/intro';
 import Layout from '../components/layout';
-// import CoverImage from '../components/cover-image';
-// import { HOME_OG_IMAGE_URL } from '../lib/constants';
+import ChurchImage from '../public/assets/Church.png';
+import CurvedText from '../components/CurvedText';
 
 function Index(): JSX.Element {
   return (
@@ -13,12 +13,23 @@ function Index(): JSX.Element {
         <title>Nick and Laney's Wedding</title>
       </Head>
       <Container>
-        <Intro />
-        {/* <section className="mt-16 mb-16 md:mb-12">
-          <div className="lg:px-32">
-            <CoverImage title="The Wedding" src={HOME_OG_IMAGE_URL} />
+        <style jsx global>{`
+          html {
+            background-color: #d3d7be;
+          }
+        `}</style>
+        {/* <Intro /> */}
+        <section className="mb-16 xs:mt-10 mt-16 md:mb-12">
+          <div className="text-center lg:px-32">
+            <p className="absolute xs:mt-10 mt-20 w-3/4 font-serif xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl">
+              and so they lived happily ever after
+            </p>
+            <div className="mx-auto xs:w-3/4 md:w-7/12">
+              <Image src={ChurchImage} alt="Church" layout="responsive" />
+            </div>
+            <CurvedText text="hashtag lanetomonaco" />
           </div>
-        </section> */}
+        </section>
       </Container>
     </Layout>
   );

@@ -42,7 +42,7 @@ function TheProposal(): JSX.Element {
             background-color: #d3d7be;
           }
         `}</style>
-        <section className="mb-16 mt-16 md:mb-12">
+        <section className="mb-16 xs:mt-10 mt-16 md:mb-12">
           <PageHeader text="the wedding" />
           {copy}
         </section>
