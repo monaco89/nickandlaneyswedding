@@ -26,12 +26,12 @@ const letter = {
 
 function Intro(): JSX.Element {
   return (
-    <section className="flex-col md:flex-row flex items-center md:justify-between text-left mt-16 mb-16 md:mb-12">
+    <section className="flex flex-col items-center mb-16 mt-16 text-left md:flex-row md:justify-between md:mb-12">
       <motion.h1
         variants={sentence}
         initial="hidden"
         animate="visible"
-        className="text-4xl md:text-6xl font-bold tracking-tighter leading-tight md:pr-8"
+        className="text-4xl font-bold tracking-tighter leading-tight md:pr-8 md:text-6xl"
       >
         {line1.split('').map((char, index) => (
           <motion.span key={`${char}-${index}`} variants={letter}>

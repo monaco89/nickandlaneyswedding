@@ -1,10 +1,8 @@
 import React from 'react';
 import Head from 'next/head';
-import Image from 'next/image';
+// import Image from 'next/image';
 import Container from '../components/container';
 import Layout from '../components/layout';
-import ChurchImage from '../public/assets/Church.png';
-import CurvedText from '../components/CurvedText';
 
 function Index(): JSX.Element {
   return (
@@ -24,10 +22,6 @@ function Index(): JSX.Element {
             <p className="absolute xs:mt-10 mt-20 w-3/4 font-serif xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl">
               and so they lived happily ever after
             </p>
-            <div className="mx-auto xs:w-3/4 md:w-7/12">
-              <Image src={ChurchImage} alt="Church" layout="responsive" />
-            </div>
-            <CurvedText text="hashtag lanetomonaco" />
           </div>
         </section>
       </Container>

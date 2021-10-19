@@ -32,8 +32,14 @@ function Meta(): JSX.Element {
       <meta name="msapplication-TileColor" content="#ffffff" />
       <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
       <meta name="theme-color" content="#ffffff" />
-      <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       <meta name="description" content="Nick and Laney's Wedding Website" />
+      <meta name="og:title" content="Nick and Laney's Wedding" />
+      <meta
+        name="og:description"
+        content="Information about the wedding, accomodations, engagement, registry."
+      />
+      <meta name="og:url" content="https://www.nickandlaney.com" />
+      <meta property="og:type" content="website" />
       <meta property="og:image" content={HOME_OG_IMAGE_URL} />
     </Head>
   );
