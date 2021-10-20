@@ -12,13 +12,13 @@ function TheProposal(): JSX.Element {
         <title>The Story | Nick and Laney's Wedding</title>
       </Head>
       <Container>
-        <style jsx global>{`
-          html {
-            background-color: #d3d7be;
-          }
-        `}</style>
         <section className="mb-16 xs:mt-10 mt-16 md:mb-12">
-          <PageHeader text="the story" />
+          {/* <PageHeader text="the story" /> */}
+          <h1 className="xs:leading-1 leading-11 lg:leading-12 lg:text-10xl xs:ml-0 ml-16 xs:w-10/12 w-8/12 text-center text-black font-sans xs:text-7xl font-extralight sm:text-7xl md:text-7xl">
+            <span className="text-left">THE</span>
+            <br />
+            <span className="block text-right">STORY</span>
+          </h1>
           <div className="sticky lg:w-full">
             <div className="container mx-auto w-4/5 h-full">
               <div className="wrap relative p-10 xs:p-5 h-full overflow-hidden">

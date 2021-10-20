@@ -19,7 +19,7 @@ const variants = {
   },
 };
 
-function TheRegistry(): JSX.Element {
+function TheAccommodations(): JSX.Element {
   const copy = (
     <motion.div className="single" initial="exit" animate="enter" exit="exit">
       <motion.h2
@@ -34,7 +34,7 @@ function TheRegistry(): JSX.Element {
   return (
     <Layout>
       <Head>
-        <title>The Registry | Nick and Laney's Wedding</title>
+        <title>The Accommodations | Nick and Laney's Wedding</title>
       </Head>
       <Container>
         <style jsx global>{`
@@ -43,7 +43,7 @@ function TheRegistry(): JSX.Element {
           }
         `}</style>
         <section className="mb-16 xs:mt-10 mt-16 md:mb-12">
-          <PageHeader text="the registry" />
+          <PageHeader text="the Accommodations" />
           {copy}
         </section>
       </Container>
@@ -51,4 +51,4 @@ function TheRegistry(): JSX.Element {
   );
 }
 
-export default TheRegistry;
+export default TheAccommodations;

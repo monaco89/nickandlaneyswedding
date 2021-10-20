@@ -15,6 +15,9 @@
 /* Stop purging. */
 
 /* custom utilities */
+body {
+  background-color: #f8f5ec;
+}
 mark {
   display: inline-block;
   line-height: 0em;

@@ -5,18 +5,18 @@ import Logo from '../public/assets/MonacoLogoDraft.png';
 
 function Header(): JSX.Element {
   return (
-    <div className="flex xs:flex-col flex-wrap items-center justify-evenly m-8 font-sans text-2xl font-light md:mx-32 lg:flex-row">
-      <span className="mb-4 md:mb-0">
+    <nav className="flex xs:flex-col flex-wrap items-center justify-center m-8 text-center font-sans text-2xl font-light md:mx-32 lg:flex-row">
+      <span className="mb-4 w-1/5 xs:w-full md:mb-0">
         <Link href="/the-story">
           <a className="hover:underline">the story</a>
         </Link>
       </span>
-      <span className="mb-4 md:mb-0">
+      <span className="mb-4 w-1/5 xs:w-full md:mb-0">
         <Link href="/the-proposal">
           <a className="hover:underline">the proposal</a>
         </Link>
       </span>
-      <span className="mb-4 md:mb-0">
+      <span className="mb-4 w-1/5 xs:w-full md:mb-0">
         <Link href="/">
           <a>
             <Image
@@ -29,17 +29,17 @@ function Header(): JSX.Element {
           </a>
         </Link>
       </span>
-      <span className="mb-4 md:mb-0">
-        <Link href="/the-registry">
-          <a className="hover:underline">the registry</a>
+      <span className="mb-4 w-1/5 xs:w-full md:mb-0">
+        <Link href="/the-accommodations">
+          <a className="hover:underline">the accommodations</a>
         </Link>
       </span>
-      <span className="mb-4 md:mb-0">
+      <span className="mb-4 w-1/5 xs:w-full md:mb-0">
         <Link href="/the-wedding">
           <a className="hover:underline">the wedding</a>
         </Link>
       </span>
-    </div>
+    </nav>
   );
 }
 

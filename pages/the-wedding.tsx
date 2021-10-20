@@ -37,11 +37,6 @@ function TheWedding(): JSX.Element {
         <title>The Wedding | Nick and Laney's Wedding</title>
       </Head>
       <Container>
-        <style jsx global>{`
-          html {
-            background-color: #d3d7be;
-          }
-        `}</style>
         <section className="mb-16 xs:mt-10 mt-16 md:mb-12">
           <PageHeader text="the wedding" />
           {copy}

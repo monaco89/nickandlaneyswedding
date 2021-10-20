@@ -31,6 +31,8 @@ module.exports = {
       },
       lineHeight: {
         tight: 1.2,
+        11: '5rem',
+        12: '7rem',
       },
       fontSize: {
         '5xl': '2.5rem',
@@ -38,9 +40,10 @@ module.exports = {
         '7xl': '4.5rem',
         '8xl': '6.25rem',
         '9xl': '12rem',
+        '10xl': '8rem',
       },
       fontFamily: {
-        sans: ['orpheuspro', 'ui-sans', 'system-ui'],
+        sans: ['canto', 'orpheuspro', 'ui-sans', 'system-ui'],
         serif: ['mina', 'ui-sans-serif', 'system-ui'],
         system: ['system-ui'],
       },

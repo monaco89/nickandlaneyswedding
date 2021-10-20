@@ -10,7 +10,7 @@ type Props = {
 function StoryMessage({ date, title, body, right }: Props): JSX.Element {
   if (right) {
     return (
-      <div className="right-timeline flex xs:flex-col items-center justify-between mb-8 w-full">
+      <div className="right-timeline flex xs:flex-col items-center justify-between mb-2 w-full">
         <div className="order-1" />
         <div className="order-1 px-1 py-4 w-5/12 xs:w-full text-left">
           <p className="text-black-300 mb-3 text-xl font-bold">{date}</p>
