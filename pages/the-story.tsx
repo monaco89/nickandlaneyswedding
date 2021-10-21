@@ -23,7 +23,7 @@ function TheProposal(): JSX.Element {
             <div className="container mx-auto w-4/5 h-full">
               <div className="wrap relative p-10 xs:p-5 h-full overflow-hidden">
                 <div className="absolute right-2/4 xs:hidden h-full border-2 border-black lg:block" />
-                <div className="absolute left-2/4 xs:hidden h-full border-2 border-black lg:block" />
+                {/* <div className="border-1 absolute left-2/4 xs:hidden h-full border-black lg:block" /> */}
                 <StoryMessage right title="The early years..." />
                 <StoryMessage
                   right
@@ -35,8 +35,28 @@ function TheProposal(): JSX.Element {
                     </p>
                   }
                 />
-                <StoryMessage right date="JANUARY 2015" body="Kiss" />
-                <StoryMessage right date="FEBURARY 2016" body="V-day" />
+                <StoryMessage
+                  right
+                  date="JANUARY 2015"
+                  body={
+                    <p>
+                      After too much to drink at Fens and talking to each other
+                      all night, <mark>Nick kisses Delaney</mark> for the first
+                      time.
+                    </p>
+                  }
+                />
+                <StoryMessage
+                  right
+                  date="FEBURARY 2016"
+                  body={
+                    <p>
+                      For their <mark>first date</mark>, Nick took Delaney to
+                      Pagani, a little Italian resturant, on the lower west
+                      side. Then, of course had to get ice cream after.
+                    </p>
+                  }
+                />
                 <StoryMessage
                   right
                   date="MARCH 2016"
@@ -53,8 +73,9 @@ function TheProposal(): JSX.Element {
                   date="NOVEMBER 27, 2017"
                   body={
                     <p>
-                      Nick <mark>friend requested</mark> Delaney on Facebook.{' '}
-                      Delaney was too impatient to wait for him to say
+                      Almost 2 years later, Nick <mark>friend requested</mark>{' '}
+                      Delaney on Facebook. He couldn't figure out what to say
+                      and she was too impatient to wait for him to say
                       something, so she sent him a message.
                     </p>
                   }
@@ -74,7 +95,7 @@ function TheProposal(): JSX.Element {
                   date="AUGUST 17, 2018"
                   body={
                     <p>
-                      Delaney moved to DC and they get their{' '}
+                      Delaney moved to DC and they got their{' '}
                       <mark>first apartment</mark> together.
                     </p>
                   }
@@ -100,7 +121,7 @@ function TheProposal(): JSX.Element {
                 />
                 <StoryMessage
                   right
-                  date="TBD 2023"
+                  date="AUGUST 2023"
                   body={<mark>They say I DO.</mark>}
                 />
               </div>
