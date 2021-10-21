@@ -41,10 +41,12 @@ module.exports = {
         '8xl': '6.25rem',
         '9xl': '12rem',
         '10xl': '8rem',
+        '11xl': '16rem',
       },
       fontFamily: {
         sans: ['canto', 'orpheuspro', 'ui-sans', 'system-ui'],
-        serif: ['mina', 'ui-sans-serif', 'system-ui'],
+        serif: ['ui-sans-serif', 'system-ui'],
+        custom: ['la-bohemienne', 'sans-serif'],
         system: ['system-ui'],
       },
       boxShadow: {
@@ -58,6 +60,9 @@ module.exports = {
         lg: { min: '1200px' }, // Desktop smallest.
         xl: { min: '1159px' }, // Desktop wide.
         xxl: { min: '1359px' }, // Desktop widescreen.
+      },
+      rotate: {
+        '-8': '-8deg',
       },
     },
   },

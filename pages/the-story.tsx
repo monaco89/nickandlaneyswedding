@@ -82,7 +82,7 @@ function TheProposal(): JSX.Element {
                 />
                 <StoryMessage
                   right
-                  date="DECEMBER 28, 2018"
+                  date="DECEMBER 28, 2017"
                   body={
                     <p>
                       After all this time, Nick FINALLY asked Delaney to{' '}
@@ -121,7 +121,7 @@ function TheProposal(): JSX.Element {
                 />
                 <StoryMessage
                   right
-                  date="AUGUST 2023"
+                  date="AUGUST 18, 2023"
                   body={<mark>They say I DO.</mark>}
                 />
               </div>
