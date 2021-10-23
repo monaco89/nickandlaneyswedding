@@ -24,7 +24,7 @@ function TheAccommodations(): JSX.Element {
         variants={variants}
         className="my-8 text-center text-black font-sans xs:text-3xl font-light lg:text-6xl"
       >
-        tbd...
+        coming soon...
       </motion.h2>
     </motion.div>
   );
@@ -33,7 +33,7 @@ function TheAccommodations(): JSX.Element {
     <Layout title="The Accommodations">
       <Container>
         <section className="mb-16 xs:mt-0 mt-16 md:mb-12">
-          <h1 className="mb-0 text-center text-black font-custom text-12xl xs:text-6xl leading-12">
+          <h1 className="mb-0 text-center text-black font-custom text-12xl xs:text-6xl xs:leading-10 leading-12">
             Rhode Island
           </h1>
           <h2 className="mt-0 text-center text-black font-sans text-13xl xs:text-2xl">
