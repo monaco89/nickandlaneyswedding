@@ -33,7 +33,7 @@ function TheEvents(): JSX.Element {
   return (
     <Layout title="The Events">
       <Container>
-        <section className="mb-16 xs:mt-10 mt-16 md:mb-12">
+        <section className="mb-16 xs:mt-0 mt-16 md:mb-12">
           <PageHeader text="the events" />
           {copy}
         </section>

@@ -7,16 +7,16 @@ function TheProposal(): JSX.Element {
   return (
     <Layout title="The Story">
       <Container>
-        <section className="mb-16 xs:mt-10 mt-16 md:mb-12">
-          <h1 className="xs:leading-1 xs:ml-0 ml-16 xs:w-10/12 w-8/12 text-center text-black font-sans xs:text-7xl font-extralight leading-11 sm:text-7xl md:text-7xl lg:text-10xl lg:leading-12">
+        <section className="mb-16 xs:mt-0 mt-16 md:mb-12">
+          <h1 className="xs:leading-1 xs:ml-12 ml-16 xs:w-10/12 w-8/12 text-center xs:text-left text-black font-sans text-10xl xs:text-6xl font-extralight leading-11 sm:text-7xl md:text-7xl lg:leading-12">
             <span className="text-left">THE</span>
             <br />
-            <span className="block text-right">STORY</span>
+            <span className="block xs:text-left text-right">STORY</span>
           </h1>
           <div className="sticky lg:w-full">
             <div className="container mx-auto w-4/5 h-full">
-              <div className="wrap relative p-10 xs:p-5 h-full overflow-hidden">
-                <div className="absolute right-2/4 xs:hidden h-full border-2 border-black lg:block" />
+              <div className="wrap relative p-10 xs:p-5 h-full">
+                <div className="absolute right-2/4 xs:right-full h-full border-2 border-black lg:block" />
                 {/* <div className="border-1 absolute left-2/4 xs:hidden h-full border-black lg:block" /> */}
                 <StoryMessage right title="The early years..." />
                 <StoryMessage

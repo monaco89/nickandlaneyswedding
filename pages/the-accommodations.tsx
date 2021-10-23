@@ -32,13 +32,14 @@ function TheAccommodations(): JSX.Element {
   return (
     <Layout title="The Accommodations">
       <Container>
-        <section className="mb-16 xs:mt-10 mt-16 md:mb-12">
-          <h1 className="mb-0 text-center text-black font-custom text-12xl leading-12">
+        <section className="mb-16 xs:mt-0 mt-16 md:mb-12">
+          <h1 className="mb-0 text-center text-black font-custom text-12xl xs:text-6xl leading-12">
             Rhode Island
           </h1>
-          <h2 className="mt-0 text-center text-black font-sans text-13xl">
+          <h2 className="mt-0 text-center text-black font-sans text-13xl xs:text-2xl">
             ACCOMMODATIONS
           </h2>
+          {copy}
         </section>
       </Container>
     </Layout>

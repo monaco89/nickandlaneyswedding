@@ -34,7 +34,7 @@ function MobileMenu(): JSX.Element {
   return (
     <>
       <button
-        className={cn(styles.burger, 'visible md:hidden lg:hidden')}
+        className={cn(styles.burger, 'visible md:hidden lg:hidden ml-5')}
         aria-label="Toggle menu"
         type="button"
         onClick={toggleMenu}
@@ -79,7 +79,7 @@ function MobileMenu(): JSX.Element {
 function MenuIcon(props: JSX.IntrinsicElements['svg']) {
   return (
     <svg
-      className="absolute w-5 h-5"
+      className="absolute w-7 h-7"
       width="20"
       height="20"
       viewBox="0 0 20 20"
@@ -107,7 +107,7 @@ function MenuIcon(props: JSX.IntrinsicElements['svg']) {
 function CrossIcon(props: JSX.IntrinsicElements['svg']) {
   return (
     <svg
-      className="absolute w-5 h-5"
+      className="absolute w-7 h-7"
       viewBox="0 0 24 24"
       width="24"
       height="24"
