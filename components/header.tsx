@@ -35,8 +35,8 @@ function Header(): JSX.Element {
         </Link>
       </span>
       <span className="mb-4 w-1/5 xs:w-full md:mb-0">
-        <Link href="/the-wedding">
-          <a className="hover:underline">the wedding</a>
+        <Link href="/the-events">
+          <a className="hover:underline">the events</a>
         </Link>
       </span>
     </nav>

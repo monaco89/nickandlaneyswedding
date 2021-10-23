@@ -3,7 +3,6 @@ import Head from 'next/head';
 import { motion } from 'framer-motion';
 import Container from '../components/container';
 import Layout from '../components/layout';
-import PageHeader from '../components/PageHeader';
 
 const transition = {
   duration: 2,
@@ -38,8 +37,12 @@ function TheAccommodations(): JSX.Element {
       </Head>
       <Container>
         <section className="mb-16 xs:mt-10 mt-16 md:mb-12">
-          <PageHeader text="the Accommodations" />
-          {copy}
+          <h1 className="text-12xl mb-0 text-center text-black font-custom leading-12">
+            Rhode Island
+          </h1>
+          <h2 className="text-13xl mt-0 text-center text-black font-sans">
+            ACCOMMODATIONS
+          </h2>
         </section>
       </Container>
     </Layout>

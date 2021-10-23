@@ -3,7 +3,6 @@ import Head from 'next/head';
 import Image from 'next/image';
 import ReactPlayer from 'react-player/youtube';
 import Container from '../components/container';
-import PageHeader from '../components/PageHeader';
 import Layout from '../components/layout';
 import pic1 from '../public/assets/1.jpg';
 import pic2 from '../public/assets/2.jpg';
@@ -24,10 +23,6 @@ function TheProposal(): JSX.Element {
       <Head>
         <title>The Proposal | Nick and Laney's Wedding</title>
       </Head>
-      {/* <PageHeader text="the proposal" /> */}
-      {/* <h2 className="my-8 text-center text-black font-sans xs:text-3xl font-light lg:text-6xl">
-            Newport, Rhode Island
-          </h2> */}
       <h1 className="z-10 xs:block xs:ml-0 ml-40 xs:mt-0 mt-8 text-center text-black font-sans xs:text-6xl text-7xl font-extralight md:absolute lg:absolute">
         The Proposal
       </h1>
