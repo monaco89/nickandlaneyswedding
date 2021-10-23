@@ -31,7 +31,7 @@ module.exports = {
     'react/prop-types': 'off',
     'react/no-array-index-key': 'off',
     'jsx-a11y/anchor-is-valid': 'off',
-    'react/jsx-props-no-spreading': ['error', { custom: 'ignore' }],
+    'react/jsx-props-no-spreading': 'off',
     'react/require-default-props': 'off',
     'prettier/prettier': 'error',
     'react/no-unescaped-entities': 'off',

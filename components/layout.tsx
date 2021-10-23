@@ -4,12 +4,14 @@ import Header from './header';
 
 type Props = {
   children: React.ReactNode;
+  // All other props
+  [x: string]: any;
 };
 
-function Layout({ children }: Props): JSX.Element {
+function Layout({ children, ...rest }: Props): JSX.Element {
   return (
     <>
-      <Meta />
+      <Meta {...rest} />
       <div className="min-h-screen">
         <Header />
         <main>{children}</main>

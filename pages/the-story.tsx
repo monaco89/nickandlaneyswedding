@@ -1,20 +1,14 @@
 import React from 'react';
-import Head from 'next/head';
 import Container from '../components/container';
 import Layout from '../components/layout';
 import StoryMessage from '../components/StoryMessage';
-import PageHeader from '../components/PageHeader';
 
 function TheProposal(): JSX.Element {
   return (
-    <Layout>
-      <Head>
-        <title>The Story | Nick and Laney's Wedding</title>
-      </Head>
+    <Layout title="The Story">
       <Container>
         <section className="mb-16 xs:mt-10 mt-16 md:mb-12">
-          {/* <PageHeader text="the story" /> */}
-          <h1 className="xs:leading-1 leading-11 lg:leading-12 lg:text-10xl xs:ml-0 ml-16 xs:w-10/12 w-8/12 text-center text-black font-sans xs:text-7xl font-extralight sm:text-7xl md:text-7xl">
+          <h1 className="xs:leading-1 xs:ml-0 ml-16 xs:w-10/12 w-8/12 text-center text-black font-sans xs:text-7xl font-extralight leading-11 sm:text-7xl md:text-7xl lg:text-10xl lg:leading-12">
             <span className="text-left">THE</span>
             <br />
             <span className="block text-right">STORY</span>

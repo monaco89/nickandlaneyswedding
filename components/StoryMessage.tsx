@@ -15,9 +15,9 @@ function StoryMessage({ date, title, body, right }: Props): JSX.Element {
         <div className="order-1 px-1 py-4 w-5/12 xs:w-full text-left">
           <p className="text-black-300 mb-3 text-xl font-bold">{date}</p>
           {title && <h4 className="mb-3 text-3xl md:text-2xl">{title}</h4>}
-          <p className="text-black-300 w-4/6 text-opacity-100 text-lg leading-snug">
+          <div className="text-black-300 w-4/6 text-opacity-100 text-lg leading-snug">
             {body}
-          </p>
+          </div>
         </div>
       </div>
     );
@@ -33,9 +33,9 @@ function StoryMessage({ date, title, body, right }: Props): JSX.Element {
             <mark>{title}</mark>
           </h4>
         )}
-        <p className="text-black-300 text-opacity-100 text-base leading-snug">
+        <div className="text-black-300 text-opacity-100 text-base leading-snug">
           {body}
-        </p>
+        </div>
       </div>
     </div>
   );

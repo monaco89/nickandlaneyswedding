@@ -1,5 +1,4 @@
 import React from 'react';
-import Head from 'next/head';
 import { motion } from 'framer-motion';
 import Container from '../components/container';
 import Layout from '../components/layout';
@@ -32,10 +31,7 @@ function TheEvents(): JSX.Element {
   );
 
   return (
-    <Layout>
-      <Head>
-        <title>The Events | Nick and Laney's Wedding</title>
-      </Head>
+    <Layout title="The Events">
       <Container>
         <section className="mb-16 xs:mt-10 mt-16 md:mb-12">
           <PageHeader text="the events" />

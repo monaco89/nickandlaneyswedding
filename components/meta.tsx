@@ -1,8 +1,20 @@
 import React from 'react';
+import { useRouter } from 'next/router';
 import Head from 'next/head';
 import { HOME_OG_IMAGE_URL } from '../lib/constants';
 
-function Meta(): JSX.Element {
+function Meta({ ...customMeta }): JSX.Element {
+  const router = useRouter();
+  const meta = {
+    title: customMeta.title
+      ? `${customMeta.title} | Nick and Laney's Wedding`
+      : "Nick and Laney's Wedding",
+    description: `Nick and Laney's Story & Wedding Details`,
+    image: HOME_OG_IMAGE_URL,
+    type: 'website',
+    ...customMeta,
+  };
+
   return (
     <Head>
       <link
@@ -26,21 +38,28 @@ function Meta(): JSX.Element {
       <link
         rel="mask-icon"
         href="/favicon/safari-pinned-tab.svg"
-        color="#000000"
+        color="#f8f5ec"
       />
       <link rel="shortcut icon" href="/favicon/favicon.ico" />
-      <meta name="msapplication-TileColor" content="#ffffff" />
-      <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
-      <meta name="theme-color" content="#ffffff" />
-      <meta name="description" content="Nick and Laney's Wedding Website" />
-      <meta name="og:title" content="Nick and Laney's Wedding" />
+      <title>{meta.title}</title>
+      <meta name="robots" content="follow, index" />
+      <meta content={meta.description} name="description" />
       <meta
-        name="og:description"
-        content="Information about the wedding, accomodations, engagement, registry."
+        property="og:url"
+        content={`https://nickandlaney.com${router.asPath}`}
       />
-      <meta name="og:url" content="https://www.nickandlaney.com" />
-      <meta property="og:type" content="website" />
-      <meta property="og:image" content={HOME_OG_IMAGE_URL} />
+      <link rel="canonical" href={`https://nickandlaney.com${router.asPath}`} />
+      <meta property="og:type" content={meta.type} />
+      <meta property="og:site_name" content="Nick and Laney" />
+      <meta property="og:description" content={meta.description} />
+      <meta property="og:title" content={meta.title} />
+      <meta property="og:image" content={meta.image} />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@nickmonaco" />
+      <meta name="twitter:title" content={meta.title} />
+      <meta name="twitter:description" content={meta.description} />
+      <meta name="twitter:image" content={meta.image} />
+      <meta name="theme-color" content="#f8f5ec" />
     </Head>
   );
 }

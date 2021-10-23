@@ -1,20 +1,9 @@
 @import url('https://use.typekit.net/raz1yzb.css');
 
 @tailwind base;
-
-/* Write your own custom base styles here */
-
-/* Start purging... */
 @tailwind components;
-/* Stop purging. */
-
-/* Write you own custom component styles here */
-
-/* Start purging... */
 @tailwind utilities;
-/* Stop purging. */
 
-/* custom utilities */
 body {
   background-color: #f8f5ec;
 }

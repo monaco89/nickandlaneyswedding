@@ -1,45 +1,64 @@
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
+import { useRouter } from 'next/router';
+import NextLink from 'next/link';
+import cn from 'classnames';
 import Logo from '../public/assets/MonacoLogoDraft.png';
+import MobileMenu from './MobileMenu';
+import { NavItemProps } from '../lib/types';
+
+function NavItem({ href, text }: NavItemProps) {
+  const router = useRouter();
+  const isActive = router.asPath === href;
+
+  return (
+    <NextLink href={href}>
+      <a
+        className={cn(
+          isActive ? 'underline' : 'no-underline',
+          'p-1 sm:px-3 sm:py-2 rounded-lg transition-all hover:underline'
+        )}
+      >
+        <span>{text}</span>
+      </a>
+    </NextLink>
+  );
+}
 
 function Header(): JSX.Element {
   return (
-    <nav className="flex xs:flex-col flex-wrap items-center justify-center m-8 text-center font-sans text-2xl font-light md:mx-32 lg:flex-row">
-      <span className="mb-4 w-1/5 xs:w-full md:mb-0">
-        <Link href="/the-story">
-          <a className="hover:underline">the story</a>
-        </Link>
-      </span>
-      <span className="mb-4 w-1/5 xs:w-full md:mb-0">
-        <Link href="/the-proposal">
-          <a className="hover:underline">the proposal</a>
-        </Link>
-      </span>
-      <span className="mb-4 w-1/5 xs:w-full md:mb-0">
-        <Link href="/">
-          <a>
-            <Image
-              src={Logo}
-              alt="Monaco crest"
-              className="logo"
-              height={150}
-              width={150}
-            />
-          </a>
-        </Link>
-      </span>
-      <span className="mb-4 w-1/5 xs:w-full md:mb-0">
-        <Link href="/the-accommodations">
-          <a className="hover:underline">the accommodations</a>
-        </Link>
-      </span>
-      <span className="mb-4 w-1/5 xs:w-full md:mb-0">
-        <Link href="/the-events">
-          <a className="hover:underline">the events</a>
-        </Link>
-      </span>
-    </nav>
+    <div className="flex flex-col justify-center">
+      <nav className="relative flex items-center justify-center mx-auto pb-8 pt-8 w-full text-center font-sans text-2xl font-light sm:pb-16">
+        <div>
+          <MobileMenu />
+        </div>
+        <span className="hidden mb-4 w-1/5 xs:w-full md:inline-block md:mb-0 lg:inline-block">
+          <NavItem href="/the-story" text="the story" />
+        </span>
+        <span className="hidden mb-4 w-1/5 xs:w-full md:inline-block md:mb-0 lg:inline-block">
+          <NavItem href="/the-proposal" text="the proposal" />
+        </span>
+        <span className="mb-4 w-1/5 xs:w-full md:mb-0">
+          <NextLink href="/">
+            <a>
+              <Image
+                src={Logo}
+                alt="Monaco crest"
+                className="logo"
+                width={150}
+                height={150}
+              />
+            </a>
+          </NextLink>
+        </span>
+        <span className="hidden mb-4 w-1/5 xs:w-full md:inline-block md:mb-0 lg:inline-block">
+          <NavItem href="/the-accommodations" text="the accommodations" />
+        </span>
+        <span className="hidden mb-4 w-1/5 xs:w-full md:inline-block md:mb-0 lg:inline-block">
+          <NavItem href="/the-events" text="the events" />
+        </span>
+      </nav>
+    </div>
   );
 }
 
