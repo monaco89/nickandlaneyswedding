@@ -17,6 +17,7 @@ function Meta({ ...customMeta }): JSX.Element {
 
   return (
     <Head>
+      <link href="https://use.typekit.net/raz1yzb.css" rel="stylesheet" />
       <link
         rel="apple-touch-icon"
         sizes="180x180"
