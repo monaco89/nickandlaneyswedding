@@ -6,6 +6,7 @@ import Layout from '../components/layout';
 import pic1 from '../public/assets/1.jpg';
 import pic2 from '../public/assets/2.jpg';
 import pic3 from '../public/assets/3.jpg';
+import pic4 from '../public/assets/4.jpg';
 import kissImage from '../public/assets/kiss.jpg';
 import pic5 from '../public/assets/5.jpg';
 import pic6 from '../public/assets/6.jpg';
@@ -83,13 +84,13 @@ function TheProposal(): JSX.Element {
           </div>
           <div className="grid gap-4 xs:grid-cols-1 grid-cols-3 grid-rows-1 xs:grid-rows-3 mt-12 xs:mx-2 mx-4 md:mt-48">
             <div className="relative w-full h-auto">
-              <Image src={pic2} alt="Sailboat" />
-            </div>
-            <div className="relative w-full h-auto">
               <Image src={pic7} alt="Sailboat" />
             </div>
             <div className="relative w-full h-auto">
-              <Image src={pic2} alt="Sailboat" />
+              <Image src={pic4} alt="The ring" />
+            </div>
+            <div className="relative w-full h-auto">
+              <Image src={pic2} alt="Hand" />
             </div>
           </div>
           <div className="grid gap-8 xs:grid-cols-1 grid-cols-2 grid-rows-2 xs:grid-rows-4 mt-8 xs:mx-2 mx-4">
