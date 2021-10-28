@@ -17,7 +17,7 @@ const variants = {
   },
 };
 
-function TheAccommodations(): JSX.Element {
+function TheDestination(): JSX.Element {
   const copy = (
     <motion.div className="single" initial="exit" animate="enter" exit="exit">
       <motion.h2
@@ -30,7 +30,7 @@ function TheAccommodations(): JSX.Element {
   );
 
   return (
-    <Layout title="The Accommodations">
+    <Layout title="The Destination">
       <Container>
         <section className="mb-16 xs:mt-0 mt-16 md:mb-12">
           <h1 className="mb-0 text-center text-black font-custom text-12xl xs:text-6xl xs:leading-10 leading-12">
@@ -46,4 +46,4 @@ function TheAccommodations(): JSX.Element {
   );
 }
 
-export default TheAccommodations;
+export default TheDestination;

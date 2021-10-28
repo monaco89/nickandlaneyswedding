@@ -7,7 +7,7 @@ import Logo from '../public/assets/crest.png';
 import MobileMenu from './MobileMenu';
 import { NavItemProps } from '../lib/types';
 
-function NavItem({ href, text }: NavItemProps) {
+function NavItem({ href, text, border }: NavItemProps) {
   const router = useRouter();
   const isActive = router.asPath === href;
 
@@ -16,7 +16,8 @@ function NavItem({ href, text }: NavItemProps) {
       <a
         className={cn(
           isActive ? 'underline' : 'no-underline',
-          'p-1 sm:px-3 sm:py-2 rounded-lg transition-all hover:underline'
+          'p-1 sm:px-3 sm:py-2 transition-all hover:underline',
+          border && 'border-2 rounded-none px-4'
         )}
       >
         <span>{text}</span>
@@ -28,7 +29,7 @@ function NavItem({ href, text }: NavItemProps) {
 function Header(): JSX.Element {
   return (
     <div className="flex flex-col justify-center">
-      <nav className="relative flex items-center justify-center mx-auto pb-8 pt-8 w-full text-center font-sans text-2xl font-light sm:pb-16">
+      <nav className="relative flex items-center justify-center mx-auto pb-8 w-full text-center font-sans text-2xl font-light sm:pb-16">
         <div>
           <MobileMenu />
         </div>
@@ -38,6 +39,9 @@ function Header(): JSX.Element {
         <span className="hidden mb-4 w-1/5 xs:w-full md:inline-block md:mb-0 lg:inline-block">
           <NavItem href="/the-proposal" text="the proposal" />
         </span>
+        <span className="hidden mb-4 w-1/5 xs:w-full md:inline-block md:mb-0 lg:inline-block">
+          <NavItem href="/the-registry" text="the registry" />
+        </span>
         <span className="mb-4 w-1/5 xs:w-full md:mb-0">
           <NextLink href="/">
             <a>
@@ -45,17 +49,20 @@ function Header(): JSX.Element {
                 src={Logo}
                 alt="Monaco crest"
                 className="logo"
-                width={150}
-                height={150}
+                width={250}
+                height={250}
               />
             </a>
           </NextLink>
         </span>
         <span className="hidden mb-4 w-1/5 xs:w-full md:inline-block md:mb-0 lg:inline-block">
-          <NavItem href="/the-accommodations" text="the accommodations" />
+          <NavItem href="/the-destination" text="the destination" />
         </span>
         <span className="hidden mb-4 w-1/5 xs:w-full md:inline-block md:mb-0 lg:inline-block">
           <NavItem href="/the-events" text="the events" />
+        </span>
+        <span className="hidden mb-4 w-1/5 xs:w-full md:inline-block md:mb-0 lg:inline-block">
+          <NavItem href="/rsvp" text="rsvp" border />
         </span>
       </nav>
     </div>
