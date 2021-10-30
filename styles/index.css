@@ -11,3 +11,29 @@ mark {
   padding-bottom: 0.5em;
   background-color: rgb(200, 210, 212, 0.6);
 }
+
+.rsvp-hero {
+  background-image: url(../public/assets/RsvpHero.jpg);
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  height: 600px;
+}
+
+/* .rsvp-hero {
+  position: relative;
+  z-index: 1;
+}
+
+.rsvp-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  z-index: -1;
+  background-image: url(../public/assets/RsvpHero.jpg);
+  background-repeat: no-repeat;
+  height: 600px;
+} */
