@@ -1,8 +1,15 @@
 import React from 'react';
 import Container from '../components/container';
 import Layout from '../components/layout';
+import Input from '../components/Input';
 
+// TODO reCAPTCHA
 function TheRsvp(): JSX.Element {
+  const handleSubmit = (e: any) => {
+    e.preventDefault();
+
+    console.log('submitting');
+  };
   return (
     <Layout title="The Accommodations">
       <div className="rsvp-hero w-full bg-cover bg-center grayscale filter">
@@ -16,7 +23,17 @@ function TheRsvp(): JSX.Element {
         </div>
       </div>
       <Container>
-        <section className="mb-16 xs:mt-0 mt-16 md:mb-12">form here</section>
+        <section className="mb-16 mt-16 xs:mt-8 md:mb-12">
+          <form onSubmit={handleSubmit} style={{ height: '500px' }}>
+            <Input id="guest-one" type="text" label="Name of Guest One" />
+            <Input id="guest-two" type="text" label="Name of Guest Two" />
+            <Input
+              id="restrictions"
+              type="text"
+              label="Food Restrictions in your Party"
+            />
+          </form>
+        </section>
       </Container>
     </Layout>
   );

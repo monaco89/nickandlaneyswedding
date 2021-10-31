@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#d3d7be',
+        primary: '#f8f5ec',
         'accent-1': '#FAFAFA',
         'accent-2': '#EAEAEA',
         'accent-7': '#333',
@@ -28,6 +28,7 @@ module.exports = {
       },
       letterSpacing: {
         tighter: '-.04em',
+        widest: '2rem',
       },
       lineHeight: {
         tight: 1.2,

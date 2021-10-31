@@ -28,7 +28,7 @@ function Index(): JSX.Element {
           </div>
         </section>
         <div className="grid gap-0 xs:grid-cols-1 grid-cols-4 grid-rows-1 xs:grid-rows-4">
-          <div className="relative w-full h-full">
+          <div className="relative w-full h-auto">
             <Image
               src={pic1}
               alt="Nick and Delaney holding hands"

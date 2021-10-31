@@ -19,6 +19,35 @@ mark {
   height: 600px;
 }
 
+#arc > span[class^='w']:nth-of-type(n + 0) {
+  display: block;
+  position: absolute;
+  -moz-transform-origin: 50% 100%;
+  -webkit-transform-origin: 50% 100%;
+  -o-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+}
+
+#arc .w0 {
+  -moz-transform: rotate(-1.14rad);
+  -webkit-transform: rotate(-1.14rad);
+  -o-transform: rotate(-1.14rad);
+  -ms-transform: rotate(-1.14rad);
+  transform: rotate(-1.14rad);
+  width: 21px;
+  height: 24px;
+  left: 42.7px;
+  top: 93.95px;
+}
+
+#arc span {
+  line-height: 0.65;
+  white-space: pre;
+  overflow: visible;
+  padding: 0px;
+}
+
 /* .rsvp-hero {
   position: relative;
   z-index: 1;
