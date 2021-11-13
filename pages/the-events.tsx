@@ -1,42 +1,20 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import Container from '../components/container';
 import Layout from '../components/layout';
-import PageHeader from '../components/PageHeader';
-
-const transition = {
-  duration: 2,
-  ease: [0.43, 0.13, 0.23, 0.96],
-};
-
-const variants = {
-  exit: { y: '50%', opacity: 0, transition },
-  enter: {
-    y: '0%',
-    opacity: 1,
-    transition,
-  },
-};
+import Event from '../components/Event';
 
 function TheEvents(): JSX.Element {
-  const copy = (
-    <motion.div className="single" initial="exit" animate="enter" exit="exit">
-      <motion.h2
-        variants={variants}
-        className="my-8 text-center text-black font-sans xs:text-3xl font-light lg:text-6xl"
-      >
-        Coming 2023.
-      </motion.h2>
-    </motion.div>
-  );
-
   return (
     <Layout title="The Events">
       <Container>
-        <section className="mb-16 xs:mt-0 mt-16 md:mb-12">
-          <PageHeader text="the events" />
-          {copy}
-        </section>
+        <div className="sticky lg:w-full">
+          <div className="container mx-auto w-full h-full">
+            <div className="wrap relative xs:p-5 h-full">
+              <div className="absolute right-2/3 xs:right-full h-full border-2 border-black lg:block" />
+              <Event day="MON" date="08.12" title="Seafood Cook Out" />
+            </div>
+          </div>
+        </div>
       </Container>
     </Layout>
   );
