@@ -15,19 +15,27 @@ import pic8 from '../public/assets/8.jpg';
 import pic9 from '../public/assets/9.jpg';
 import pic10 from '../public/assets/10.jpg';
 import pic11 from '../public/assets/11.jpg';
+import pic12 from '../public/assets/12.jpg';
+import pic13 from '../public/assets/13.jpg';
+import pic14 from '../public/assets/14.jpg';
 import lighthouseImage from '../public/assets/lighthouse.jpg';
 
 function TheProposal(): JSX.Element {
   return (
     <Layout title="The Proposal">
-      <h1 className="z-10 xs:block xs:ml-0 ml-40 xs:mt-0 mt-8 text-center text-black font-sans xs:text-6xl text-7xl font-extralight md:absolute lg:absolute">
-        The Proposal
-      </h1>
-      <h2 className="z-10 xs:block xs:ml-0 ml-64 xs:mt-0 mt-28 text-center text-black font-custom xs:text-4xl text-6xl md:absolute lg:absolute">
-        at Castle Hill Inn
-      </h2>
-      <div className="grid gap-0 xs:grid-cols-1 grid-cols-2 grid-rows-1 mx-0">
-        <div className="relative w-full h-auto">
+      <div className="grid gap-0 xs:grid-cols-1 grid-cols-5 grid-rows-1 items-center mb-10 mx-0">
+        <div className="text-center">
+          <p className="mb-0 xs:mb-6 mx-auto px-10 py-2 w-max text-3xl xs:text-xl bg-white transform -rotate-90 xs:rotate-0">
+            AUGUST 02, 2021
+          </p>
+        </div>
+        <div className="relative col-span-3 p-3 w-full h-auto border-4 border-white">
+          <h1 className="absolute z-10 left-0 right-0 xs:mt-0 mt-8 mx-auto w-max text-center text-black font-sans text-13xl xs:text-5xl font-extralight">
+            The Proposal
+          </h1>
+          <h2 className="absolute z-10 -right-40 left-0 xs:right-0 xs:mt-14 mt-28 mx-auto w-max text-center text-black font-custom xs:text-3xl text-6xl">
+            at Castle Hill Inn
+          </h2>
           <Image
             src={lighthouseImage}
             alt="Castle Hill Inn"
@@ -35,21 +43,13 @@ function TheProposal(): JSX.Element {
             // objectFit="cover"
           />
         </div>
-        <div className="relative w-full h-auto grayscale filter">
-          <Image
-            src={kissImage}
-            alt="Castle Hill Inn"
-            // layout="fill"
-            // objectFit="cover"
-          />
-        </div>
+        <p className="mt-0 xs:mt-6 mx-auto px-10 py-2 w-max text-3xl xs:text-xl bg-white transform xs:rotate-0 rotate-90">
+          NEWPORT, RI
+        </p>
       </div>
       <Container>
         <section className="mb-12">
-          <h2 className="my-8 text-center text-black text-4xl tracking-wide">
-            AUGUST 02, 2021
-          </h2>
-          <div className="grid gap-8 xs:grid-cols-1 grid-cols-2 grid-rows-2 xs:grid-rows-4 xs:mx-2 mx-4">
+          <div className="grid gap-8 xs:grid-cols-1 grid-cols-2 grid-rows-3 xs:grid-rows-6 xs:mx-2 mx-4">
             <div className="relative w-full h-auto">
               <Image
                 src={pic5}
@@ -81,6 +81,22 @@ function TheProposal(): JSX.Element {
                 objectFit="cover"
               />
             </div>
+            <div className="relative w-full h-auto">
+              <Image
+                src={kissImage}
+                alt="Nick and Laney kissing"
+                layout="fill"
+                objectFit="cover"
+              />
+            </div>
+            <div className="relative w-full h-auto">
+              <Image
+                src={pic12}
+                alt="Nick and Laney looking at ring"
+                layout="fill"
+                objectFit="cover"
+              />
+            </div>
           </div>
           <div className="grid gap-4 xs:grid-cols-1 grid-cols-3 grid-rows-1 xs:grid-rows-3 mt-12 xs:mx-2 mx-4 md:mt-48">
             <div className="relative w-full h-auto">
@@ -93,7 +109,7 @@ function TheProposal(): JSX.Element {
               <Image src={pic2} alt="Hand" />
             </div>
           </div>
-          <div className="grid gap-8 xs:grid-cols-1 grid-cols-2 grid-rows-2 xs:grid-rows-4 mt-8 xs:mx-2 mx-4">
+          <div className="grid gap-8 xs:grid-cols-1 grid-cols-2 grid-rows-3 xs:grid-rows-6 mt-8 xs:mx-2 mx-4">
             <div className="relative w-full h-auto">
               <Image
                 src={pic6}
@@ -117,6 +133,22 @@ function TheProposal(): JSX.Element {
               <Image
                 src={pic11}
                 alt="Laney showing off her ring"
+                layout="fill"
+                objectFit="cover"
+              />
+            </div>
+            <div className="relative w-full h-auto">
+              <Image
+                src={pic13}
+                alt="Nick and laney"
+                layout="fill"
+                objectFit="cover"
+              />
+            </div>
+            <div className="relative w-full h-auto">
+              <Image
+                src={pic14}
+                alt="Laney smiling"
                 layout="fill"
                 objectFit="cover"
               />
