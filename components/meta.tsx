@@ -9,7 +9,7 @@ function Meta({ ...customMeta }): JSX.Element {
     title: customMeta.title
       ? `${customMeta.title} | Nick and Laney's Wedding`
       : "Nick and Laney's Wedding",
-    description: `Nick and Laney's Story & Wedding Details`,
+    description: `Nick and Laney's Wedding. August 18th 2023. View our story, our proposal, the registry and the event surrounding the wedding.`,
     image: HOME_OG_IMAGE_URL,
     type: 'website',
     ...customMeta,
