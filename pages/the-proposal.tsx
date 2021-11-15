@@ -30,7 +30,7 @@ function TheProposal(): JSX.Element {
           </p>
         </div>
         <div className="relative col-span-3 p-3 w-full h-auto border-4 border-white">
-          <h1 className="absolute z-10 left-0 right-0 xs:mt-0 mt-8 mx-auto w-max text-center text-black font-sans text-13xl xs:text-5xl font-extralight">
+          <h1 className="text-15xl absolute z-10 left-0 right-0 xs:mt-0 mt-8 mx-auto w-max text-center text-black font-sans xs:text-5xl font-extralight">
             The Proposal
           </h1>
           <h2 className="absolute z-10 -right-40 left-0 xs:right-0 xs:mt-14 mt-28 mx-auto w-max text-center text-black font-custom xs:text-3xl text-6xl">

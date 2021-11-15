@@ -34,7 +34,7 @@ function MobileMenu(): JSX.Element {
   return (
     <>
       <button
-        className={cn(styles.burger, 'visible md:hidden lg:hidden ml-5')}
+        className={cn(styles.burger, 'visible md:hidden lg:hidden')}
         aria-label="Toggle menu"
         type="button"
         onClick={toggleMenu}

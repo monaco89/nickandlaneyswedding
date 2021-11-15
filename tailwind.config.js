@@ -46,6 +46,7 @@ module.exports = {
         '12xl': '9rem',
         '13xl': '3.5rem',
         '14xl': '11rem',
+        '15xl': '4rem',
       },
       fontFamily: {
         sans: ['canto', 'orpheuspro', 'ui-sans', 'system-ui'],
