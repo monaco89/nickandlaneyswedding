@@ -60,7 +60,7 @@ function Index(): JSX.Element {
             />
           </div>
         </div>
-        <div className="relative mt-16 w-full h-auto text-center">
+        <div className="relative mt-8 w-full h-auto text-center">
           <Image src={hashtag} alt="#lanetomonaco" width={200} height={200} />
         </div>
       </Container>

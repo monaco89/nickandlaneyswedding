@@ -23,27 +23,29 @@ import lighthouseImage from '../public/assets/lighthouse.jpg';
 function TheProposal(): JSX.Element {
   return (
     <Layout title="The Proposal">
-      <div className="grid gap-0 xs:grid-cols-1 grid-cols-5 grid-rows-1 items-center mb-10 mx-0">
+      <div className="grid gap-0 xs:grid-cols-1 grid-cols-5 grid-rows-1 items-center mb-10 sm:grid-cols-1">
         <div className="text-center">
-          <p className="mb-0 xs:mb-6 mx-auto px-10 py-2 w-max text-3xl xs:text-xl bg-white transform -rotate-90 xs:rotate-0">
+          <p className="mb-0 xs:mb-6 mx-auto px-10 py-2 w-max text-3xl xs:text-xl bg-white transform -rotate-90 xs:rotate-0 sm:mb-6 sm:rotate-0">
             AUGUST 02, 2021
           </p>
         </div>
         <div className="relative col-span-3 p-3 w-full h-auto border-4 border-white">
-          <h1 className="text-15xl absolute z-10 left-0 right-0 xs:mt-0 mt-8 mx-auto w-max text-center text-black font-sans xs:text-5xl font-extralight">
+          <h1 className="absolute z-10 left-0 right-0 xs:mt-0 mt-8 mx-auto w-max text-center text-black font-sans text-15xl xs:text-5xl font-extralight sm:mt-0 sm:text-5xl">
             The Proposal
           </h1>
-          <h2 className="absolute z-10 -right-40 left-0 xs:right-0 xs:mt-14 mt-28 mx-auto w-max text-center text-black font-custom xs:text-3xl text-6xl">
+          <h2 className="absolute z-10 -right-40 left-0 xs:right-0 xs:mt-14 mt-28 mx-auto w-max text-center text-black font-custom xs:text-3xl text-6xl sm:mt-14 sm:text-3xl">
             at Castle Hill Inn
           </h2>
-          <Image
-            src={lighthouseImage}
-            alt="Castle Hill Inn"
-            // layout="fill"
-            // objectFit="cover"
-          />
+          <div className="h-100 relative w-full xs:h-56 sm:h-56 md:h-96">
+            <Image
+              src={lighthouseImage}
+              alt="Castle Hill Inn"
+              layout="fill"
+              objectFit="cover"
+            />
+          </div>
         </div>
-        <p className="mt-0 xs:mt-6 mx-auto px-10 py-2 w-max text-3xl xs:text-xl bg-white transform xs:rotate-0 rotate-90">
+        <p className="mt-0 xs:mt-6 mx-auto px-10 py-2 w-max text-3xl xs:text-xl bg-white transform xs:rotate-0 rotate-90 sm:mt-6 sm:text-xl sm:rotate-0">
           NEWPORT, RI
         </p>
       </div>
