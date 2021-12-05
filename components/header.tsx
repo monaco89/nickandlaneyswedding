@@ -29,7 +29,7 @@ function NavItem({ href, text, border }: NavItemProps) {
 function Header(): JSX.Element {
   return (
     <div className="flex flex-col justify-center">
-      <nav className="relative flex items-center justify-center mx-auto pb-8 w-full text-center font-sans text-2xl font-light sm:pb-16">
+      <nav className="relative flex items-center justify-center mx-auto pb-8 w-full text-center font-sans text-2xl font-light sm:pb-8">
         <div>
           <MobileMenu />
         </div>

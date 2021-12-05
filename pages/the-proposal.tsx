@@ -23,7 +23,7 @@ import lighthouseImage from '../public/assets/lighthouse.jpg';
 function TheProposal(): JSX.Element {
   return (
     <Layout title="The Proposal">
-      <div className="grid gap-0 xs:grid-cols-1 grid-cols-5 grid-rows-1 items-center mb-10 sm:grid-cols-1">
+      <div className="grid gap-0 xs:grid-cols-1 grid-cols-5 grid-rows-1 items-center mb-10 sm:grid-cols-1 sm:px-8">
         <div className="text-center">
           <p className="mb-0 xs:mb-6 mx-auto px-10 py-2 w-max text-3xl xs:text-xl bg-white transform -rotate-90 xs:rotate-0 sm:mb-6 sm:rotate-0">
             AUGUST 02, 2021
