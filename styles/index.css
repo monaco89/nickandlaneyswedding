@@ -48,6 +48,19 @@ mark {
   padding: 0px;
 }
 
+.layered-card::before {
+  background: none;
+  border: 2px solid black;
+  content: '';
+  top: 0;
+  left: 0;
+  position: absolute;
+  transform: translate(-1.5rem, -1.5rem);
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
 /* .rsvp-hero {
   position: relative;
   z-index: 1;
