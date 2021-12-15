@@ -5,10 +5,19 @@ type Props = {
   children: any;
 };
 
+const transition = {
+  duration: 1,
+  ease: [0.43, 0.13, 0.23, 0.96],
+};
+
 const variants = {
-  hidden: { opacity: 0, x: -200, y: 0 },
-  enter: { opacity: 1, x: 0, y: 0 },
-  exit: { opacity: 0, x: 0, y: -100 },
+  hidden: { opacity: 0, x: 0, y: 0 },
+  exit: { y: '50%', opacity: 0, transition },
+  enter: {
+    y: '0%',
+    opacity: 1,
+    transition,
+  },
 };
 
 function PageTransition({ children }: Props) {

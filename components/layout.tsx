@@ -1,7 +1,6 @@
 import React from 'react';
 import Meta from './meta';
 import Header from './header';
-import PageTransition from './Animations/PageTransition';
 
 type Props = {
   children: React.ReactNode;
@@ -15,7 +14,7 @@ function Layout({ children, ...rest }: Props): JSX.Element {
       <Meta {...rest} />
       <div className="min-h-screen">
         <Header />
-        <PageTransition>{children}</PageTransition>
+        <main>{children}</main>
       </div>
     </>
   );

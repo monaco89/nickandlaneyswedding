@@ -36,7 +36,7 @@ function TheProposal(): JSX.Element {
           <h2 className="absolute z-10 -right-40 left-0 xs:right-0 xs:mt-14 mt-28 mx-auto w-max text-center text-black font-custom xs:text-3xl text-6xl sm:mt-14 sm:text-3xl">
             at Castle Hill Inn
           </h2>
-          <div className="h-100 relative w-full xs:h-56 sm:h-56 md:h-96">
+          <div className="relative w-full h-100 xs:h-56 sm:h-56 md:h-96">
             <Image
               src={lighthouseImage}
               alt="Castle Hill Inn"
