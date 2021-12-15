@@ -1,8 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
 import Container from '../components/container';
 import Layout from '../components/layout';
+import Accordion from '../components/Accordion';
 import InnImage from '../public/assets/inn_v.jpg';
 
 const transition = {
@@ -20,16 +20,7 @@ const variants = {
 };
 
 function TheDestination(): JSX.Element {
-  const copy = (
-    <motion.div className="single" initial="exit" animate="enter" exit="exit">
-      <motion.h2
-        variants={variants}
-        className="my-8 text-center text-black font-sans xs:text-3xl font-light lg:text-6xl"
-      >
-        coming soon...
-      </motion.h2>
-    </motion.div>
-  );
+  const [expanded, setExpanded] = React.useState<false | number>(0);
 
   return (
     <Layout title="The Destination">
@@ -100,13 +91,18 @@ function TheDestination(): JSX.Element {
               </p>
               <button
                 type="button"
-                className="text-black-500 px-10 py-2 hover:text-black text-xl font-bold hover:bg-primary border-2 border-primary transition duration-300 ease-in-out"
+                className={`text-black-500 px-10 py-2 hover:text-black text-xl font-bold border-2 border-primary transition duration-300 ease-in-out ${
+                  expanded === 1
+                    ? 'bg-primary hover:bg-transparent'
+                    : 'bg-inherit hover:bg-primary'
+                }`}
+                onClick={() => setExpanded(expanded === 1 ? false : 1)}
               >
-                View
+                {expanded === 1 ? 'Close' : 'View'}
               </button>
             </div>
             <div className="xs:hidden">
-              <div className="h-101 relative w-full">
+              <div className="relative w-full h-101">
                 <Image
                   src={InnImage}
                   alt="Castle Hill Inn"
@@ -116,9 +112,12 @@ function TheDestination(): JSX.Element {
               </div>
             </div>
           </div>
+          <div>
+            <Accordion i={1} expanded={expanded} setExpanded={setExpanded} />
+          </div>
           <div className="grid gap-0 xs:grid-cols-1 grid-cols-3 items-center xs:mt-0 mt-20 sm:grid-cols-1">
             <div className="xs:hidden">
-              <div className="layered-card h-101 relative w-full">
+              <div className="layered-card relative w-full h-101">
                 <Image
                   src={InnImage}
                   alt="Nick"

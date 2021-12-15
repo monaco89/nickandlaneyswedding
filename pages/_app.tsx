@@ -1,5 +1,6 @@
 import React from 'react';
 import { AppProps } from 'next/app';
+import { AnimatePresence } from 'framer-motion';
 import { useRouter } from 'next/router';
 import * as gtag from '../lib/gtag';
 import '../styles/index.css';
@@ -20,7 +21,11 @@ const App = ({ Component, pageProps }: AppProps): JSX.Element => {
     };
   }, [router.events]);
   // eslint-disable-next-line react/jsx-props-no-spreading
-  return <Component {...pageProps} />;
+  return (
+    <AnimatePresence exitBeforeEnter>
+      <Component {...pageProps} />
+    </AnimatePresence>
+  );
 };
 
 export default App;

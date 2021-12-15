@@ -43,17 +43,21 @@ function Header(): JSX.Element {
           <NavItem href="/the-registry" text="the registry" />
         </span>
         <span className="mb-4 w-1/5 xs:w-full xs:text-left md:mb-0">
-          <NextLink href="/">
-            <a>
-              <Image
-                src={Logo}
-                alt="Monaco crest"
-                className="logo"
-                width={250}
-                height={250}
-              />
-            </a>
-          </NextLink>
+          <div className="relative w-full xs:h-56 h-56">
+            <NextLink href="/">
+              <a>
+                <Image
+                  src={Logo}
+                  alt="Monaco crest"
+                  className="logo"
+                  // width={250}
+                  // height={250}
+                  layout="fill"
+                  objectFit="contain"
+                />
+              </a>
+            </NextLink>
+          </div>
         </span>
         <span className="hidden mb-4 w-1/5 xs:w-full md:inline-block md:mb-0 lg:inline-block">
           <NavItem href="/the-destination" text="the destination" />
