@@ -30,55 +30,26 @@ function TheDestination(): JSX.Element {
         }
       `}</style>
       <Container>
-        <section className="mb-36 xs:mb-8 xs:mt-0 mt-16 md:mb-8">
-          <h1
-            className="flex justify-center mb-4 mt-0 text-center font-sans xs:text-2xl text-4xl"
-            id="arc"
-          >
-            {/* <svg x="0px" y="0px" width="400" height="100" viewBox="0 0 400 100">
-              <defs>
-                <path
-                  id="bigArc"
-                  d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97"
-                />
-              </defs>
-              <text x="200" fill="#000000">
-                <textPath
-                  xlinkHref="#bigArc"
-                  textAnchor="middle"
-                  startOffset="0%"
-                >
-                  Join us in
-                </textPath>
-              </text>
-            </svg> */}
-            Join us in
-          </h1>
-          <h2 className="mb-0 mb-4 text-center font-custom xs:text-6xl text-8xl tracking-widest">
-            Rhode Island
-          </h2>
-          <h2 className="flex justify-center mt-0 text-center font-sans xs:text-2xl text-4xl">
-            the Ocean State
-            {/* <svg x="0px" y="0px" width="350" height="150" viewBox="0 0 350 150">
-              <defs>
-                <path
-                  id="bottomArc"
-                  d="M40,180c0-60.751,49.248-110,110-110c60.751,0,110,49.249,110,110"
-                />
-              </defs>
-              <text x="200" fill="#000000">
-                <textPath
-                  xlinkHref="#bottomArc"
-                  textAnchor="middle"
-                  startOffset="0%"
-                >
-                  the Ocean State
-                </textPath>
-              </text>
-            </svg> */}
-          </h2>
-        </section>
-        <section className="mb-10 text-center">
+        <div className="container__video">
+          <div>
+            <video
+              className="container__video__player"
+              autoPlay
+              // loop
+              src="https://files.nickmonaco.me/rhodeisland.mp4"
+              type="video/mp4"
+              // controls
+            >
+              Your browser does not support the video tag.
+            </video>
+            <div className="container__video__content">
+              <h2 className="mb-0 mb-4 text-center text-white font-custom xs:text-6xl text-8xl tracking-widest">
+                Rhode Island
+              </h2>
+            </div>
+          </div>
+        </div>
+        <section className="my-12 text-center">
           <div className="min-h-64 grid gap-0 xs:grid-cols-1 grid-cols-3 items-center sm:grid-cols-1">
             <div className="xs:col-span-1 col-span-2 xs:p-10 pb-32 pt-16 px-28 h-5/6 xs:h-full bg-white sm:col-span-1 sm:p-10 sm:h-full">
               <h3 className="xs:text-4xl text-7xl sm:text-4xl sm:text-4xl">

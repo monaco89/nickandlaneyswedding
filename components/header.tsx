@@ -29,8 +29,8 @@ function NavItem({ href, text, border }: NavItemProps) {
 function Header(): JSX.Element {
   return (
     <div className="flex flex-col justify-center">
-      <nav className="relative flex items-center justify-center mx-auto pb-8 w-full text-center font-sans text-2xl font-light sm:pb-8">
-        <div>
+      <nav className="relative flex items-center justify-center mb-8 mx-auto w-full text-center font-sans text-2xl font-light">
+        <div className="z-50">
           <MobileMenu />
         </div>
         <span className="hidden mb-4 w-1/5 xs:w-full md:inline-block md:mb-0 lg:inline-block">
@@ -43,7 +43,7 @@ function Header(): JSX.Element {
           <NavItem href="/the-registry" text="the registry" />
         </span>
         <span className="mb-4 w-1/5 xs:w-full xs:text-left md:mb-0">
-          <div className="relative w-full xs:h-56 h-56">
+          <div className="relative xs:-left-10 w-full xs:h-36 h-52 sm:h-36 md:h-36">
             <NextLink href="/">
               <a>
                 <Image

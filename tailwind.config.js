@@ -22,6 +22,7 @@ module.exports = {
         orange: colors.orange,
         blue: colors.blue,
         green: colors.green,
+        secondary: '#B3BFC2',
       },
       spacing: {
         28: '7rem',
@@ -48,6 +49,7 @@ module.exports = {
         '14xl': '11rem',
         '15xl': '4rem',
         '16xl': '3.25rem',
+        '17xl': '14rem',
       },
       height: {
         100: '34rem',
