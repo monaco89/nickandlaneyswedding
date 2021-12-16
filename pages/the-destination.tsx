@@ -30,6 +30,9 @@ function TheDestination(): JSX.Element {
         }
       `}</style>
       <Container>
+        <p className="xs:block hidden text-center text-white xs:text-4xl text-4xl text-7xl sm:block sm:text-4xl md:text-4xl">
+          join us in
+        </p>
         <div className="container__video">
           <div>
             <video
@@ -38,24 +41,27 @@ function TheDestination(): JSX.Element {
               // loop
               src="https://files.nickmonaco.me/rhodeisland.mp4"
               // type="video/mp4"
-              // controls
+              controls
             >
               Your browser does not support the video tag.
             </video>
             <div className="container__video__content">
-              <h2 className="mb-0 mb-4 text-center text-white font-custom xs:text-6xl text-8xl tracking-widest">
+              <p className="xs:hidden mb-10 text-white xs:text-4xl text-4xl text-7xl sm:hidden sm:text-4xl md:text-4xl">
+                join us in
+              </p>
+              <h2 className="mb-0 mb-4 text-center text-white font-custom xs:text-6xl text-8xl tracking-widest sm:text-6xl md:text-5xl">
                 Rhode Island
               </h2>
             </div>
           </div>
         </div>
         <section className="my-12 text-center">
-          <div className="min-h-64 grid gap-0 xs:grid-cols-1 grid-cols-3 items-center sm:grid-cols-1">
-            <div className="xs:col-span-1 col-span-2 xs:p-10 pb-32 pt-16 px-28 h-5/6 xs:h-full bg-white sm:col-span-1 sm:p-10 sm:h-full">
-              <h3 className="xs:text-4xl text-7xl sm:text-4xl sm:text-4xl">
+          <div className="min-h-64 grid gap-0 xs:grid-cols-1 grid-cols-3 items-center sm:grid-cols-1 sm:grid-cols-2 md:grid-cols-2">
+            <div className="xs:col-span-1 col-span-2 xs:p-10 pb-32 pt-16 px-28 h-5/6 xs:h-full bg-white sm:col-span-1 sm:col-span-1 sm:p-10 sm:h-full md:col-span-1">
+              <h3 className="xs:text-4xl text-7xl sm:text-4xl md:text-4xl">
                 WHERE TO STAY
               </h3>
-              <p className="mb-4 mt-6 xs:px-0 px-20 text-2xl xs:text-xl">
+              <p className="mb-4 mt-6 xs:px-0 px-20 text-2xl xs:text-xl sm:px-0 md:px-0">
                 We recommand staying in Narragansett if you're extending your
                 trip for more days prior the wedding. If you are only coming for
                 the wedding, we suggest our Portsmouth hotel.
@@ -98,7 +104,9 @@ function TheDestination(): JSX.Element {
               </div>
             </div>
             <div className="xs:col-span-1 col-span-2 xs:p-10 pb-32 pt-16 px-28 h-5/6 xs:h-full sm:col-span-1 sm:h-full">
-              <h3 className="xs:text-4xl text-7xl sm:text-4xl">WHAT TO DO</h3>
+              <h3 className="xs:text-4xl text-7xl sm:text-4xl md:text-4xl">
+                WHAT TO DO
+              </h3>
               <p className="mb-4 mt-6 xs:px-0 px-20 text-2xl xs:text-xl sm:px-0 sm:text-xl">
                 We have put together a list of some of our favorite coffee
                 shops, resturants, bar and of course seafood spots.
@@ -122,8 +130,8 @@ function TheDestination(): JSX.Element {
                 />
               </div>
             </div>
-            <div className="xs:p-10 px-28 py-24 h-full bg-white sm:p-10">
-              <h3 className="text-16xl xs:text-4xl sm:text-4xl">
+            <div className="xs:p-10 px-28 py-24 h-full bg-white sm:p-10 md:px-10">
+              <h3 className="text-16xl xs:text-4xl sm:text-4xl md:text-4xl">
                 WHERE TO EAT + DRINK
               </h3>
               <button

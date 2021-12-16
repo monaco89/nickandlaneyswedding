@@ -55,6 +55,9 @@ module.exports = {
         100: '34rem',
         101: '36rem',
       },
+      width: {
+        '10p': '10%',
+      },
       fontFamily: {
         sans: ['canto', 'orpheuspro', 'ui-sans', 'system-ui'],
         serif: ['ui-sans-serif', 'system-ui'],
