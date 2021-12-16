@@ -37,7 +37,7 @@ function TheDestination(): JSX.Element {
               autoPlay
               // loop
               src="https://files.nickmonaco.me/rhodeisland.mp4"
-              type="video/mp4"
+              // type="video/mp4"
               // controls
             >
               Your browser does not support the video tag.
