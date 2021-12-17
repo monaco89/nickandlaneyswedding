@@ -6,13 +6,13 @@ import { HOME_OG_IMAGE_URL } from '../lib/constants';
 function Meta({ ...customMeta }): JSX.Element {
   const router = useRouter();
   const meta = {
+    ...customMeta,
     title: customMeta.title
       ? `${customMeta.title} | Nick & Laney's Wedding`
       : "Nick & Laney's Wedding",
     description: `Nick and Laney's Wedding. August 18th 2023. View our story, our proposal, the registry and the event surrounding the wedding.`,
     image: HOME_OG_IMAGE_URL,
     type: 'website',
-    ...customMeta,
   };
 
   return (

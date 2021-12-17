@@ -61,7 +61,7 @@ function Header(): JSX.Element {
           <NavItem href="/the-events" text="the events" />
         </span>
         <span className="w-10p hidden mb-4 xs:w-full md:inline-block md:mb-0 lg:inline-block">
-          <NavItem href="/rsvp" text="tell us" />
+          <NavItem href="/the-plan" text="the plan" />
         </span>
         <div className="z-50">
           <MobileMenu />

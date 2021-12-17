@@ -8,12 +8,14 @@ type InputProps = {
 function Input({ label, id, ...rest }: InputProps) {
   return (
     <div className="mb-4">
-      <label htmlFor={id} className="text-3xl">
+      <label
+        htmlFor={id}
+        className="block my-3 text-gray-800 text-2xl font-semibold"
+      >
         {label}
       </label>
-      <br />
       <input
-        className="p-3 w-3/5 bg-transparent border border-black rounded-none"
+        className="px-4 py-2 w-full text-lg bg-gray-100 rounded-lg focus:outline-none"
         id={id}
         {...rest}
       />
