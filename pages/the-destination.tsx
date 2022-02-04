@@ -4,6 +4,8 @@ import Container from '../components/container';
 import Layout from '../components/layout';
 import Accordion from '../components/Accordion';
 import InnImage from '../public/assets/inn_v.jpg';
+import HouseImage from '../public/assets/house.jpg';
+import FoodImage from '../public/assets/food.png';
 
 const transition = {
   duration: 2,
@@ -41,7 +43,7 @@ function TheDestination(): JSX.Element {
               // loop
               src="https://files.nickmonaco.me/rhodeisland.mp4"
               // type="video/mp4"
-              // controls
+              controls
               muted
             >
               Your browser does not support the video tag.
@@ -82,8 +84,8 @@ function TheDestination(): JSX.Element {
             <div className="xs:hidden">
               <div className="relative w-full h-101">
                 <Image
-                  src={InnImage}
-                  alt="Castle Hill Inn"
+                  src={HouseImage}
+                  alt="A Row House"
                   layout="fill"
                   objectFit="cover"
                 />
@@ -98,7 +100,7 @@ function TheDestination(): JSX.Element {
               <div className="layered-card relative w-full h-101">
                 <Image
                   src={InnImage}
-                  alt="Nick"
+                  alt="Inn at Castle Hill"
                   layout="fill"
                   objectFit="cover"
                 />
@@ -121,11 +123,11 @@ function TheDestination(): JSX.Element {
             </div>
           </div>
           <div className="grid gap-0 gap-2 xs:grid-cols-1 grid-cols-3 items-center xs:mt-0 mt-20 sm:grid-cols-1 sm:mt-0">
-            <div className="xs:hidden sm:hidden">
-              <div className="relative p-10 w-full h-full bg-white">
+            <div className="xs:hidden h-full sm:hidden">
+              <div className="min-h-20 relative p-10 w-full h-full bg-white">
                 <Image
-                  src={InnImage}
-                  alt="Nick"
+                  src={FoodImage}
+                  alt="Clams"
                   // layout="fill"
                   objectFit="cover"
                 />
