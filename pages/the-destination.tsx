@@ -6,6 +6,7 @@ import Accordion from '../components/Accordion';
 import InnImage from '../public/assets/inn_v.jpg';
 import HouseImage from '../public/assets/house.jpg';
 import FoodImage from '../public/assets/food.png';
+import DellsImage from '../public/assets/dells.png';
 
 const transition = {
   duration: 2,
@@ -147,8 +148,8 @@ function TheDestination(): JSX.Element {
             <div className="xs:hidden sm:hidden">
               <div className="relative p-10 w-full h-full bg-white">
                 <Image
-                  src={InnImage}
-                  alt="Nick"
+                  src={DellsImage}
+                  alt="Dells"
                   // layout="fill"
                   objectFit="cover"
                 />
