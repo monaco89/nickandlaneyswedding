@@ -12,10 +12,10 @@ function ThePlan(): JSX.Element {
     console.log('submitting');
   };
   return (
-    <Layout title="The Plan">
+    <Layout title="The Plans">
       <Container>
         <h1 className="text-center font-sans xs:text-6xl text-7xl sm:text-6xl">
-          The Plan
+          The Plans
         </h1>
         <p className="xs:py-10 py-20 text-center font-sans xs:text-2xl text-3xl sm:py-10 sm:text-2xl">
           Tell us about your plans! We would love to spend time with everyone
@@ -53,7 +53,7 @@ function ThePlan(): JSX.Element {
               />
               <button
                 type="submit"
-                className="bg-secondary mt-6 px-4 py-2 w-full text-white font-sans text-lg font-semibold tracking-wide hover:bg-accent-7 rounded-lg"
+                className="mt-6 px-4 py-2 w-full text-white font-sans text-lg font-semibold tracking-wide hover:bg-accent-7 bg-secondary rounded-lg"
               >
                 Submit
               </button>

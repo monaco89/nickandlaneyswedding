@@ -30,13 +30,13 @@ function Header(): JSX.Element {
   return (
     <div className="flex flex-col justify-center">
       <nav className="relative flex items-center justify-center mb-8 mx-auto w-full text-center font-sans text-2xl font-light">
-        <span className="w-10p hidden mb-4 xs:w-full md:inline-block md:mb-0 lg:inline-block">
+        <span className="hidden mb-4 w-10p xs:w-full md:inline-block md:mb-0 lg:inline-block">
           <NavItem href="/the-story" text="the story" />
         </span>
-        <span className="w-10p hidden mb-4 xs:w-full md:inline-block md:mb-0 md:w-2/12 lg:inline-block">
+        <span className="hidden mb-4 w-10p xs:w-full md:inline-block md:mb-0 md:w-2/12 lg:inline-block">
           <NavItem href="/the-proposal" text="the proposal" />
         </span>
-        <span className="w-10p hidden mb-4 xs:w-full md:inline-block md:mb-0 md:w-2/12 lg:inline-block">
+        <span className="hidden mb-4 w-10p xs:w-full md:inline-block md:mb-0 md:w-2/12 lg:inline-block">
           <NavItem href="/the-registry" text="the registry" />
         </span>
         <span className="mb-4 w-2/12 xs:w-full xs:text-left md:mb-0 md:w-2/12">
@@ -54,14 +54,14 @@ function Header(): JSX.Element {
             </NextLink>
           </div>
         </span>
-        <span className="w-10p hidden mb-4 xs:w-full md:inline-block md:mb-0 md:w-2/12 lg:inline-block">
+        <span className="hidden mb-4 w-10p xs:w-full md:inline-block md:mb-0 md:w-2/12 lg:inline-block">
           <NavItem href="/the-destination" text="the destination" />
         </span>
-        <span className="w-10p hidden mb-4 xs:w-full md:inline-block md:mb-0 md:w-2/12 lg:inline-block">
+        <span className="hidden mb-4 w-10p xs:w-full md:inline-block md:mb-0 md:w-2/12 lg:inline-block">
           <NavItem href="/the-events" text="the events" />
         </span>
-        <span className="w-10p hidden mb-4 xs:w-full md:inline-block md:mb-0 lg:inline-block">
-          <NavItem href="/the-plan" text="the plan" />
+        <span className="hidden mb-4 w-10p xs:w-full md:inline-block md:mb-0 lg:inline-block">
+          <NavItem href="/the-plan" text="the plans" />
         </span>
         <div className="z-50">
           <MobileMenu />
