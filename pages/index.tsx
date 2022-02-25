@@ -22,7 +22,7 @@ function Index(): JSX.Element {
               <p className="absolute left-0 right-0 m-auto xs:mt-32 mt-40 font-custom xs:text-13xl text-8xl transform -rotate-8 sm:text-15xl md:text-15xl">
                 Delaney Higgins
               </p>
-              <p className="sm:text-17xl md:text-17xl my-0 text-white text-11xl xs:text-14xl">
+              <p className="my-0 text-white text-11xl xs:text-14xl sm:text-17xl md:text-17xl">
                 &
               </p>
             </div>
@@ -62,8 +62,8 @@ function Index(): JSX.Element {
             />
           </div>
         </div>
-        <div className="relative mt-8 w-full h-auto text-center">
-          <Image src={hashtag} alt="#lanetomonaco" width={200} height={200} />
+        <div className="relative my-12 w-full h-auto text-center">
+          <Image src={hashtag} alt="#lanetomonaco" width={250} height={125} />
         </div>
       </Container>
     </Layout>

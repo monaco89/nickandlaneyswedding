@@ -12,10 +12,8 @@ import pic5 from '../public/assets/5.jpg';
 import pic6 from '../public/assets/6.jpg';
 import pic7 from '../public/assets/7.jpg';
 import pic8 from '../public/assets/8.jpg';
-import pic9 from '../public/assets/9.jpg';
 import pic10 from '../public/assets/10.jpg';
 import pic11 from '../public/assets/11.jpg';
-import pic12 from '../public/assets/12.jpg';
 import pic13 from '../public/assets/13.jpg';
 import pic14 from '../public/assets/14.jpg';
 import lighthouseImage from '../public/assets/lighthouse.jpg';
@@ -93,8 +91,8 @@ function TheProposal(): JSX.Element {
             </div>
             <div className="relative w-full h-auto">
               <Image
-                src={pic12}
-                alt="Nick and Laney looking at ring"
+                src={pic11}
+                alt="Laney showing off her ring"
                 layout="fill"
                 objectFit="cover"
               />
@@ -111,7 +109,7 @@ function TheProposal(): JSX.Element {
               <Image src={pic2} alt="Hand" />
             </div>
           </div>
-          <div className="grid gap-8 xs:grid-cols-1 grid-cols-2 grid-rows-3 xs:grid-rows-6 mt-8 xs:mx-2 mx-4">
+          <div className="grid gap-8 xs:grid-cols-1 grid-cols-2 grid-rows-2 xs:grid-rows-6 mt-8 xs:mx-2 mx-4">
             <div className="relative w-full h-auto">
               <Image
                 src={pic6}
@@ -122,22 +120,6 @@ function TheProposal(): JSX.Element {
             </div>
             <div className="relative w-full h-auto">
               <Image src={pic10} alt="Newport bay" objectFit="cover" />
-            </div>
-            <div className="relative w-full h-auto">
-              <Image
-                src={pic9}
-                alt="Nick taking a drink"
-                layout="fill"
-                objectFit="cover"
-              />
-            </div>
-            <div className="relative w-full h-auto">
-              <Image
-                src={pic11}
-                alt="Laney showing off her ring"
-                layout="fill"
-                objectFit="cover"
-              />
             </div>
             <div className="relative w-full h-auto">
               <Image

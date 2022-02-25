@@ -47,7 +47,7 @@ function TheProposal(): JSX.Element {
                     <p>
                       For their <mark>first date</mark>, Nick took Delaney to
                       Pagani, a little Italian resturant, on the lower west
-                      side. Then, of course had to get ice cream after.
+                      side.
                     </p>
                   }
                 />
@@ -89,8 +89,9 @@ function TheProposal(): JSX.Element {
                   date="AUGUST 17, 2018"
                   body={
                     <p>
-                      Delaney moved to DC and they got their{' '}
-                      <mark>first apartment</mark> together.
+                      They dated long distance for 6 months, then Delaney moved
+                      to DC and they got their <mark>first apartment</mark>{' '}
+                      together.
                     </p>
                   }
                 />

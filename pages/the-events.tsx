@@ -83,7 +83,7 @@ function TheEvents(): JSX.Element {
                   <p>PARKING: Limited parking available on site</p>
 
                   <h3 className="mb-4 mt-20 font-sans text-6xl font-extralight leading-10">
-                    Afternoon Drinks
+                    Intermission
                   </h3>
                   <p>at Blank</p>
                   <p>ADDRESS: 123 Street, Blah, Blah</p>
@@ -115,7 +115,7 @@ function TheEvents(): JSX.Element {
               </div>
               <div className="flex-1 xs:p-4 px-12 text-center">
                 <h2 className="mb-3 font-custom xs:text-13xl text-7xl md:text-2xl">
-                  farewell Brunch
+                  Farewell Brunch
                 </h2>
                 <div className="mx-auto w-2/3 xs:w-full text-xl">
                   <p>
@@ -126,6 +126,9 @@ function TheEvents(): JSX.Element {
                   <p>TIME: 6:00PM</p>
                   <p>PARKING: Limited street parking along Monkey Street</p>
                 </div>
+                <h3 className="mb-4 mt-20 font-sans text-6xl font-extralight leading-10">
+                  Mr. & Mrs Monaco Depart
+                </h3>
               </div>
             </div>
           </div>
