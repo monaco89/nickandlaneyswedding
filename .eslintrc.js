@@ -35,6 +35,7 @@ module.exports = {
     'react/require-default-props': 'off',
     'prettier/prettier': 'error',
     'react/no-unescaped-entities': 'off',
+    'consistent-return': 0,
     'import/no-cycle': [0, { ignoreExternal: true }],
     'prefer-const': 'off',
     // needed because of https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-use-before-define.md#how-to-use & https://stackoverflow.com/questions/63818415/react-was-used-before-it-was-defined

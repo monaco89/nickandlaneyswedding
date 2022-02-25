@@ -6,7 +6,7 @@ import pic1 from '../public/assets/home/1.jpg';
 import pic2 from '../public/assets/home/2.jpg';
 import pic3 from '../public/assets/home/3.jpg';
 import pic4 from '../public/assets/home/4.jpg';
-import hashtag from '../public/assets/home/hashtag.png';
+// import hashtag from '../public/assets/home/hashtag.png';
 
 function Index(): JSX.Element {
   return (
@@ -62,9 +62,9 @@ function Index(): JSX.Element {
             />
           </div>
         </div>
-        <div className="relative my-12 w-full h-auto text-center">
+        {/* <div className="relative my-12 w-full h-auto text-center">
           <Image src={hashtag} alt="#lanetomonaco" width={250} height={125} />
-        </div>
+        </div> */}
       </Container>
     </Layout>
   );

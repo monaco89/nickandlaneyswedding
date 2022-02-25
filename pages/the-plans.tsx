@@ -1,4 +1,5 @@
 import React from 'react';
+import ReCAPTCHA from 'react-google-recaptcha';
 import Container from '../components/container';
 import Layout from '../components/layout';
 import Input from '../components/Input';
@@ -6,10 +7,45 @@ import RadioInput from '../components/RadioInput';
 
 // TODO reCAPTCHA
 function ThePlan(): JSX.Element {
+  const [isSubmitting, setSubmitting] = React.useState(false);
+  const [guests, setGuests] = React.useState<string>('');
+  const [recaptcha, setRecaptchas] = React.useState<boolean>(false);
+  const [error, setError] = React.useState<string | null>(null);
+
+  const isValidated = () => {
+    let message = '';
+    if (!recaptcha) {
+      message = 'Please verify recaptcha';
+    }
+    if (!guests) {
+      message = 'Name of guests is required';
+    }
+
+    if (message) {
+      setError(message);
+      return false;
+    }
+
+    return true;
+  };
+
+  const handleRecaptcha = (e: any) => {
+    console.log(e);
+  };
+
   const handleSubmit = (e: any) => {
     e.preventDefault();
+    setError(null);
+    setSubmitting(true);
 
-    console.log('submitting');
+    if (!isValidated()) {
+      setSubmitting(false);
+      return null;
+    }
+
+    console.log(guests);
+
+    setSubmitting(false);
   };
   return (
     <Layout title="The Plans">
@@ -24,16 +60,18 @@ function ThePlan(): JSX.Element {
         </p>
         <div className="flex items-center justify-center mb-6">
           <div className="w-2/3 xs:w-full sm:w-full md:w-1/2 lg:w-2/5">
+            {error && <p>{error}</p>}
             <form
               onSubmit={handleSubmit}
               className="p-10 min-w-full bg-white rounded-lg shadow-sm"
             >
               <Input
-                id="guest-one"
-                label="Name of Guest One"
+                id="guestw"
+                label="Name of Guest(s)"
                 type="text"
-                name="username"
-                placeholder="username"
+                name="guests"
+                placeholder="Name of Guest(s)"
+                onChange={(e: any) => setGuests(e.target.value)}
               />
               <p>Is Delaney mad?</p>
               <RadioInput
@@ -51,11 +89,16 @@ function ThePlan(): JSX.Element {
                 name="fav_language"
                 label="very"
               />
+              <ReCAPTCHA
+                sitekey="6Lcnw50eAAAAAKNshRHE7KKKmKksdobcCE8QUnZx"
+                onChange={handleRecaptcha}
+              />
               <button
                 type="submit"
                 className="mt-6 px-4 py-2 w-full text-white font-sans text-lg font-semibold tracking-wide hover:bg-accent-7 bg-secondary rounded-lg"
+                disabled={isSubmitting}
               >
-                Submit
+                {isSubmitting ? 'Submitting' : 'Submit'}
               </button>
             </form>
           </div>
