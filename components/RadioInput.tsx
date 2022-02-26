@@ -22,7 +22,7 @@ function RadioInput({ id, label, ...rest }: InputProps) {
       />
       <label
         htmlFor={id}
-        className="block ml-2 text-gray-900 text-sm font-medium"
+        className="block ml-2 text-gray-900 text-xl font-medium"
       >
         {label}
       </label>
