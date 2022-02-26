@@ -1,13 +1,15 @@
 import React from 'react';
+import { useMutation } from '@apollo/client';
 import ReCAPTCHA from 'react-google-recaptcha';
 import Container from '../components/container';
 import Layout from '../components/layout';
 import Input from '../components/Input';
 import RadioInput from '../components/RadioInput';
+import { PLANS_MUTATION } from '../graphql/PlansMutation';
 
-// TODO reCAPTCHA
 function ThePlan(): JSX.Element {
-  const [isSubmitting, setSubmitting] = React.useState(false);
+  const [submitted, setSubmitted] = React.useState<boolean>(false);
+  const [isSubmitting, setSubmitting] = React.useState<boolean>(false);
   const [guests, setGuests] = React.useState<string>('');
   const [brunch, setBrunch] = React.useState<string>('');
   const [when, setWhen] = React.useState<string>('');
@@ -15,6 +17,7 @@ function ThePlan(): JSX.Element {
   const [transportation, setTransportation] = React.useState<string>('');
   const [recaptcha, setRecaptcha] = React.useState<boolean>(false);
   const [error, setError] = React.useState<string | null>(null);
+  const [mutatePlan] = useMutation(PLANS_MUTATION);
 
   const isValidated = () => {
     let message = '';
@@ -46,13 +49,12 @@ function ThePlan(): JSX.Element {
   };
 
   const handleRecaptcha = (e: any) => {
-    console.log(e);
     if (e) {
       setRecaptcha(true);
     }
   };
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
     setError(null);
     setSubmitting(true);
@@ -62,7 +64,23 @@ function ThePlan(): JSX.Element {
       return null;
     }
 
-    console.log(guests, brunch, when, where, transportation);
+    try {
+      await mutatePlan({
+        variables: {
+          input: {
+            guests,
+            brunch,
+            when,
+            where,
+            transportation,
+          },
+        },
+      });
+
+      setSubmitted(true);
+    } catch (err: any) {
+      setError(err.message);
+    }
 
     setSubmitting(false);
   };
@@ -78,94 +96,108 @@ function ThePlan(): JSX.Element {
           who plans on extending their trip before the wedding!
         </p>
         <div className="flex items-center justify-center mb-6">
-          <div className="w-2/3 xs:w-full sm:w-full md:w-1/2 lg:w-2/5">
-            {error && <p>{error}</p>}
-            <form
-              onSubmit={handleSubmit}
-              className="p-10 min-w-full bg-white rounded-lg shadow-sm"
-            >
-              <Input
-                id="guest"
-                label="Name of Guest(s)"
-                type="text"
-                name="guests"
-                placeholder="Name of Guest(s)"
-                onChange={(e: any) => setGuests(e.target.value)}
-              />
-              <div className="mb-4">
-                <label
-                  htmlFor="when"
-                  className="block my-3 text-gray-800 text-2xl font-semibold"
-                >
-                  When are you arriving to Rhode Island?
-                </label>
-                <input
-                  className="px-4 py-2 w-full text-lg bg-gray-100 rounded-lg focus:outline-none"
-                  id="when"
-                  type="date"
-                  name="when"
-                  onChange={(e: any) => setWhen(e.target.value)}
-                />
-              </div>
-              <div className="my-8">
+          <div className="w-2/3 xs:w-full sm:w-full md:w-1/2 lg:w-1/2">
+            {!submitted ? (
+              <form
+                onSubmit={handleSubmit}
+                className="p-10 min-w-full bg-white rounded-lg shadow-sm"
+              >
                 <Input
-                  id="where"
-                  label="Where are you staying?"
+                  id="guest"
+                  label="Name of Guest(s)"
                   type="text"
-                  name="where"
-                  placeholder="Hotel Name or Beach House Town"
-                  onChange={(e: any) => setWhere(e.target.value)}
+                  name="guests"
+                  placeholder="Name of Guest(s)"
+                  onChange={(e: any) => setGuests(e.target.value)}
                 />
+                <div className="mb-4">
+                  <label
+                    htmlFor="when"
+                    className="block my-3 text-gray-800 text-2xl font-semibold"
+                  >
+                    When are you arriving to Rhode Island?
+                  </label>
+                  <input
+                    className="px-4 py-2 w-full text-lg bg-gray-100 rounded-lg focus:outline-none"
+                    id="when"
+                    type="date"
+                    name="when"
+                    onChange={(e: any) => setWhen(e.target.value)}
+                  />
+                </div>
+                <div className="my-8">
+                  <Input
+                    id="where"
+                    label="Where are you staying?"
+                    type="text"
+                    name="where"
+                    placeholder="Hotel Name or Beach House Town"
+                    onChange={(e: any) => setWhere(e.target.value)}
+                  />
+                </div>
+                <fieldset
+                  id="brunch"
+                  className="my-8"
+                  onChange={(e: any) => setBrunch(e.target.value)}
+                >
+                  <label
+                    htmlFor="brunch"
+                    className="block my-3 text-gray-800 text-2xl font-semibold"
+                  >
+                    Are you planning on coming to the farewell brunch on
+                    Saturday hosted by our families in Narragensett?
+                  </label>
+                  <RadioInput id="brunch-option-1" name="brunch" label="Yes" />
+                  <RadioInput id="brunch-option-2" name="brunch" label="No" />
+                </fieldset>
+                <fieldset
+                  id="transportation"
+                  className="my-8"
+                  onChange={(e: any) => setTransportation(e.target.value)}
+                >
+                  <label
+                    htmlFor="brunch"
+                    className="block my-3 text-gray-800 text-2xl font-semibold"
+                  >
+                    Are you interested in transportation after the Wedding
+                    Reception?
+                  </label>
+                  <RadioInput
+                    id="transportation-option-1"
+                    name="transportation"
+                    label="Yes"
+                  />
+                  <RadioInput
+                    id="transportation-option-2"
+                    name="transportation"
+                    label="No"
+                  />
+                </fieldset>
+                <ReCAPTCHA
+                  sitekey="6Lcnw50eAAAAAKNshRHE7KKKmKksdobcCE8QUnZx"
+                  onChange={handleRecaptcha}
+                />
+                <button
+                  type="submit"
+                  className="mt-6 px-4 py-2 w-full text-white font-sans text-lg font-semibold tracking-wide hover:bg-accent-7 bg-secondary rounded-lg"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? 'Submitting' : 'Submit'}
+                </button>
+                {error && (
+                  <p className="py-3 text-center text-red-700 text-3xl font-bold">
+                    {error}
+                  </p>
+                )}
+              </form>
+            ) : (
+              <div className="p-10 min-w-full text-center text-xl bg-white rounded-lg shadow-sm">
+                <h3>
+                  Thank you for your response. Can't wait to see you on our
+                  wedding day!
+                </h3>
               </div>
-              <fieldset
-                id="brunch"
-                className="my-8"
-                onChange={(e: any) => setBrunch(e.target.value)}
-              >
-                <label
-                  htmlFor="brunch"
-                  className="block my-3 text-gray-800 text-2xl font-semibold"
-                >
-                  Are you planning on coming to the farewell brunch on saturday
-                  hosted by our families in Narragensett?
-                </label>
-                <RadioInput id="brunch-option-1" name="brunch" label="Yes" />
-                <RadioInput id="brunch-option-2" name="brunch" label="No" />
-              </fieldset>
-              <fieldset
-                id="transportation"
-                className="my-8"
-                onChange={(e: any) => setTransportation(e.target.value)}
-              >
-                <label
-                  htmlFor="brunch"
-                  className="block my-3 text-gray-800 text-2xl font-semibold"
-                >
-                  Are you interested in transportation after the Wedding?
-                </label>
-                <RadioInput
-                  id="transportation-option-1"
-                  name="transportation"
-                  label="Yes"
-                />
-                <RadioInput
-                  id="transportation-option-2"
-                  name="transportation"
-                  label="No"
-                />
-              </fieldset>
-              <ReCAPTCHA
-                sitekey="6Lcnw50eAAAAAKNshRHE7KKKmKksdobcCE8QUnZx"
-                onChange={handleRecaptcha}
-              />
-              <button
-                type="submit"
-                className="mt-6 px-4 py-2 w-full text-white font-sans text-lg font-semibold tracking-wide hover:bg-accent-7 bg-secondary rounded-lg"
-                disabled={isSubmitting}
-              >
-                {isSubmitting ? 'Submitting' : 'Submit'}
-              </button>
-            </form>
+            )}
           </div>
         </div>
       </Container>
