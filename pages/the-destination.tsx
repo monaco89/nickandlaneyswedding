@@ -93,8 +93,66 @@ function TheDestination(): JSX.Element {
               </div>
             </div>
           </div>
-          <div>
-            <Accordion i={1} expanded={expanded} setExpanded={setExpanded} />
+          <div className="mt-8 p-8">
+            <Accordion i={1} expanded={expanded} setExpanded={setExpanded}>
+              <h4 className="text-5xl">HOTELS & BEACH HOUSES</h4>
+              <div className="flex items-center justify-around">
+                <div>
+                  <p className="m-4 hover:underline text-3xl">
+                    <a
+                      href="https://thebreakhotel.com/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      The Break Hotel
+                    </a>
+                  </p>
+                  <p className="m-4 hover:underline text-3xl">
+                    <a
+                      href="https://theatlantichouse.com/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      The Atlantic House Hotel
+                    </a>
+                  </p>
+                  <p className="m-4 hover:underline text-3xl">
+                    <a
+                      href="https://www.shorehouseri.com/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      The Shore House
+                    </a>
+                  </p>
+                  <p className="m-4 hover:underline text-3xl">
+                    <a
+                      href="https://aquabluehotels.com/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Aqua Blue Hotel
+                    </a>
+                  </p>
+                </div>
+                <div>
+                  <p className="m-4 hover:underline text-3xl">
+                    <a
+                      href="https://www.gurneysresorts.com/newport"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Gurney's Newport Resort & Marina
+                    </a>
+                  </p>
+                  {/* <p className="m-4 text-3xl">
+                    If you are looking to rent a beach house close to where Nick
+                    and I will be staying we recommend the neighborhoods across
+                    from Scarborough state beach.
+                  </p> */}
+                </div>
+              </div>
+            </Accordion>
           </div>
           <div className="grid gap-0 xs:grid-cols-1 grid-cols-3 items-center xs:mt-0 mt-20 sm:grid-cols-1">
             <div className="xs:hidden">
