@@ -97,7 +97,7 @@ function TheDestination(): JSX.Element {
           <div className="mt-8 p-8">
             <Accordion i={1} expanded={expanded} setExpanded={setExpanded}>
               <h4 className="text-5xl">HOTELS & BEACH HOUSES</h4>
-              <div className="flex items-center justify-around">
+              <div className="flex xs:flex-col items-center justify-around md:flex-row">
                 <div>
                   <p className="m-4 hover:underline text-3xl">
                     <a

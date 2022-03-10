@@ -1,10 +1,12 @@
 import React from 'react';
 import cn from 'classnames';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import useDelayedRender from 'use-delayed-render';
 import styles from '../styles/mobile-menu.module.css';
 
 function MobileMenu(): JSX.Element {
+  const router = useRouter();
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const { mounted: isMenuMounted, rendered: isMenuRendered } = useDelayedRender(
     isMenuOpen,
@@ -49,6 +51,10 @@ function MobileMenu(): JSX.Element {
             'flex flex-col absolute',
             isMenuRendered && styles.menuRendered
           )}
+          style={{
+            backgroundColor:
+              router.pathname === '/the-destination' ? '#c8d2d4' : '',
+          }}
         >
           <li style={{ transitionDelay: '150ms' }}>
             <Link href="/the-story">
