@@ -11,7 +11,7 @@ function createApolloClient() {
   return new ApolloClient({
     ssrMode: typeof window === 'undefined',
     link: new HttpLink({
-      uri: process.env.NEXT_API_URI,
+      uri: 'https://m3m9ezi21f.execute-api.us-east-1.amazonaws.com/development',
     }),
     cache: new InMemoryCache(),
   });
