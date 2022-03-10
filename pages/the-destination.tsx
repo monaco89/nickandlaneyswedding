@@ -46,6 +46,7 @@ function TheDestination(): JSX.Element {
               // type="video/mp4"
               // controls
               muted
+              playsInline
             >
               Your browser does not support the video tag.
             </video>
