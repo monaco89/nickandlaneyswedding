@@ -11,10 +11,10 @@ function createApolloClient() {
   return new ApolloClient({
     ssrMode: typeof window === 'undefined',
     link: new HttpLink({
-      // process.env.NODE_ENV === "development"
-      //   ? "http://localhost:3000/local/graphql"
-      //   :
-      uri: 'http://localhost:3000/local/graphql',
+      uri:
+        process.env.NODE_ENV === 'development'
+          ? 'http://localhost:3000/local/graphql'
+          : process.env.apiUri,
     }),
     cache: new InMemoryCache(),
   });
