@@ -11,7 +11,7 @@ function createApolloClient() {
   return new ApolloClient({
     ssrMode: typeof window === 'undefined',
     link: new HttpLink({
-      uri: 'https://m3m9ezi21f.execute-api.us-east-1.amazonaws.com/development',
+      uri: 'https://m3m9ezi21f.execute-api.us-east-1.amazonaws.com/development/graphql',
     }),
     cache: new InMemoryCache(),
   });
