@@ -87,14 +87,11 @@ function ThePlan(): JSX.Element {
   return (
     <Layout title="The Plans">
       <Container>
-        <h1 className="text-center font-sans xs:text-6xl text-7xl sm:text-6xl">
-          The Plans
-        </h1>
-        <p className="xs:py-10 py-20 text-center font-sans xs:text-2xl text-3xl sm:py-10 sm:text-2xl">
+        <h1 className="xs:py-10 py-20 text-center font-sans xs:text-2xl text-3xl sm:py-10 sm:text-2xl">
           Tell us about your plans! We would love to spend time with everyone
           <br />
           who plans on extending their trip before the wedding!
-        </p>
+        </h1>
         <div className="flex items-center justify-center mb-6">
           <div className="w-2/3 xs:w-full sm:w-full md:w-1/2 lg:w-1/2">
             {!submitted ? (
@@ -131,7 +128,7 @@ function ThePlan(): JSX.Element {
                     label="Where are you staying?"
                     type="text"
                     name="where"
-                    placeholder="Hotel Name or Beach House Town"
+                    placeholder="Hotel Name or Beach House Location"
                     onChange={(e: any) => setWhere(e.target.value)}
                   />
                 </div>
@@ -145,7 +142,7 @@ function ThePlan(): JSX.Element {
                     className="block my-3 text-gray-800 text-2xl font-semibold"
                   >
                     Are you planning on coming to the farewell brunch on
-                    Saturday hosted by our families in Narragensett?
+                    Saturday 8/19 hosted by our families in Narragansett?
                   </label>
                   <RadioInput id="brunch-option-1" name="brunch" label="Yes" />
                   <RadioInput id="brunch-option-2" name="brunch" label="No" />

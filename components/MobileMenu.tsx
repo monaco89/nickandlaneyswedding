@@ -56,11 +56,16 @@ function MobileMenu(): JSX.Element {
             </Link>
           </li>
           <li style={{ transitionDelay: '175ms' }}>
+            <Link href="/the-registry">
+              <a className="flex pb-4 w-auto">the registry</a>
+            </Link>
+          </li>
+          <li style={{ transitionDelay: '200ms' }}>
             <Link href="/the-proposal">
               <a className="flex pb-4 w-auto">the proposal</a>
             </Link>
           </li>
-          <li style={{ transitionDelay: '200ms' }}>
+          <li style={{ transitionDelay: '225ms' }}>
             <Link href="/the-destination">
               <a className="flex pb-4 w-auto">the destination</a>
             </Link>
@@ -70,7 +75,7 @@ function MobileMenu(): JSX.Element {
               <a className="flex pb-4 w-auto">the events</a>
             </Link>
           </li>
-          <li style={{ transitionDelay: '250ms' }}>
+          <li style={{ transitionDelay: '275ms' }}>
             <Link href="/the-plans">
               <a className="flex pb-4 w-auto">the plans</a>
             </Link>
