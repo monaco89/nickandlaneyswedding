@@ -82,8 +82,8 @@ function MobileMenu(): JSX.Element {
             </Link>
           </li>
           <li style={{ transitionDelay: '275ms' }}>
-            <Link href="/the-plans">
-              <a className="flex pb-4 w-auto">the plans</a>
+            <Link href="/tell-us">
+              <a className="flex pb-4 w-auto">tell us</a>
             </Link>
           </li>
         </ul>

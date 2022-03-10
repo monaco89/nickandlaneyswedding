@@ -85,7 +85,7 @@ function ThePlan(): JSX.Element {
     setSubmitting(false);
   };
   return (
-    <Layout title="The Plans">
+    <Layout title="Tell Us">
       <Container>
         <h1 className="xs:py-10 py-20 text-center font-sans xs:text-2xl text-3xl sm:py-10 sm:text-2xl">
           Tell us about your plans! We would love to spend time with everyone

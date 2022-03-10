@@ -20,7 +20,13 @@ function NavItem({ href, text, border }: NavItemProps) {
           border && 'border-2 rounded-none px-4'
         )}
       >
-        <span>{text}</span>
+        {text === 'tell us' ? (
+          <span style={{ border: '1px solid black', padding: '5px' }}>
+            {text}
+          </span>
+        ) : (
+          <span>{text}</span>
+        )}
       </a>
     </NextLink>
   );
@@ -61,7 +67,7 @@ function Header(): JSX.Element {
           <NavItem href="/the-events" text="the events" />
         </span>
         <span className="hidden mb-4 w-10p xs:w-full md:inline-block md:mb-0 lg:inline-block">
-          <NavItem href="/the-plans" text="the plans" />
+          <NavItem href="/tell-us" text="tell us" />
         </span>
         <div className="z-50">
           <MobileMenu />

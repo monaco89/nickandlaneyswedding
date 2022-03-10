@@ -67,10 +67,11 @@ function TheProposal(): JSX.Element {
                   date="NOVEMBER 27, 2017"
                   body={
                     <p>
-                      Almost 2 years later, Nick <mark>friend requested</mark>{' '}
-                      Delaney on Facebook. He couldn't figure out what to say
-                      and she was too impatient to wait for him to say
-                      something, so she sent him a message.
+                      Almost 2 years of not talking to each other, Nick{' '}
+                      <mark>friend requested</mark> Delaney on Facebook. He
+                      couldn't figure out what to say and she was too impatient
+                      to wait for him to say something, so she sent him a
+                      message.
                     </p>
                   }
                 />
@@ -89,7 +90,7 @@ function TheProposal(): JSX.Element {
                   date="AUGUST 17, 2018"
                   body={
                     <p>
-                      They dated long distance for 6 months, then Delaney moved
+                      They dated long distance for 8 months, then Delaney moved
                       to DC and they got their <mark>first apartment</mark>{' '}
                       together.
                     </p>
