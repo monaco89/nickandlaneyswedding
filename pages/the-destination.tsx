@@ -33,14 +33,27 @@ function TheDestination(): JSX.Element {
         }
       `}</style>
       <Container>
-        <p className="xs:block hidden text-center text-white xs:text-4xl text-4xl text-7xl sm:block sm:text-4xl md:text-4xl">
+        {/* <p className="xs:block hidden text-center text-white xs:text-4xl text-4xl text-7xl sm:block sm:text-4xl md:text-4xl">
           join us in
-        </p>
+        </p> */}
+        <h1 className="xs:leading-0 xs:ml-0 xs:ml-12 ml-16 text-center xs:text-left text-black font-sans text-10xl xs:text-7xl font-extralight leading-11 sm:text-7xl md:text-7xl lg:leading-12">
+          <span className="text-left">THE</span>
+          <br />
+          <span className="block xs:text-left">Destination</span>
+        </h1>
+        {/* <div className="">
+          <p className="text-white xs:text-5xl text-7xl sm:text-4xl md:text-4xl">
+            join us in
+          </p>
+          <h2 className="xs:leading-13 mb-0 mb-4 text-white font-custom xs:text-6xl text-8xl tracking-widest sm:text-6xl md:text-5xl">
+            Rhode Island
+          </h2>
+        </div> */}
         <div className="container__video">
           <div>
             <video
               className="container__video__player"
-              autoPlay
+              // autoPlay
               // loop
               src="https://files.nickmonaco.me/rhodeisland.mp4"
               // type="video/mp4"
@@ -50,19 +63,19 @@ function TheDestination(): JSX.Element {
             >
               Your browser does not support the video tag.
             </video>
-            <div className="container__video__content">
-              <p className="xs:hidden mb-10 text-white xs:text-4xl text-4xl text-7xl sm:hidden sm:text-4xl md:text-4xl">
+            <div className="container__video__content xs:hidden">
+              <p className="xs:mb-0 mb-10 xs:mt-10 text-white xs:text-5xl text-7xl sm:hidden sm:text-4xl md:text-4xl">
                 join us in
               </p>
-              <h2 className="mb-0 mb-4 text-center text-white font-custom xs:text-6xl text-8xl tracking-widest sm:text-6xl md:text-5xl">
+              <h2 className="xs:leading-13 mb-0 mb-4 text-center text-white font-custom xs:text-6xl text-8xl tracking-widest sm:text-6xl md:text-5xl">
                 Rhode Island
               </h2>
             </div>
           </div>
         </div>
-        <section className="my-12 text-center">
-          <div className="min-h-64 grid gap-0 xs:grid-cols-1 grid-cols-3 items-center sm:grid-cols-1 sm:grid-cols-2 md:grid-cols-2">
-            <div className="xs:col-span-1 col-span-2 xs:p-10 pb-32 pt-16 px-28 h-5/6 xs:h-full bg-white sm:col-span-1 sm:col-span-1 sm:p-10 sm:h-full md:col-span-1">
+        <section className="my-12 text-center xs:text-left">
+          <div className="flex xs:flex-col-reverse items-center">
+            <div className="m-w-52 xs:p-10 pb-32 pt-16 px-28 bg-white sm:p-10 sm:p-10 md:p-10">
               <h3 className="xs:text-4xl text-7xl sm:text-4xl md:text-4xl">
                 WHERE TO STAY
               </h3>
@@ -83,13 +96,13 @@ function TheDestination(): JSX.Element {
                 {expanded === 1 ? 'Close' : 'View'}
               </button>
             </div>
-            <div className="xs:hidden">
-              <div className="relative w-full h-101">
+            <div className="w-full h-101 xs:h-101 sm:h-72 md:h-96">
+              <div className="relative w-full h-full">
                 <Image
                   src={HouseImage}
                   alt="A Row House"
                   layout="fill"
-                  objectFit="cover"
+                  objectFit="contain"
                 />
               </div>
             </div>
@@ -155,9 +168,9 @@ function TheDestination(): JSX.Element {
               </div>
             </Accordion>
           </div>
-          <div className="grid gap-0 xs:grid-cols-1 grid-cols-3 items-center xs:mt-0 mt-20 sm:grid-cols-1">
-            <div className="xs:hidden">
-              <div className="layered-card relative w-full h-101">
+          <div className="flex xs:flex-col items-center xs:mt-0 mt-20">
+            <div className="w-full h-101 xs:h-101 sm:h-72 md:h-96">
+              <div className="layered-card relative w-full h-full">
                 <Image
                   src={InnImage}
                   alt="Inn at Castle Hill"
@@ -166,7 +179,7 @@ function TheDestination(): JSX.Element {
                 />
               </div>
             </div>
-            <div className="xs:col-span-1 col-span-2 xs:p-10 pb-32 pt-16 px-28 h-5/6 xs:h-full sm:col-span-1 sm:h-full">
+            <div className="m-w-52 xs:p-10 pb-32 pt-16 px-28">
               <h3 className="xs:text-4xl text-7xl sm:text-4xl md:text-4xl">
                 WHAT TO DO
               </h3>
@@ -182,7 +195,7 @@ function TheDestination(): JSX.Element {
               </button>
             </div>
           </div>
-          <div className="grid gap-0 gap-2 xs:grid-cols-1 grid-cols-3 items-center xs:mt-0 mt-20 sm:grid-cols-1 sm:mt-0">
+          <div className="grid gap-0 gap-2 xs:grid-cols-1 grid-cols-3 items-center mt-20 sm:grid-cols-1">
             <div className="xs:hidden h-full sm:hidden">
               <div className="min-h-20 relative p-10 w-full h-full bg-white">
                 <Image

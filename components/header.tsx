@@ -45,7 +45,7 @@ function Header(): JSX.Element {
         <span className="hidden mb-4 w-10p xs:w-full md:inline-block md:mb-0 md:w-2/12 lg:inline-block">
           <NavItem href="/the-registry" text="the registry" />
         </span>
-        <span className="mb-4 w-2/12 xs:w-full xs:text-left md:mb-0 md:w-2/12">
+        <span className="mb-4 xs:ml-36 w-2/12 xs:w-full xs:text-left md:mb-0 md:w-2/12">
           <div className="relative xs:-left-10 w-full xs:h-36 h-48 sm:h-36 md:h-36">
             <NextLink href="/">
               <a>
