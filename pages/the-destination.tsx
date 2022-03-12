@@ -3,24 +3,23 @@ import Image from 'next/image';
 import Container from '../components/container';
 import Layout from '../components/layout';
 import Accordion from '../components/Accordion';
-import InnImage from '../public/assets/inn_v.jpg';
+import ThingsImage from '../public/assets/things.jpg';
 import HouseImage from '../public/assets/house.jpg';
-import FoodImage from '../public/assets/food.png';
-import DellsImage from '../public/assets/dells.png';
+import FoodImage from '../public/assets/food.jpg';
 
-const transition = {
-  duration: 2,
-  ease: [0.43, 0.13, 0.23, 0.96],
-};
+// const transition = {
+//   duration: 2,
+//   ease: [0.43, 0.13, 0.23, 0.96],
+// };
 
-const variants = {
-  exit: { y: '50%', opacity: 0, transition },
-  enter: {
-    y: '0%',
-    opacity: 1,
-    transition,
-  },
-};
+// const variants = {
+//   exit: { y: '50%', opacity: 0, transition },
+//   enter: {
+//     y: '0%',
+//     opacity: 1,
+//     transition,
+//   },
+// };
 
 function TheDestination(): JSX.Element {
   const [expanded, setExpanded] = React.useState<false | number>(0);
@@ -53,7 +52,7 @@ function TheDestination(): JSX.Element {
           <div>
             <video
               className="container__video__player"
-              // autoPlay
+              autoPlay
               // loop
               src="https://files.nickmonaco.me/rhodeisland.mp4"
               // type="video/mp4"
@@ -65,21 +64,24 @@ function TheDestination(): JSX.Element {
             </video>
             <div className="container__video__content">
               <h1 className="xs:mb-0 mb-10 xs:mt-10 text-white xs:text-5xl text-8xl sm:text-4xl md:text-4xl">
-                join us in
+                JOIN US IN
               </h1>
-              <h2 className="xs:leading-13 mb-0 mb-4 text-center text-white font-custom xs:text-6xl text-9xl tracking-widest sm:text-6xl md:text-5xl">
+              <h2 className="xs:leading-13 mb-0 mb-4 text-center text-white font-custom text-14xl xs:text-6xl tracking-widest sm:text-6xl md:text-5xl">
                 Rhode Island
               </h2>
             </div>
           </div>
         </div>
         <section className="mt-20 my-12 text-center xs:text-left">
-          <div className="flex xs:flex-col-reverse items-center">
-            <div className="m-w-52 xs:p-10 pb-32 pt-16 px-28 bg-white sm:p-10 sm:p-10 md:p-10">
-              <h3 className="xs:text-4xl text-7xl sm:text-4xl md:text-4xl">
+          <div className="flex xs:flex-col-reverse items-center xs:mt-0 mt-20">
+            <div
+              className="xs:p-10 pb-32 pt-16 px-28 bg-white lg:h-full"
+              style={{ maxWidth: '755px' }}
+            >
+              <h3 className="text-13xl xs:text-4xl sm:text-4xl md:text-4xl">
                 WHERE TO STAY
               </h3>
-              <p className="mb-4 mt-6 xs:px-0 px-20 text-2xl xs:text-xl sm:px-0 md:px-0">
+              <p className="mb-4 mt-6 xs:px-0 px-10 text-2xl xs:text-xl sm:px-0 sm:text-xl">
                 We recommand staying in Narragansett if you're extending your
                 trip for more days prior the wedding. If you are only coming for
                 the wedding, we suggest our Portsmouth hotel.
@@ -97,12 +99,12 @@ function TheDestination(): JSX.Element {
               </button>
             </div>
             <div className="w-full h-101 xs:h-101 sm:h-72 md:h-96">
-              <div className="relative w-full h-full">
+              <div className="layered-card relative w-full h-full">
                 <Image
                   src={HouseImage}
-                  alt="A Row House"
+                  alt="Inn at Castle Hill"
                   layout="fill"
-                  objectFit="contain"
+                  objectFit="cover"
                 />
               </div>
             </div>
@@ -172,15 +174,18 @@ function TheDestination(): JSX.Element {
             <div className="w-full h-101 xs:h-101 sm:h-72 md:h-96">
               <div className="layered-card relative w-full h-full">
                 <Image
-                  src={InnImage}
+                  src={ThingsImage}
                   alt="Inn at Castle Hill"
                   layout="fill"
                   objectFit="cover"
                 />
               </div>
             </div>
-            <div className="xs:p-10 pb-32 pt-16 px-28 lg:h-full">
-              <h3 className="xs:text-4xl text-7xl sm:text-4xl md:text-4xl">
+            <div
+              className="xs:p-10 pb-32 pt-16 px-28 bg-white lg:h-full"
+              style={{ maxWidth: '755px' }}
+            >
+              <h3 className="text-13xl xs:text-4xl sm:text-4xl md:text-4xl">
                 WHAT TO DO
               </h3>
               <p className="mb-4 mt-6 xs:px-0 px-20 text-2xl xs:text-xl sm:px-0 sm:text-xl">
@@ -189,19 +194,30 @@ function TheDestination(): JSX.Element {
               </p>
               <button
                 type="button"
-                className="text-black-500 px-10 py-2 hover:text-black text-xl font-bold hover:bg-primary bg-white transition duration-300 ease-in-out"
+                className={`text-black-500 px-10 py-2 hover:text-black text-xl font-bold border-2 border-primary transition duration-300 ease-in-out ${
+                  expanded === 1
+                    ? 'bg-primary hover:bg-transparent'
+                    : 'bg-inherit hover:bg-primary'
+                }`}
+                // onClick={() => setExpanded(expanded === 1 ? false : 1)}
               >
-                View
+                {expanded === 1 ? 'Close' : 'View'}
               </button>
             </div>
           </div>
 
           <div className="flex xs:flex-col-reverse items-center mt-40">
-            <div className="m-w-52 xs:p-10 pb-32 pt-16 px-28 bg-white sm:p-10 sm:p-10 md:p-10">
-              <h3 className="xs:text-4xl text-7xl sm:text-4xl md:text-4xl">
+            <div
+              className="xs:p-10 pb-32 pt-16 px-28 bg-white lg:h-full"
+              style={{ maxWidth: '755px' }}
+            >
+              <h3 className="text-13xl xs:text-4xl sm:text-4xl md:text-4xl">
                 WHERE TO EAT + DRINK
               </h3>
-              {/* <p className="mb-4 mt-6 xs:px-0 px-20 text-2xl xs:text-xl sm:px-0 md:px-0"></p> */}
+              <p className="mb-4 mt-6 xs:px-0 px-20 text-2xl xs:text-xl sm:px-0 sm:text-xl">
+                We have put together a list of some of our favorite coffee
+                shops, resturants, bar and of course seafood spots.
+              </p>
               <button
                 type="button"
                 className={`text-black-500 px-10 py-2 hover:text-black text-xl font-bold border-2 border-primary transition duration-300 ease-in-out ${
@@ -215,12 +231,12 @@ function TheDestination(): JSX.Element {
               </button>
             </div>
             <div className="w-full h-101 xs:h-101 sm:h-72 md:h-96">
-              <div className="relative w-full h-full">
+              <div className="layered-card relative w-full h-full">
                 <Image
                   src={FoodImage}
-                  alt="A Row House"
+                  alt="Inn at Castle Hill"
                   layout="fill"
-                  objectFit="contain"
+                  objectFit="cover"
                 />
               </div>
             </div>
