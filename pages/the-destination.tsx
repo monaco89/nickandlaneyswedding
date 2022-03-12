@@ -36,11 +36,11 @@ function TheDestination(): JSX.Element {
         {/* <p className="xs:block hidden text-center text-white xs:text-4xl text-4xl text-7xl sm:block sm:text-4xl md:text-4xl">
           join us in
         </p> */}
-        <h1 className="xs:leading-0 xs:ml-0 xs:ml-12 ml-16 text-center xs:text-left text-black font-sans text-10xl xs:text-7xl font-extralight leading-11 sm:text-7xl md:text-7xl lg:leading-12">
+        {/* <h1 className="xs:leading-0 xs:ml-0 xs:ml-12 ml-16 text-center xs:text-left text-black font-sans text-10xl xs:text-7xl font-extralight leading-11 sm:text-7xl md:text-7xl lg:leading-12">
           <span className="text-left">THE</span>
           <br />
           <span className="block xs:text-left">Destination</span>
-        </h1>
+        </h1> */}
         {/* <div className="">
           <p className="text-white xs:text-5xl text-7xl sm:text-4xl md:text-4xl">
             join us in
@@ -63,11 +63,11 @@ function TheDestination(): JSX.Element {
             >
               Your browser does not support the video tag.
             </video>
-            <div className="container__video__content xs:hidden">
-              <p className="xs:mb-0 mb-10 xs:mt-10 text-white xs:text-5xl text-7xl sm:hidden sm:text-4xl md:text-4xl">
+            <div className="container__video__content">
+              <h1 className="xs:mb-0 mb-10 xs:mt-10 text-white xs:text-5xl text-8xl sm:text-4xl md:text-4xl">
                 join us in
-              </p>
-              <h2 className="xs:leading-13 mb-0 mb-4 text-center text-white font-custom xs:text-6xl text-8xl tracking-widest sm:text-6xl md:text-5xl">
+              </h1>
+              <h2 className="xs:leading-13 mb-0 mb-4 text-center text-white font-custom xs:text-6xl text-9xl tracking-widest sm:text-6xl md:text-5xl">
                 Rhode Island
               </h2>
             </div>
@@ -179,7 +179,7 @@ function TheDestination(): JSX.Element {
                 />
               </div>
             </div>
-            <div className="m-w-52 xs:p-10 pb-32 pt-16 px-28">
+            <div className="xs:p-10 pb-32 pt-16 px-28 lg:h-full">
               <h3 className="xs:text-4xl text-7xl sm:text-4xl md:text-4xl">
                 WHAT TO DO
               </h3>
@@ -195,18 +195,18 @@ function TheDestination(): JSX.Element {
               </button>
             </div>
           </div>
-          <div className="grid gap-0 gap-2 xs:grid-cols-1 grid-cols-3 items-center mt-20 sm:grid-cols-1">
-            <div className="xs:hidden h-full sm:hidden">
-              <div className="min-h-20 relative p-10 w-full h-full bg-white">
+          <div className="flex xs:flex-col items-center mt-20 md:h-101 lg:h-101">
+            <div className="mr-4">
+              <div className="min-h-20 relative p-10 xs:p-7 w-full h-full bg-white md:p-7">
                 <Image
                   src={FoodImage}
                   alt="Clams"
                   // layout="fill"
-                  objectFit="cover"
+                  objectFit="contain"
                 />
               </div>
             </div>
-            <div className="xs:p-10 px-28 py-24 h-full bg-white sm:p-10 md:px-10">
+            <div className="mr-4 xs:p-10 px-28 py-24 h-full bg-white sm:p-10 md:px-10 md:w-full">
               <h3 className="text-16xl xs:text-4xl sm:text-4xl md:text-4xl">
                 WHERE TO EAT + DRINK
               </h3>
@@ -218,12 +218,12 @@ function TheDestination(): JSX.Element {
               </button>
             </div>
             <div className="xs:hidden sm:hidden">
-              <div className="relative p-10 w-full h-full bg-white">
+              <div className="relative p-10 w-full h-full bg-white md:p-7">
                 <Image
                   src={DellsImage}
                   alt="Dells"
                   // layout="fill"
-                  objectFit="cover"
+                  objectFit="contain"
                 />
               </div>
             </div>

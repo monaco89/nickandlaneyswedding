@@ -9,6 +9,7 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <link href="https://use.typekit.net/raz1yzb.css" rel="stylesheet" />
           {/* enable analytics script only for production */}
           {isProduction && (
             <>
