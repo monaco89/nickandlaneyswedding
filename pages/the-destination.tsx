@@ -73,7 +73,7 @@ function TheDestination(): JSX.Element {
             </div>
           </div>
         </div>
-        <section className="my-12 text-center xs:text-left">
+        <section className="mt-20 my-12 text-center xs:text-left">
           <div className="flex xs:flex-col-reverse items-center">
             <div className="m-w-52 xs:p-10 pb-32 pt-16 px-28 bg-white sm:p-10 sm:p-10 md:p-10">
               <h3 className="xs:text-4xl text-7xl sm:text-4xl md:text-4xl">
@@ -195,34 +195,31 @@ function TheDestination(): JSX.Element {
               </button>
             </div>
           </div>
-          <div className="flex xs:flex-col items-center mt-20 md:h-101 lg:h-101">
-            <div className="mr-4">
-              <div className="min-h-20 relative p-10 xs:p-7 w-full h-full bg-white md:p-7">
-                <Image
-                  src={FoodImage}
-                  alt="Clams"
-                  // layout="fill"
-                  objectFit="contain"
-                />
-              </div>
-            </div>
-            <div className="mr-4 xs:p-10 px-28 py-24 h-full bg-white sm:p-10 md:px-10 md:w-full">
-              <h3 className="text-16xl xs:text-4xl sm:text-4xl md:text-4xl">
+
+          <div className="flex xs:flex-col-reverse items-center mt-40">
+            <div className="m-w-52 xs:p-10 pb-32 pt-16 px-28 bg-white sm:p-10 sm:p-10 md:p-10">
+              <h3 className="xs:text-4xl text-7xl sm:text-4xl md:text-4xl">
                 WHERE TO EAT + DRINK
               </h3>
+              {/* <p className="mb-4 mt-6 xs:px-0 px-20 text-2xl xs:text-xl sm:px-0 md:px-0"></p> */}
               <button
                 type="button"
-                className="text-black-500 mt-10 px-10 py-2 hover:text-black text-xl font-bold hover:bg-primary bg-white bg-white border-2 border-primary transition duration-300 ease-in-out"
+                className={`text-black-500 px-10 py-2 hover:text-black text-xl font-bold border-2 border-primary transition duration-300 ease-in-out ${
+                  expanded === 1
+                    ? 'bg-primary hover:bg-transparent'
+                    : 'bg-inherit hover:bg-primary'
+                }`}
+                // onClick={() => setExpanded(expanded === 1 ? false : 1)}
               >
-                View
+                {expanded === 1 ? 'Close' : 'View'}
               </button>
             </div>
-            <div className="xs:hidden sm:hidden">
-              <div className="relative p-10 w-full h-full bg-white md:p-7">
+            <div className="w-full h-101 xs:h-101 sm:h-72 md:h-96">
+              <div className="relative w-full h-full">
                 <Image
-                  src={DellsImage}
-                  alt="Dells"
-                  // layout="fill"
+                  src={FoodImage}
+                  alt="A Row House"
+                  layout="fill"
                   objectFit="contain"
                 />
               </div>

@@ -32,7 +32,12 @@ function TheRegistry(): JSX.Element {
   return (
     <Layout title="The Registry">
       <Container>
-        <section className="mb-16 xs:mt-0 mt-16 md:mb-12">{copy}</section>
+        <section className="mb-16 xs:mt-0 mt-16 md:mb-12">
+          <h1 className="xs:leading-0 text-center xs:text-left text-black font-sans xs:text-7xl text-8xl font-extralight leading-11 sm:text-7xl md:text-7xl lg:leading-12">
+            THE REGISTRY
+          </h1>
+          {copy}
+        </section>
       </Container>
     </Layout>
   );
