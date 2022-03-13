@@ -109,7 +109,7 @@ function TheProposal(): JSX.Element {
               <Image src={pic2} alt="Hand" />
             </div>
           </div>
-          <div className="grid gap-8 xs:grid-cols-1 grid-cols-2 grid-rows-2 xs:grid-rows-6 mt-8 xs:mx-2 mx-4">
+          <div className="grid gap-8 xs:grid-cols-1 grid-cols-2 grid-rows-2 xs:grid-rows-4 mt-8 xs:mx-2 mx-4">
             <div className="relative w-full h-auto">
               <Image
                 src={pic6}

@@ -111,7 +111,6 @@ function TheDestination(): JSX.Element {
           </div>
           <div className="mt-8 p-8">
             <Accordion i={1} expanded={expanded} setExpanded={setExpanded}>
-              <h4 className="text-5xl">HOTELS & BEACH HOUSES</h4>
               <div className="flex xs:flex-col items-center justify-around md:flex-row">
                 <div>
                   <p className="m-4 hover:underline text-3xl">
@@ -195,15 +194,85 @@ function TheDestination(): JSX.Element {
               <button
                 type="button"
                 className={`text-black-500 px-10 py-2 hover:text-black text-xl font-bold border-2 border-primary transition duration-300 ease-in-out ${
-                  expanded === 1
+                  expanded === 2
                     ? 'bg-primary hover:bg-transparent'
                     : 'bg-inherit hover:bg-primary'
                 }`}
-                // onClick={() => setExpanded(expanded === 1 ? false : 1)}
+                onClick={() => setExpanded(expanded === 2 ? false : 2)}
               >
-                {expanded === 1 ? 'Close' : 'View'}
+                {expanded === 2 ? 'Close' : 'View'}
               </button>
             </div>
+          </div>
+          <div className="mt-8 p-8">
+            <Accordion i={2} expanded={expanded} setExpanded={setExpanded}>
+              <div className="flex xs:flex-col items-center justify-around md:flex-row">
+                <div>
+                  <h4 className="xs:text-3xl text-6xl sm:text-3xl md:text-3xl">
+                    Narragansett
+                  </h4>
+                  <p className="m-4 hover:underline text-3xl">
+                    <a
+                      href="https://www.narragansettri.gov/323/Narragansett-Town-Beach"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Narragansett Town Beach
+                    </a>
+                  </p>
+                  <p className="m-4 hover:underline text-3xl">
+                    <a
+                      href="https://riparks.com/beach/scarborough-north.php"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Scarborough Beach (free)
+                    </a>
+                  </p>
+                </div>
+                <div>
+                  <h4 className="xs:text-3xl text-6xl sm:text-3xl md:text-3xl">
+                    Newport
+                  </h4>
+                  <p className="m-4 hover:underline text-3xl">
+                    <a
+                      href="https://www.discovernewport.org/things-to-do/cliff-walk/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      The Cliff Walk
+                    </a>
+                  </p>
+                  <p className="m-4 hover:underline text-3xl">
+                    <a
+                      href="https://www.newportmansions.org/plan-a-visit"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Newport Mansions Tour
+                    </a>
+                  </p>
+                  <p className="m-4 hover:underline text-3xl">
+                    <a
+                      href="https://www.discovernewport.org/things-to-do/shopping/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Downtown Newport Shops
+                    </a>
+                  </p>
+                  <p className="m-4 hover:underline text-3xl">
+                    <a
+                      href="https://www.discovernewport.org/listing/jamestown-newport-ferry/701/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Ferry to Rose Island and Jamestown
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </Accordion>
           </div>
 
           <div className="flex xs:flex-col-reverse items-center mt-40">
@@ -221,13 +290,13 @@ function TheDestination(): JSX.Element {
               <button
                 type="button"
                 className={`text-black-500 px-10 py-2 hover:text-black text-xl font-bold border-2 border-primary transition duration-300 ease-in-out ${
-                  expanded === 1
+                  expanded === 3
                     ? 'bg-primary hover:bg-transparent'
                     : 'bg-inherit hover:bg-primary'
                 }`}
-                // onClick={() => setExpanded(expanded === 1 ? false : 1)}
+                onClick={() => setExpanded(expanded === 3 ? false : 3)}
               >
-                {expanded === 1 ? 'Close' : 'View'}
+                {expanded === 3 ? 'Close' : 'View'}
               </button>
             </div>
             <div className="w-full h-101 xs:h-101 sm:h-72 md:h-96">
@@ -240,6 +309,121 @@ function TheDestination(): JSX.Element {
                 />
               </div>
             </div>
+          </div>
+          <div className="mt-8 p-8">
+            <Accordion i={3} expanded={expanded} setExpanded={setExpanded}>
+              <div className="flex xs:flex-col items-center justify-around md:flex-row">
+                <div>
+                  <h4 className="xs:text-3xl text-6xl sm:text-3xl md:text-3xl">
+                    Narragansett
+                  </h4>
+                  <p className="m-4 hover:underline text-3xl">
+                    <a
+                      href="https://thecoastguardhouse.com/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Coast Guard House
+                    </a>
+                  </p>
+                  <p className="m-4 hover:underline text-3xl">
+                    <a
+                      href="https://www.spainri.com/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Spains of Narragansett
+                    </a>
+                  </p>
+                  <p className="m-4 hover:underline text-3xl">
+                    <a
+                      href="https://www.trio-ri.com/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Trio
+                    </a>
+                  </p>
+                  <p className="m-4 hover:underline text-3xl">
+                    <a
+                      href="https://www.rhodyoysters.com/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Matunuck Oyster Bar
+                    </a>
+                  </p>
+                  <p className="m-4 hover:underline text-3xl">
+                    <a
+                      href="https://www.mewstavern.com/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Mews Tavern
+                    </a>
+                  </p>
+                  <p className="m-4 hover:underline text-3xl">
+                    <a
+                      href="https://www.davescoffee.com/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Dave's Coffee
+                    </a>
+                  </p>
+                  <p className="m-4 hover:underline text-3xl">
+                    <a
+                      href="https://www.sweetcakesbakeryri.com/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Sweet Cakes Bakery
+                    </a>
+                  </p>
+                  <p className="m-4 hover:underline text-3xl">
+                    <a
+                      href="https://www.tripadvisor.com/Restaurant_Review-g54097-d625191-Reviews-Iggy_s_Doughboys_and_Chowder_House-Narragansett_Washington_County_Rhode_Island.html"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Iggy's Doughboys and Chowder
+                    </a>
+                  </p>
+                  <p className="m-4 hover:underline text-3xl">
+                    <a
+                      href="https://www.champlins.com/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Champlins Seafood
+                    </a>
+                  </p>
+                  <p className="m-4 hover:underline text-3xl">
+                    <a
+                      href="https://www.nanasgelato.com/restaurant"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Nana's Ice Cream & Gelato Cafe
+                    </a>
+                  </p>
+                </div>
+                <div>
+                  <h4 className="xs:text-3xl text-6xl sm:text-3xl md:text-3xl">
+                    Newport
+                  </h4>
+                  <p className="m-4 hover:underline text-3xl">
+                    <a
+                      href="https://www.castlehillinn.com/dining"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Castle Hill Inn
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </Accordion>
           </div>
         </section>
       </Container>

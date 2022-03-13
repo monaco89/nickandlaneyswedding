@@ -8,7 +8,7 @@ function TheProposal(): JSX.Element {
     <Layout title="The Story">
       <Container>
         <section className="mb-16 xs:mt-0 mt-6">
-          <h1 className="xs:leading-0 xs:ml-0 ml-16 mx-auto w-4/12 xs:w-full text-center xs:text-left text-black font-sans xs:text-7xl text-8xl font-extralight leading-11 sm:text-7xl md:text-7xl lg:leading-12">
+          <h1 className="xs:leading-0 mx-auto w-4/12 xs:w-full text-center xs:text-left text-black font-sans xs:text-7xl text-8xl font-extralight leading-11 sm:text-7xl md:text-7xl lg:leading-12">
             <span className="text-left">THE</span>
             <br />
             <span className="block xs:text-left text-right">STORY</span>
