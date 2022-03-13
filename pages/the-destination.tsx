@@ -175,11 +175,15 @@ function TheDestination(): JSX.Element {
                       Gurney's Newport Resort & Marina
                     </a>
                   </p>
-                  {/* <p className="m-4 text-3xl">
-                    If you are looking to rent a beach house close to where Nick
-                    and I will be staying we recommend the neighborhoods across
-                    from Scarborough state beach.
-                  </p> */}
+                  <p className="m-4 hover:underline text-3xl">
+                    <a
+                      href="https://www.hammettshotel.com/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Hammetts Hotel
+                    </a>
+                  </p>
                 </div>
               </div>
             </Accordion>
@@ -241,7 +245,7 @@ function TheDestination(): JSX.Element {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      Scarborough Beach (free)
+                      Scarborough Beach
                     </a>
                   </p>
                   <p className="m-4 hover:underline text-3xl">
@@ -251,6 +255,24 @@ function TheDestination(): JSX.Element {
                       rel="noreferrer"
                     >
                       Adventureland Mini Golf
+                    </a>
+                  </p>
+                  <p className="m-4 hover:underline text-3xl">
+                    <a
+                      href="https://adventurelandri.com/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Adventureland Mini Golf
+                    </a>
+                  </p>
+                  <p className="m-4 hover:underline text-3xl">
+                    <a
+                      href="https://www.warmwinds.com/surf-lessons"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Warm Winds Surf Rental/Lessons
                     </a>
                   </p>
                 </div>
