@@ -1,19 +1,59 @@
 import React from 'react';
+import { useInView } from 'react-intersection-observer';
+import { motion, useAnimation } from 'framer-motion';
 import Container from '../components/container';
 import Layout from '../components/layout';
+
+const Box = ({ children }: any) => {
+  const { inView, entry, ref } = useInView();
+  const animationControl = useAnimation();
+
+  if (inView) {
+    animationControl.start({
+      x: 0,
+      transition: {
+        delay: 0.7,
+      },
+    });
+  }
+
+  return (
+    <div ref={ref}>
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ duration: 0.3 }}
+        variants={{
+          visible: { opacity: 1, scale: 1 },
+          hidden: { opacity: 0, scale: 0 },
+        }}
+      >
+        {children}
+      </motion.div>
+    </div>
+  );
+};
 
 function TheEvents(): JSX.Element {
   return (
     <Layout title="The Events">
       <Container>
+        <h1 className="xs:leading-0 xs:block hidden mb-8 xs:ml-0 ml-16 w-8/12 xs:w-full text-center xs:text-left text-black font-sans xs:text-7xl text-8xl font-extralight leading-11 sm:text-7xl md:text-7xl lg:leading-12">
+          <span className="text-left">THE</span>
+          <span className="block xs:text-left text-right">EVENTS</span>
+        </h1>
         <div className="sticky lg:w-full">
           <div className="container flex flex-row mx-auto xs:p-1 w-full h-full sm:p-0">
-            <div className="w-50 right-2/3 xs:right-full h-auto border-r-4 border-black lg:block" />
+            <div className="w-50 right-2/3 xs:right-full xs:w-2 h-auto border-r-4 border-black lg:block" />
             <div>
               <div className="wrap items-center mb-40 ml-12 font-sans">
                 <div className="min-w-1/4 mb-4">
-                  <p className="text-16xl" style={{ fontFamily: 'orpheuspro' }}>
-                    <mark>SATURDAY, AUG 11</mark>
+                  <p
+                    className="w-fit xs:leading-13 text-16xl leading-6 border-b-8"
+                    style={{ fontFamily: 'orpheuspro' }}
+                  >
+                    SATURDAY, AUG 11
                   </p>
                 </div>
                 <div>
@@ -29,28 +69,61 @@ function TheEvents(): JSX.Element {
                 </div>
               </div>
 
-              <div className="wrap items-center ml-12 font-sans">
-                <div className="min-w-1/4 mb-4">
-                  <p className="text-16xl" style={{ fontFamily: 'orpheuspro' }}>
-                    <mark>THURSDAY, AUG 18</mark>
-                  </p>
-                </div>
-                <div>
-                  <h2 className="mb-1 text-3xl leading-10">WEDDING CEREMONY</h2>
-                  <p className="text-2xl">2:00 PM | South Ferry Church</p>
-                  <p className="mb-3 text-2xl">
-                    170 S Ferry Rd,
-                    <br />
-                    Saunderstown, RI 02874
-                  </p>
-                  <div className="w-2/3 xs:w-full text-xl">
-                    This is the most perfect little chapel on a hill but it does
-                    not have restrooms, so please remember to go before you
-                    arrive.
+              <Box>
+                <div className="wrap items-center mb-40 ml-12 font-sans">
+                  <div className="min-w-1/4 mb-4">
+                    <p
+                      className="w-fit xs:leading-13 text-16xl leading-6 border-b-8"
+                      style={{ fontFamily: 'orpheuspro' }}
+                    >
+                      THURSDAY, AUG 18
+                    </p>
+                  </div>
+                  <div>
+                    <h2 className="mb-1 text-3xl leading-10">
+                      WEDDING CEREMONY
+                    </h2>
+                    <p className="text-2xl">2:00 PM | South Ferry Church</p>
+                    <p className="mb-3 text-2xl">
+                      170 S Ferry Rd,
+                      <br />
+                      Saunderstown, RI 02874
+                    </p>
+                    <div className="w-2/3 xs:w-full text-xl">
+                      This is the most perfect little chapel on a hill but it
+                      does not have restrooms, so please remember to go before
+                      you arrive.
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Box>
 
+              <Box>
+                <div className="wrap items-center mb-40 ml-12 font-sans">
+                  <div className="min-w-1/4 mb-4">
+                    <p
+                      className="w-fit xs:leading-13 text-16xl leading-6 border-b-8"
+                      style={{ fontFamily: 'orpheuspro' }}
+                    >
+                      THURSDAY, AUG 18
+                    </p>
+                  </div>
+                  <div>
+                    <h2 className="mb-1 text-3xl leading-10">WELCOME PARTY</h2>
+                    <p className="text-2xl">2:00 PM | South Ferry Church</p>
+                    <p className="mb-3 text-2xl">
+                      170 S Ferry Rd,
+                      <br />
+                      Saunderstown, RI 02874
+                    </p>
+                    <div className="w-2/3 xs:w-full text-xl">
+                      This is the most perfect little chapel on a hill but it
+                      does not have restrooms, so please remember to go before
+                      you arrive.
+                    </div>
+                  </div>
+                </div>
+              </Box>
               <div className="wrap flex xs:flex-col items-center mb-12 p-12 xs:px-0 sm:px-0">
                 <div className="min-w-1/4 mb-8 text-center">
                   <p className="mb-0 text-gray-400 text-10xl xs:text-7xl font-bold sm:text-7xl">

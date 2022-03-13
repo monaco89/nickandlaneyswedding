@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import NextLink from 'next/link';
@@ -12,23 +13,25 @@ function NavItem({ href, text, border }: NavItemProps) {
   const isActive = router.asPath === href;
 
   return (
-    <NextLink href={href}>
-      <a
-        className={cn(
-          isActive ? 'underline' : 'no-underline',
-          'p-1 sm:px-3 sm:py-2 transition-all hover:underline',
-          border && 'border-2 rounded-none px-4'
-        )}
-      >
-        {text === 'tell us' ? (
-          <span style={{ border: '1px solid black', padding: '5px' }}>
-            {text}
-          </span>
-        ) : (
-          <span>{text}</span>
-        )}
-      </a>
-    </NextLink>
+    <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+      <NextLink href={href}>
+        <a
+          className={cn(
+            isActive ? 'underline' : 'no-underline',
+            'p-1 sm:px-3 sm:py-2 transition-all hover:underline',
+            border && 'border-2 rounded-none px-4'
+          )}
+        >
+          {text === 'tell us' ? (
+            <span style={{ border: '1px solid black', padding: '5px' }}>
+              {text}
+            </span>
+          ) : (
+            <span>{text}</span>
+          )}
+        </a>
+      </NextLink>
+    </motion.button>
   );
 }
 
