@@ -34,7 +34,7 @@ module.exports = {
       lineHeight: {
         tight: 1.2,
         11: '5rem',
-        12: '7rem',
+        12: '6rem',
         13: '3rem',
       },
       fontSize: {

@@ -1,49 +1,43 @@
 import React from 'react';
-import { useInView } from 'react-intersection-observer';
-import { motion, useAnimation } from 'framer-motion';
+import { motion } from 'framer-motion';
 import Container from '../components/container';
 import Layout from '../components/layout';
 
-const Box = ({ children }: any) => {
-  const { inView, entry, ref } = useInView();
-  const animationControl = useAnimation();
+const transition = {
+  duration: 0.7,
+  ease: [0.43, 0.13, 0.23, 0.96],
+};
 
-  if (inView) {
-    animationControl.start({
-      x: 0,
-      transition: {
-        delay: 0.7,
-      },
-    });
-  }
+const variants = {
+  visible: { opacity: 1, scale: 1, transition },
+  hidden: { opacity: 0, scale: 0 },
+};
 
+function Box({ children }: any) {
   return (
-    <div ref={ref}>
+    <div>
       <motion.div
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        transition={{ duration: 0.3 }}
-        variants={{
-          visible: { opacity: 1, scale: 1 },
-          hidden: { opacity: 0, scale: 0 },
-        }}
+        // transition={{ duration: 0.4 }}
+        variants={variants}
       >
         {children}
       </motion.div>
     </div>
   );
-};
+}
 
 function TheEvents(): JSX.Element {
   return (
     <Layout title="The Events">
       <Container>
-        <h1 className="xs:leading-0 xs:block hidden mb-8 xs:ml-0 ml-16 w-8/12 xs:w-full text-center xs:text-left text-black font-sans xs:text-7xl text-8xl font-extralight leading-11 sm:text-7xl md:text-7xl lg:leading-12">
+        <h1 className="xs:leading-0 xs:block hidden xs:ml-0 ml-16 w-8/12 xs:w-full text-center xs:text-left text-black font-sans xs:text-7xl text-8xl font-extralight leading-11 sm:text-7xl md:text-7xl lg:leading-12">
           <span className="text-left">THE</span>
           <span className="block xs:text-left text-right">EVENTS</span>
         </h1>
-        <div className="sticky lg:w-full">
+        <div className="sticky mt-8 lg:w-full">
           <div className="container flex flex-row mx-auto xs:p-1 w-full h-full sm:p-0">
             <div className="w-50 right-2/3 xs:right-full xs:w-2 h-auto border-r-4 border-black lg:block" />
             <div>

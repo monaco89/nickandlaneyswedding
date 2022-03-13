@@ -1,5 +1,6 @@
 import React from 'react';
 import cn from 'classnames';
+import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import useDelayedRender from 'use-delayed-render';
@@ -57,34 +58,64 @@ function MobileMenu(): JSX.Element {
           }}
         >
           <li style={{ transitionDelay: '150ms' }}>
-            <Link href="/the-story">
-              <a className="flex pb-4 w-auto">the story</a>
-            </Link>
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              <Link href="/the-story">
+                <a className="flex pb-4 w-auto">the story</a>
+              </Link>
+            </motion.button>
           </li>
           <li style={{ transitionDelay: '175ms' }}>
-            <Link href="/the-registry">
-              <a className="flex pb-4 w-auto">the registry</a>
-            </Link>
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              <Link href="/the-registry">
+                <a className="flex pb-4 w-auto">the registry</a>
+              </Link>
+            </motion.button>
           </li>
           <li style={{ transitionDelay: '200ms' }}>
-            <Link href="/the-proposal">
-              <a className="flex pb-4 w-auto">the proposal</a>
-            </Link>
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              <Link href="/the-proposal">
+                <a className="flex pb-4 w-auto">the proposal</a>
+              </Link>
+            </motion.button>
           </li>
           <li style={{ transitionDelay: '225ms' }}>
-            <Link href="/the-destination">
-              <a className="flex pb-4 w-auto">the destination</a>
-            </Link>
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              <Link href="/the-destination">
+                <a className="flex pb-4 w-auto">the destination</a>
+              </Link>
+            </motion.button>
           </li>
           <li style={{ transitionDelay: '250ms' }}>
-            <Link href="/the-events">
-              <a className="flex pb-4 w-auto">the events</a>
-            </Link>
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              <Link href="/the-events">
+                <a className="flex pb-4 w-auto">the events</a>
+              </Link>
+            </motion.button>
           </li>
           <li style={{ transitionDelay: '275ms' }}>
-            <Link href="/tell-us">
-              <a className="flex pb-4 w-auto">tell us</a>
-            </Link>
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              <Link href="/tell-us">
+                <a className="flex pb-4 w-auto">tell us</a>
+              </Link>{' '}
+            </motion.button>
           </li>
         </ul>
       )}
