@@ -113,6 +113,9 @@ function TheDestination(): JSX.Element {
             <Accordion i={1} expanded={expanded} setExpanded={setExpanded}>
               <div className="flex xs:flex-col items-center justify-around md:flex-row">
                 <div>
+                  <h4 className="xs:text-3xl text-6xl sm:text-3xl md:text-3xl">
+                    Narragansett
+                  </h4>
                   <p className="m-4 hover:underline text-3xl">
                     <a
                       href="https://thebreakhotel.com/"
@@ -151,6 +154,18 @@ function TheDestination(): JSX.Element {
                   </p>
                 </div>
                 <div>
+                  <h4 className="xs:text-3xl text-6xl sm:text-3xl md:text-3xl">
+                    Newport
+                  </h4>
+                  <p className="m-4 hover:underline text-3xl">
+                    <a
+                      href="https://www.eastislandreserve.com/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      East Island Reserve Hotel (close to reception)
+                    </a>
+                  </p>
                   <p className="m-4 hover:underline text-3xl">
                     <a
                       href="https://www.gurneysresorts.com/newport"
@@ -227,6 +242,15 @@ function TheDestination(): JSX.Element {
                       rel="noreferrer"
                     >
                       Scarborough Beach (free)
+                    </a>
+                  </p>
+                  <p className="m-4 hover:underline text-3xl">
+                    <a
+                      href="https://adventurelandri.com/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Adventureland Mini Golf
                     </a>
                   </p>
                 </div>
@@ -364,6 +388,24 @@ function TheDestination(): JSX.Element {
                   </p>
                   <p className="m-4 hover:underline text-3xl">
                     <a
+                      href="https://thebreakhotel.com/rooftop/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      The Break Hotel Rooftop Bar
+                    </a>
+                  </p>
+                  <p className="m-4 hover:underline text-3xl">
+                    <a
+                      href="https://www.tiltedbarnbrewery.com/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Tilted Barn Brewery
+                    </a>
+                  </p>
+                  <p className="m-4 hover:underline text-3xl">
+                    <a
                       href="https://www.davescoffee.com/"
                       target="_blank"
                       rel="noreferrer"
@@ -419,6 +461,24 @@ function TheDestination(): JSX.Element {
                       rel="noreferrer"
                     >
                       Castle Hill Inn
+                    </a>
+                  </p>
+                  <p className="m-4 hover:underline text-3xl">
+                    <a
+                      href="https://www.newportvineyards.com/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Newport Vineyards
+                    </a>
+                  </p>
+                  <p className="m-4 hover:underline text-3xl">
+                    <a
+                      href="https://newportlobstershack.com/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Newport Lobster Shack
                     </a>
                   </p>
                 </div>
