@@ -1,8 +1,8 @@
-import React from 'react';
-import { MapPin, Clock } from 'react-feather';
-import { motion } from 'framer-motion';
-import Container from '../components/container';
-import Layout from '../components/layout';
+import React from "react";
+import { MapPin, Clock } from "react-feather";
+import { motion } from "framer-motion";
+import Container from "../components/container";
+import Layout from "../components/layout";
 
 const transition = {
   duration: 0.7,
@@ -34,7 +34,7 @@ function TheEvents(): JSX.Element {
   return (
     <Layout title="The Events">
       <Container>
-        <h1 className="xs:leading-0 mb-20 text-center xs:text-left text-black font-custom font-sans xs:text-7xl text-8xl font-extralight leading-11 sm:text-7xl md:text-7xl">
+        <h1 className="xs:leading-0 mb-20 text-center xs:text-left text-black font-sans font-sans xs:text-7xl text-8xl font-extralight leading-11 sm:text-7xl md:text-7xl">
           Wedding Week Events
         </h1>
         <div className="sticky mt-8 lg:w-full">
@@ -45,7 +45,7 @@ function TheEvents(): JSX.Element {
                 <div className="min-w-1/4 mb-4">
                   <p
                     className="xs:text-18xl w-fit text-16xl xs:leading-13 leading-6 border-b-8 sm:leading-13"
-                    style={{ fontFamily: 'orpheuspro' }}
+                    style={{ fontFamily: "orpheuspro" }}
                   >
                     SATURDAY, AUG 11
                   </p>
@@ -70,7 +70,7 @@ function TheEvents(): JSX.Element {
                   <div className="min-w-1/4 mb-4">
                     <p
                       className="xs:text-18xl w-fit text-16xl xs:leading-13 leading-6 border-b-8 sm:leading-13 sm:leading-13"
-                      style={{ fontFamily: 'orpheuspro' }}
+                      style={{ fontFamily: "orpheuspro" }}
                     >
                       THURSDAY, AUG 17
                     </p>
@@ -81,8 +81,8 @@ function TheEvents(): JSX.Element {
                       <Clock
                         size={18}
                         className="inline"
-                        style={{ marginTop: '-0.2rem' }}
-                      />{' '}
+                        style={{ marginTop: "-0.2rem" }}
+                      />{" "}
                       6:00 PM | The Towers
                     </p>
                     <p className="mb-3 text-2xl">
@@ -95,8 +95,8 @@ function TheEvents(): JSX.Element {
                         <MapPin
                           size={18}
                           className="inline"
-                          style={{ marginTop: '-0.2rem' }}
-                        />{' '}
+                          style={{ marginTop: "-0.2rem" }}
+                        />{" "}
                         35 Ocean Rd,
                         <br />
                         Narragansett, RI 02882
@@ -117,7 +117,7 @@ function TheEvents(): JSX.Element {
                   <div className="min-w-1/4 mb-4">
                     <p
                       className="xs:text-18xl w-fit text-16xl xs:leading-13 leading-6 border-b-8 sm:leading-13 sm:leading-13"
-                      style={{ fontFamily: 'orpheuspro' }}
+                      style={{ fontFamily: "orpheuspro" }}
                     >
                       FRIDAY, AUG 18
                     </p>
@@ -137,8 +137,8 @@ function TheEvents(): JSX.Element {
                         <MapPin
                           size={18}
                           className="inline"
-                          style={{ marginTop: '-0.2rem' }}
-                        />{' '}
+                          style={{ marginTop: "-0.2rem" }}
+                        />{" "}
                         170 S Ferry Rd,
                         <br />
                         Saunderstown, RI 02874
@@ -159,7 +159,7 @@ function TheEvents(): JSX.Element {
                     <h2 className="mb-1 text-3xl leading-10">INTERMISSION</h2>
                     <div className="w-2/3 xs:w-full text-xl">
                       While the bride and groom take their first photos as
-                      husband and wife, we recommend you grab a glass of wine at{' '}
+                      husband and wife, we recommend you grab a glass of wine at{" "}
                       <a
                         href="https://goo.gl/maps/5evfwSJxofe8ZQuF8"
                         target="_blank"
@@ -168,8 +168,8 @@ function TheEvents(): JSX.Element {
                         <MapPin
                           size={18}
                           className="inline"
-                          style={{ marginTop: '-0.2rem' }}
-                        />{' '}
+                          style={{ marginTop: "-0.2rem" }}
+                        />{" "}
                         <mark>Greenvale Vineyards</mark>
                       </a>
                     </div>
@@ -194,8 +194,8 @@ function TheEvents(): JSX.Element {
                         <MapPin
                           size={18}
                           className="inline"
-                          style={{ marginTop: '-0.2rem' }}
-                        />{' '}
+                          style={{ marginTop: "-0.2rem" }}
+                        />{" "}
                         3 Frank Coelho Dr,
                         <br />
                         Portsmouth, RI 02871
@@ -214,7 +214,7 @@ function TheEvents(): JSX.Element {
                   <div className="min-w-1/4 mb-4">
                     <p
                       className="xs:text-18xl w-fit text-16xl xs:leading-13 leading-6 border-b-8 sm:leading-13 sm:leading-13"
-                      style={{ fontFamily: 'orpheuspro' }}
+                      style={{ fontFamily: "orpheuspro" }}
                     >
                       SATURDAY, AUG 19
                     </p>

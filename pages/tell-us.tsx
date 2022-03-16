@@ -89,7 +89,9 @@ function ThePlan(): JSX.Element {
     <Layout title="Tell Us">
       <Container>
         <h1 className="xs:py-10 py-20 text-center font-sans xs:text-2xl text-3xl sm:py-10 sm:text-2xl">
-          Tell us about your plans! We would love to spend time with everyone
+          Tell us about your plans!
+          <br />
+          We would love to spend time with everyone
           <br />
           who plans on extending their trip before the wedding!
         </h1>
