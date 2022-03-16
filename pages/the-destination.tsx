@@ -1,11 +1,11 @@
-import React from 'react';
-import Image from 'next/image';
-import Container from '../components/container';
-import Layout from '../components/layout';
-import Accordion from '../components/Accordion';
-import ThingsImage from '../public/assets/things.jpg';
-import HouseImage from '../public/assets/house.jpg';
-import FoodImage from '../public/assets/food.jpg';
+import React from "react";
+import Image from "next/image";
+import Container from "../components/container";
+import Layout from "../components/layout";
+import Accordion from "../components/Accordion";
+import ThingsImage from "../public/assets/things.jpg";
+import HouseImage from "../public/assets/house.jpg";
+import FoodImage from "../public/assets/food.jpg";
 
 // const transition = {
 //   duration: 2,
@@ -63,10 +63,10 @@ function TheDestination(): JSX.Element {
               Your browser does not support the video tag.
             </video>
             <div className="container__video__content">
-              <h1 className="xs:mb-0 mb-10 xs:mt-10 text-white xs:text-5xl text-8xl sm:text-4xl md:text-4xl">
+              <h1 className="xs:mb-0 mb-10 xs:mt-10 text-white xs:text-15xl text-8xl sm:text-15xl md:text-15xl">
                 JOIN US IN
               </h1>
-              <h2 className="mb-0 mb-4 text-center text-white font-custom text-14xl xs:text-6xl tracking-widest xs:leading-13 sm:text-6xl md:text-5xl">
+              <h2 className="mb-0 mb-4 text-center text-white font-custom text-14xl xs:text-15xl tracking-widest xs:leading-13 sm:text-15xl md:text-15xl">
                 Rhode Island
               </h2>
             </div>
@@ -76,7 +76,7 @@ function TheDestination(): JSX.Element {
           <div className="flex xs:flex-col-reverse items-center xs:mt-0 mt-20">
             <div
               className="xs:p-10 pb-32 pt-16 px-28 bg-white sm:pb-16 sm:px-16 lg:h-full"
-              style={{ maxWidth: '755px' }}
+              style={{ maxWidth: "755px" }}
             >
               <h3 className="text-13xl xs:text-4xl sm:text-4xl md:text-4xl">
                 WHERE TO STAY
@@ -90,12 +90,12 @@ function TheDestination(): JSX.Element {
                 type="button"
                 className={`text-black-500 px-10 py-2 hover:text-black text-xl font-bold border-2 border-primary transition duration-300 ease-in-out ${
                   expanded === 1
-                    ? 'bg-primary hover:bg-transparent'
-                    : 'bg-inherit hover:bg-primary'
+                    ? "bg-primary hover:bg-transparent"
+                    : "bg-inherit hover:bg-primary"
                 }`}
                 onClick={() => setExpanded(expanded === 1 ? false : 1)}
               >
-                {expanded === 1 ? 'Close' : 'View'}
+                {expanded === 1 ? "Close" : "View"}
               </button>
             </div>
             <div className="w-full h-101 xs:h-101 sm:h-72 md:h-96">
@@ -201,7 +201,7 @@ function TheDestination(): JSX.Element {
             </div>
             <div
               className="xs:p-10 pb-32 pt-16 px-28 bg-white sm:pb-16 sm:px-16 lg:h-full"
-              style={{ maxWidth: '755px' }}
+              style={{ maxWidth: "755px" }}
             >
               <h3 className="text-13xl xs:text-4xl sm:text-4xl md:text-4xl">
                 WHAT TO DO
@@ -214,12 +214,12 @@ function TheDestination(): JSX.Element {
                 type="button"
                 className={`text-black-500 px-10 py-2 hover:text-black text-xl font-bold border-2 border-primary transition duration-300 ease-in-out ${
                   expanded === 2
-                    ? 'bg-primary hover:bg-transparent'
-                    : 'bg-inherit hover:bg-primary'
+                    ? "bg-primary hover:bg-transparent"
+                    : "bg-inherit hover:bg-primary"
                 }`}
                 onClick={() => setExpanded(expanded === 2 ? false : 2)}
               >
-                {expanded === 2 ? 'Close' : 'View'}
+                {expanded === 2 ? "Close" : "View"}
               </button>
             </div>
           </div>
@@ -246,15 +246,6 @@ function TheDestination(): JSX.Element {
                       rel="noreferrer"
                     >
                       Scarborough Beach
-                    </a>
-                  </p>
-                  <p className="m-4 hover:underline text-3xl">
-                    <a
-                      href="https://adventurelandri.com/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Adventureland Mini Golf
                     </a>
                   </p>
                   <p className="m-4 hover:underline text-3xl">
@@ -324,7 +315,7 @@ function TheDestination(): JSX.Element {
           <div className="flex xs:flex-col-reverse items-center mt-40">
             <div
               className="xs:p-10 pb-32 pt-16 px-28 bg-white sm:pb-16 sm:px-16 lg:h-full"
-              style={{ maxWidth: '755px' }}
+              style={{ maxWidth: "755px" }}
             >
               <h3 className="text-13xl xs:text-4xl sm:text-4xl md:text-4xl">
                 WHERE TO EAT + DRINK
@@ -337,12 +328,12 @@ function TheDestination(): JSX.Element {
                 type="button"
                 className={`text-black-500 px-10 py-2 hover:text-black text-xl font-bold border-2 border-primary transition duration-300 ease-in-out ${
                   expanded === 3
-                    ? 'bg-primary hover:bg-transparent'
-                    : 'bg-inherit hover:bg-primary'
+                    ? "bg-primary hover:bg-transparent"
+                    : "bg-inherit hover:bg-primary"
                 }`}
                 onClick={() => setExpanded(expanded === 3 ? false : 3)}
               >
-                {expanded === 3 ? 'Close' : 'View'}
+                {expanded === 3 ? "Close" : "View"}
               </button>
             </div>
             <div className="w-full h-101 xs:h-101 sm:h-72 md:h-96">
