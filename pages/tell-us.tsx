@@ -1,43 +1,43 @@
-import React from 'react';
-import { useMutation } from '@apollo/client';
-import ReCAPTCHA from 'react-google-recaptcha';
-import Container from '../components/container';
-import Layout from '../components/layout';
-import Input from '../components/Input';
-import RadioInput from '../components/RadioInput';
-import { PLANS_MUTATION } from '../graphql/PlansMutation';
+import React from "react";
+import { useMutation } from "@apollo/client";
+import ReCAPTCHA from "react-google-recaptcha";
+import Container from "../components/container";
+import Layout from "../components/layout";
+import Input from "../components/Input";
+import RadioInput from "../components/RadioInput";
+import { PLANS_MUTATION } from "../graphql/PlansMutation";
 
 function ThePlan(): JSX.Element {
   const [submitted, setSubmitted] = React.useState<boolean>(false);
   const [isSubmitting, setSubmitting] = React.useState<boolean>(false);
-  const [guests, setGuests] = React.useState<string>('');
-  const [brunch, setBrunch] = React.useState<string>('');
-  const [when, setWhen] = React.useState<string>('');
-  const [where, setWhere] = React.useState<string>('');
-  const [transportation, setTransportation] = React.useState<string>('');
-  const [recaptcha, setRecaptcha] = React.useState<boolean>(false);
+  const [guests, setGuests] = React.useState<string>("");
+  const [brunch, setBrunch] = React.useState<string>("");
+  const [when, setWhen] = React.useState<string>("");
+  const [where, setWhere] = React.useState<string>("");
+  const [transportation, setTransportation] = React.useState<string>("");
+  const [recaptcha, setRecaptcha] = React.useState<string>("");
   const [error, setError] = React.useState<string | null>(null);
   const [mutatePlan] = useMutation(PLANS_MUTATION);
 
   const isValidated = () => {
-    let message = '';
+    let message = "";
     if (!recaptcha) {
-      message = 'Please verify recaptcha';
+      message = "Please verify recaptcha";
     }
     if (!guests) {
-      message = 'Name of guests is required';
+      message = "Name of guests is required";
     }
     if (!when) {
-      message = 'Select when you are arriving';
+      message = "Select when you are arriving";
     }
     if (!where) {
-      message = 'Enter where you are staying';
+      message = "Enter where you are staying";
     }
     if (!brunch) {
-      message = 'Select if you are coming to brunch';
+      message = "Select if you are coming to brunch";
     }
     if (!transportation) {
-      message = 'Select if you will be using provided transportation';
+      message = "Select if you will be using provided transportation";
     }
 
     if (message) {
@@ -50,7 +50,7 @@ function ThePlan(): JSX.Element {
 
   const handleRecaptcha = (e: any) => {
     if (e) {
-      setRecaptcha(true);
+      setRecaptcha(e);
     }
   };
 
@@ -61,11 +61,6 @@ function ThePlan(): JSX.Element {
 
     if (!isValidated()) {
       setSubmitting(false);
-      return null;
-    }
-
-    if (!recaptcha) {
-      setError('Something went wrong. Try again later.');
       return null;
     }
 
@@ -85,7 +80,7 @@ function ThePlan(): JSX.Element {
 
       setSubmitted(true);
     } catch (err: any) {
-      setError(err.message);
+      setError("Something went wrong. Try again later.");
     }
 
     setSubmitting(false);
@@ -185,7 +180,7 @@ function ThePlan(): JSX.Element {
                   className="mt-6 px-4 py-2 w-full text-white font-sans text-lg font-semibold tracking-wide hover:bg-accent-7 bg-secondary rounded-lg"
                   disabled={isSubmitting}
                 >
-                  {isSubmitting ? 'Submitting' : 'Submit'}
+                  {isSubmitting ? "Submitting" : "Submit"}
                 </button>
                 {error && (
                   <p className="py-3 text-center text-red-700 text-3xl font-bold">
