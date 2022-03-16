@@ -52,6 +52,12 @@ mark {
   width: 100%;
 }
 
+@media (max-width: 767.98px) {
+  .container__video__player {
+    height: 500px;
+  }
+}
+
 .container__video {
   /* Used to position the video and content */
   position: relative;

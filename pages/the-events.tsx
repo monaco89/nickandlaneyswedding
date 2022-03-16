@@ -39,12 +39,12 @@ function TheEvents(): JSX.Element {
         </h1>
         <div className="sticky mt-8 lg:w-full">
           <div className="container flex flex-row mx-auto xs:p-1 w-full h-full sm:p-0">
-            <div className="w-50 right-2/3 xs:right-full xs:w-2 h-auto border-r-4 border-black lg:block" />
+            <div className="right-2/3 xs:right-full xs:w-2 w-50 h-auto border-r-4 border-black lg:block" />
             <div>
-              <div className="wrap items-center mb-40 ml-12 font-sans">
+              <div className="wrap items-center xs:mb-32 mb-40 ml-12 font-sans">
                 <div className="min-w-1/4 mb-4">
                   <p
-                    className="w-fit xs:leading-13 text-16xl leading-6 border-b-8"
+                    className="xs:text-18xl w-fit text-16xl xs:leading-13 leading-6 border-b-8 sm:leading-13"
                     style={{ fontFamily: 'orpheuspro' }}
                   >
                     SATURDAY, AUG 11
@@ -66,10 +66,10 @@ function TheEvents(): JSX.Element {
               </div>
 
               <Box>
-                <div className="wrap items-center mb-40 ml-12 font-sans">
+                <div className="wrap items-center xs:mb-32 mb-40 ml-12 font-sans">
                   <div className="min-w-1/4 mb-4">
                     <p
-                      className="w-fit xs:leading-13 text-16xl leading-6 border-b-8"
+                      className="xs:text-18xl w-fit text-16xl xs:leading-13 leading-6 border-b-8 sm:leading-13 sm:leading-13"
                       style={{ fontFamily: 'orpheuspro' }}
                     >
                       THURSDAY, AUG 17
@@ -116,7 +116,7 @@ function TheEvents(): JSX.Element {
                 <div className="wrap items-center mb-20 ml-12 font-sans">
                   <div className="min-w-1/4 mb-4">
                     <p
-                      className="w-fit xs:leading-13 text-16xl leading-6 border-b-8"
+                      className="xs:text-18xl w-fit text-16xl xs:leading-13 leading-6 border-b-8 sm:leading-13 sm:leading-13"
                       style={{ fontFamily: 'orpheuspro' }}
                     >
                       FRIDAY, AUG 18
@@ -178,7 +178,7 @@ function TheEvents(): JSX.Element {
               </Box>
 
               <Box>
-                <div className="wrap items-center mb-40 ml-12 font-sans">
+                <div className="wrap items-center xs:mb-32 mb-40 ml-12 font-sans">
                   <div>
                     <h2 className="mb-1 text-3xl leading-10">
                       WEDDING RECEPTION
@@ -213,7 +213,7 @@ function TheEvents(): JSX.Element {
                 <div className="wrap items-center mb-20 ml-12 font-sans">
                   <div className="min-w-1/4 mb-4">
                     <p
-                      className="w-fit xs:leading-13 text-16xl leading-6 border-b-8"
+                      className="xs:text-18xl w-fit text-16xl xs:leading-13 leading-6 border-b-8 sm:leading-13 sm:leading-13"
                       style={{ fontFamily: 'orpheuspro' }}
                     >
                       SATURDAY, AUG 19

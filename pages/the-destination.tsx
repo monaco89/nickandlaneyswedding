@@ -66,7 +66,7 @@ function TheDestination(): JSX.Element {
               <h1 className="xs:mb-0 mb-10 xs:mt-10 text-white xs:text-5xl text-8xl sm:text-4xl md:text-4xl">
                 JOIN US IN
               </h1>
-              <h2 className="xs:leading-13 mb-0 mb-4 text-center text-white font-custom text-14xl xs:text-6xl tracking-widest sm:text-6xl md:text-5xl">
+              <h2 className="mb-0 mb-4 text-center text-white font-custom text-14xl xs:text-6xl tracking-widest xs:leading-13 sm:text-6xl md:text-5xl">
                 Rhode Island
               </h2>
             </div>
@@ -75,7 +75,7 @@ function TheDestination(): JSX.Element {
         <section className="mt-20 my-12 text-center xs:text-left">
           <div className="flex xs:flex-col-reverse items-center xs:mt-0 mt-20">
             <div
-              className="xs:p-10 pb-32 pt-16 px-28 bg-white lg:h-full"
+              className="xs:p-10 pb-32 pt-16 px-28 bg-white sm:pb-16 sm:px-16 lg:h-full"
               style={{ maxWidth: '755px' }}
             >
               <h3 className="text-13xl xs:text-4xl sm:text-4xl md:text-4xl">
@@ -111,9 +111,9 @@ function TheDestination(): JSX.Element {
           </div>
           <div className="mt-8 p-8">
             <Accordion i={1} expanded={expanded} setExpanded={setExpanded}>
-              <div className="flex xs:flex-col items-center justify-around md:flex-row">
+              <div className="flex xs:flex-col items-start justify-around md:flex-row">
                 <div>
-                  <h4 className="xs:text-3xl text-6xl sm:text-3xl md:text-3xl">
+                  <h4 className="xs:text-3xl text-6xl font-bold sm:text-4xl md:text-4xl">
                     Narragansett
                   </h4>
                   <p className="m-4 hover:underline text-3xl">
@@ -154,7 +154,7 @@ function TheDestination(): JSX.Element {
                   </p>
                 </div>
                 <div>
-                  <h4 className="xs:text-3xl text-6xl sm:text-3xl md:text-3xl">
+                  <h4 className="xs:text-3xl text-6xl font-bold sm:text-4xl md:text-4xl">
                     Newport
                   </h4>
                   <p className="m-4 hover:underline text-3xl">
@@ -200,7 +200,7 @@ function TheDestination(): JSX.Element {
               </div>
             </div>
             <div
-              className="xs:p-10 pb-32 pt-16 px-28 bg-white lg:h-full"
+              className="xs:p-10 pb-32 pt-16 px-28 bg-white sm:pb-16 sm:px-16 lg:h-full"
               style={{ maxWidth: '755px' }}
             >
               <h3 className="text-13xl xs:text-4xl sm:text-4xl md:text-4xl">
@@ -225,9 +225,9 @@ function TheDestination(): JSX.Element {
           </div>
           <div className="mt-8 p-8">
             <Accordion i={2} expanded={expanded} setExpanded={setExpanded}>
-              <div className="flex xs:flex-col items-center justify-around md:flex-row">
+              <div className="flex xs:flex-col items-start justify-around md:flex-row">
                 <div>
-                  <h4 className="xs:text-3xl text-6xl sm:text-3xl md:text-3xl">
+                  <h4 className="xs:text-3xl text-6xl font-bold sm:text-4xl md:text-4xl">
                     Narragansett
                   </h4>
                   <p className="m-4 hover:underline text-3xl">
@@ -277,7 +277,7 @@ function TheDestination(): JSX.Element {
                   </p>
                 </div>
                 <div>
-                  <h4 className="xs:text-3xl text-6xl sm:text-3xl md:text-3xl">
+                  <h4 className="xs:text-3xl text-6xl font-bold sm:text-4xl md:text-4xl">
                     Newport
                   </h4>
                   <p className="m-4 hover:underline text-3xl">
@@ -323,7 +323,7 @@ function TheDestination(): JSX.Element {
 
           <div className="flex xs:flex-col-reverse items-center mt-40">
             <div
-              className="xs:p-10 pb-32 pt-16 px-28 bg-white lg:h-full"
+              className="xs:p-10 pb-32 pt-16 px-28 bg-white sm:pb-16 sm:px-16 lg:h-full"
               style={{ maxWidth: '755px' }}
             >
               <h3 className="text-13xl xs:text-4xl sm:text-4xl md:text-4xl">
@@ -358,9 +358,9 @@ function TheDestination(): JSX.Element {
           </div>
           <div className="mt-8 p-8">
             <Accordion i={3} expanded={expanded} setExpanded={setExpanded}>
-              <div className="flex xs:flex-col items-center justify-around md:flex-row">
+              <div className="flex xs:flex-col items-start justify-around md:flex-row">
                 <div>
-                  <h4 className="xs:text-3xl text-6xl sm:text-3xl md:text-3xl">
+                  <h4 className="xs:text-3xl text-6xl font-bold sm:text-4xl md:text-4xl">
                     Narragansett
                   </h4>
                   <p className="m-4 hover:underline text-3xl">
@@ -473,7 +473,7 @@ function TheDestination(): JSX.Element {
                   </p>
                 </div>
                 <div>
-                  <h4 className="xs:text-3xl text-6xl sm:text-3xl md:text-3xl">
+                  <h4 className="xs:text-3xl text-6xl font-bold sm:text-4xl md:text-4xl">
                     Newport
                   </h4>
                   <p className="m-4 hover:underline text-3xl">

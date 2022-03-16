@@ -16,36 +16,27 @@ import pic10 from '../public/assets/10.jpg';
 import pic11 from '../public/assets/11.jpg';
 import pic13 from '../public/assets/13.jpg';
 import pic14 from '../public/assets/14.jpg';
-import lighthouseImage from '../public/assets/lighthouse.jpg';
+import lighthouseImage from '../public/assets/theproposal_hero.jpg';
 
 function TheProposal(): JSX.Element {
   return (
     <Layout title="The Proposal">
-      <div className="grid gap-0 xs:grid-cols-1 grid-cols-5 grid-rows-1 items-center mb-10 sm:grid-cols-1 sm:px-8">
-        <div className="text-center">
-          <p className="mb-0 xs:mb-6 mx-auto px-10 py-2 w-max text-3xl xs:text-xl bg-white transform -rotate-90 xs:rotate-0 sm:mb-6 sm:rotate-0">
-            AUGUST 02, 2021
-          </p>
+      <div className="relative mb-20 p-3 w-full h-auto">
+        <h1 className="sm:leading-14 absolute z-10 left-0 right-0 ml-auto xs:mr-10 mr-60 mt-8 w-max text-left text-white font-sans xs:text-16xl text-8xl font-extralight xs:leading-10 leading-11 sm:mr-28 sm:mt-0 sm:mt-8 sm:text-7xl">
+          THE
+          <br /> PROPOSAL
+        </h1>
+        <h2 className="absolute z-10 left-0 right-0 ml-auto mr-52 xs:mr-8 xs:mt-32 mt-44 w-max text-right text-white font-custom xs:text-4xl text-7xl sm:mr-32 sm:mt-36 sm:text-6xl">
+          at Castle Hill Inn
+        </h2>
+        <div className="relative mx-auto w-4/5 xs:w-full h-101">
+          <Image
+            src={lighthouseImage}
+            alt="Castle Hill Inn"
+            layout="fill"
+            objectFit="cover"
+          />
         </div>
-        <div className="relative col-span-3 p-3 w-full h-auto border-4 border-white">
-          <h1 className="absolute z-10 left-0 right-0 xs:mt-0 mt-8 mx-auto w-max text-center text-black font-sans text-15xl xs:text-5xl font-extralight sm:mt-0 sm:text-5xl">
-            The Proposal
-          </h1>
-          <h2 className="absolute z-10 -right-40 left-0 xs:right-0 xs:mt-14 mt-28 mx-auto w-max text-center text-black font-custom xs:text-3xl text-6xl sm:mt-14 sm:text-3xl">
-            at Castle Hill Inn
-          </h2>
-          <div className="relative w-full h-100 xs:h-56 sm:h-56 md:h-96">
-            <Image
-              src={lighthouseImage}
-              alt="Castle Hill Inn"
-              layout="fill"
-              objectFit="cover"
-            />
-          </div>
-        </div>
-        <p className="mt-0 xs:mt-6 mx-auto px-10 py-2 w-max text-3xl xs:text-xl bg-white transform xs:rotate-0 rotate-90 sm:mt-6 sm:text-xl sm:rotate-0">
-          NEWPORT, RI
-        </p>
       </div>
       <Container>
         <section className="mb-12">
