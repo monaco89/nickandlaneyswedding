@@ -64,6 +64,11 @@ function ThePlan(): JSX.Element {
       return null;
     }
 
+    if (!recaptcha) {
+      setError('Something went wrong. Try again later.');
+      return null;
+    }
+
     try {
       await mutatePlan({
         variables: {
@@ -73,6 +78,7 @@ function ThePlan(): JSX.Element {
             when,
             where,
             transportation,
+            token: recaptcha,
           },
         },
       });
