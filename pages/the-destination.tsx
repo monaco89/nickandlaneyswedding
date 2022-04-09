@@ -155,7 +155,7 @@ function TheDestination(): JSX.Element {
                 </div>
                 <div>
                   <h4 className="xs:text-3xl text-6xl font-bold sm:text-4xl md:text-4xl">
-                    Newport
+                    Newport & Portsmouth
                   </h4>
                   <p className="m-4 hover:underline text-3xl">
                     <a
@@ -269,7 +269,7 @@ function TheDestination(): JSX.Element {
                 </div>
                 <div>
                   <h4 className="xs:text-3xl text-6xl font-bold sm:text-4xl md:text-4xl">
-                    Newport
+                    Newport & Portsmouth
                   </h4>
                   <p className="m-4 hover:underline text-3xl">
                     <a
@@ -465,7 +465,7 @@ function TheDestination(): JSX.Element {
                 </div>
                 <div>
                   <h4 className="xs:text-3xl text-6xl font-bold sm:text-4xl md:text-4xl">
-                    Newport
+                    Newport & Portsmouth
                   </h4>
                   <p className="m-4 hover:underline text-3xl">
                     <a
