@@ -7,20 +7,6 @@ import ThingsImage from "../public/assets/things.jpg";
 import HouseImage from "../public/assets/house.jpg";
 import FoodImage from "../public/assets/food.jpg";
 
-// const transition = {
-//   duration: 2,
-//   ease: [0.43, 0.13, 0.23, 0.96],
-// };
-
-// const variants = {
-//   exit: { y: '50%', opacity: 0, transition },
-//   enter: {
-//     y: '0%',
-//     opacity: 1,
-//     transition,
-//   },
-// };
-
 function TheDestination(): JSX.Element {
   const [expanded, setExpanded] = React.useState<false | number>(0);
 
@@ -32,22 +18,6 @@ function TheDestination(): JSX.Element {
         }
       `}</style>
       <Container>
-        {/* <p className="xs:block hidden text-center text-white xs:text-4xl text-4xl text-7xl sm:block sm:text-4xl md:text-4xl">
-          join us in
-        </p> */}
-        {/* <h1 className="xs:leading-0 xs:ml-0 xs:ml-12 ml-16 text-center xs:text-left text-black font-sans text-10xl xs:text-7xl font-extralight leading-11 sm:text-7xl md:text-7xl lg:leading-12">
-          <span className="text-left">THE</span>
-          <br />
-          <span className="block xs:text-left">Destination</span>
-        </h1> */}
-        {/* <div className="">
-          <p className="text-white xs:text-5xl text-7xl sm:text-4xl md:text-4xl">
-            join us in
-          </p>
-          <h2 className="xs:leading-13 mb-0 mb-4 text-white font-custom xs:text-6xl text-8xl tracking-widest sm:text-6xl md:text-5xl">
-            Rhode Island
-          </h2>
-        </div> */}
         <div className="container__video">
           <div>
             <video
@@ -66,7 +36,7 @@ function TheDestination(): JSX.Element {
               <h1 className="xs:mb-0 mb-10 xs:mt-10 text-white xs:text-15xl text-8xl sm:text-15xl md:text-15xl">
                 JOIN US IN
               </h1>
-              <h2 className="mb-0 mb-4 text-center text-white font-custom text-14xl xs:text-15xl tracking-widest xs:leading-13 sm:text-15xl md:text-15xl">
+              <h2 className="text-19xl mb-0 mb-4 text-center text-white font-custom xs:text-15xl tracking-widest xs:leading-13 sm:text-15xl md:text-15xl">
                 Rhode Island
               </h2>
             </div>
@@ -82,9 +52,10 @@ function TheDestination(): JSX.Element {
                 WHERE TO STAY
               </h3>
               <p className="mb-4 mt-6 xs:px-0 px-10 text-2xl xs:text-xl sm:px-0 sm:text-xl">
-                We recommand staying in Narragansett if you're extending your
-                trip for more days prior the wedding. If you are only coming for
-                the wedding, we suggest our Portsmouth hotel.
+                If you plan on coming to RI days prior to the wedding, we
+                recommend you stay in Narragansett! If you are only coming for
+                the wedding day, we recommend checking out our Newport and
+                Portsmouth hotels.
               </p>
               <button
                 type="button"
@@ -207,8 +178,11 @@ function TheDestination(): JSX.Element {
                 WHAT TO DO
               </h3>
               <p className="mb-4 mt-6 xs:px-0 px-20 text-2xl xs:text-xl sm:px-0 sm:text-xl">
-                We have put together a list of some of our favorite coffee
-                shops, resturants, bar and of course seafood spots.
+                Narragansett and Newport offer just about everything. But our
+                perfect day would be hanging out at The Town Beach in
+                Narragansett, grabbing some cocktails at Coast Guard House, then
+                in the evening heading to Spain of Narragansett for dinner on
+                the patio.
               </p>
               <button
                 type="button"
@@ -300,11 +274,29 @@ function TheDestination(): JSX.Element {
                   </p>
                   <p className="m-4 hover:underline text-3xl">
                     <a
-                      href="https://www.discovernewport.org/listing/jamestown-newport-ferry/701/"
+                      href="https://www.jamestownnewportferry.com/destinations"
                       target="_blank"
                       rel="noreferrer"
                     >
                       Ferry to Rose Island and Jamestown
+                    </a>
+                  </p>
+                  <p className="m-4 hover:underline text-3xl">
+                    <a
+                      href="https://gansettcruises.com"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Gansett Cruises
+                    </a>
+                  </p>
+                  <p className="m-4 hover:underline text-3xl">
+                    <a
+                      href="https://www.cruisenewport.com"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Classic Cruises of Newport
                     </a>
                   </p>
                 </div>
@@ -321,8 +313,9 @@ function TheDestination(): JSX.Element {
                 WHERE TO EAT + DRINK
               </h3>
               <p className="mb-4 mt-6 xs:px-0 px-20 text-2xl xs:text-xl sm:px-0 sm:text-xl">
-                We have put together a list of some of our favorite coffee
-                shops, resturants, bar and of course seafood spots.
+                Here are some of our favorite coffee shops, restaurants, bars,
+                and of course – seafood spots. P.S Chaplins has the best Lobster
+                roll!!
               </p>
               <button
                 type="button"
@@ -369,7 +362,7 @@ function TheDestination(): JSX.Element {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      Spains of Narragansett
+                      Spain of Narragansett
                     </a>
                   </p>
                   <p className="m-4 hover:underline text-3xl">

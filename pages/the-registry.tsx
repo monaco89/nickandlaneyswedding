@@ -1,7 +1,7 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import Container from '../components/container';
-import Layout from '../components/layout';
+import React from "react";
+import { motion } from "framer-motion";
+import Container from "../components/container";
+import Layout from "../components/layout";
 
 const transition = {
   duration: 2,
@@ -9,9 +9,9 @@ const transition = {
 };
 
 const variants = {
-  exit: { y: '50%', opacity: 0, transition },
+  exit: { y: "50%", opacity: 0, transition },
   enter: {
-    y: '0%',
+    y: "0%",
     opacity: 1,
     transition,
   },
