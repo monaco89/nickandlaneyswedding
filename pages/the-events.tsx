@@ -44,7 +44,7 @@ function TheEvents(): JSX.Element {
               <div className="wrap items-center xs:mb-32 mb-40 ml-12 font-sans">
                 <div className="min-w-1/4 mb-4">
                   <p
-                    className="xs:text-18xl w-fit text-16xl xs:leading-13 leading-6 border-b-8 sm:leading-13"
+                    className="w-fit text-16xl xs:text-18xl xs:leading-13 leading-6 border-b-8 sm:leading-13"
                     style={{ fontFamily: "orpheuspro" }}
                   >
                     SATURDAY, AUG 11
@@ -52,9 +52,7 @@ function TheEvents(): JSX.Element {
                 </div>
                 <div>
                   <h2 className="mb-3 text-3xl leading-10">
-                    N + D ARRIVE
-                    <br />
-                    in Narragansett, RI
+                    N + D ARRIVE IN NARRAGANSETT, RI
                   </h2>
                   <div className="w-2/3 xs:w-full text-xl">
                     Nick and Delaney will be staying in Narragansett near
@@ -69,21 +67,23 @@ function TheEvents(): JSX.Element {
                 <div className="wrap items-center xs:mb-32 mb-40 ml-12 font-sans">
                   <div className="min-w-1/4 mb-4">
                     <p
-                      className="xs:text-18xl w-fit text-16xl xs:leading-13 leading-6 border-b-8 sm:leading-13 sm:leading-13"
+                      className="w-fit text-16xl xs:text-18xl xs:leading-13 leading-6 border-b-8 sm:leading-13 sm:leading-13"
                       style={{ fontFamily: "orpheuspro" }}
                     >
                       THURSDAY, AUG 17
                     </p>
                   </div>
                   <div>
-                    <h2 className="mb-1 text-3xl leading-10">WELCOME PARTY</h2>
+                    <h2 className="mb-1 text-3xl leading-10">
+                      WELCOME COCKTAILS
+                    </h2>
                     <p className="text-2xl">
                       <Clock
                         size={18}
                         className="inline"
                         style={{ marginTop: "-0.2rem" }}
                       />{" "}
-                      6:00 PM | The Towers
+                      7:00 PM | The Towers
                     </p>
                     <p className="mb-3 text-2xl">
                       <a
@@ -106,7 +106,7 @@ function TheEvents(): JSX.Element {
                       We welcome all of our guests to join us for an evening of
                       sips & sweets at one of our favorite places in Rhode
                       Island. Please keep in mind there is only street parking
-                      available will be limited.
+                      available.
                     </div>
                   </div>
                 </div>
@@ -116,7 +116,7 @@ function TheEvents(): JSX.Element {
                 <div className="wrap items-center mb-20 ml-12 font-sans">
                   <div className="min-w-1/4 mb-4">
                     <p
-                      className="xs:text-18xl w-fit text-16xl xs:leading-13 leading-6 border-b-8 sm:leading-13 sm:leading-13"
+                      className="w-fit text-16xl xs:text-18xl xs:leading-13 leading-6 border-b-8 sm:leading-13 sm:leading-13"
                       style={{ fontFamily: "orpheuspro" }}
                     >
                       FRIDAY, AUG 18
@@ -213,7 +213,7 @@ function TheEvents(): JSX.Element {
                 <div className="wrap items-center mb-20 ml-12 font-sans">
                   <div className="min-w-1/4 mb-4">
                     <p
-                      className="xs:text-18xl w-fit text-16xl xs:leading-13 leading-6 border-b-8 sm:leading-13 sm:leading-13"
+                      className="w-fit text-16xl xs:text-18xl xs:leading-13 leading-6 border-b-8 sm:leading-13 sm:leading-13"
                       style={{ fontFamily: "orpheuspro" }}
                     >
                       SATURDAY, AUG 19
@@ -223,7 +223,9 @@ function TheEvents(): JSX.Element {
                     <h2 className="mb-1 text-3xl leading-10">
                       FAREWELL BRUNCH
                     </h2>
-                    <p className="text-2xl">11:00 AM | The Higgins House</p>
+                    <p className="text-2xl">
+                      11:00 AM | The Higgins Beach House
+                    </p>
                     <p className="mb-3 text-2xl">
                       Please text Delaney or Nick for the address in
                       Narragansett, RI 02992

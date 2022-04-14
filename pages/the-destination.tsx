@@ -69,11 +69,14 @@ function TheDestination(): JSX.Element {
                 {expanded === 1 ? "Close" : "View"}
               </button>
             </div>
-            <div className="w-full h-101 xs:h-101 sm:h-72 md:h-96">
+            <div
+              className="w-full h-101 xs:h-101 sm:h-72 md:h-96"
+              style={{ maxWidth: "600px" }}
+            >
               <div className="layered-card relative w-full h-full">
                 <Image
                   src={HouseImage}
-                  alt="Inn at Castle Hill"
+                  alt="An Inn"
                   layout="fill"
                   objectFit="cover"
                 />
@@ -160,11 +163,14 @@ function TheDestination(): JSX.Element {
             </Accordion>
           </div>
           <div className="flex xs:flex-col items-center xs:mt-0 mt-20">
-            <div className="w-full h-101 xs:h-101 sm:h-72 md:h-96">
+            <div
+              className="w-full h-101 xs:h-101 sm:h-72 md:h-96"
+              style={{ maxWidth: "600px" }}
+            >
               <div className="layered-card relative w-full h-full">
                 <Image
                   src={ThingsImage}
-                  alt="Inn at Castle Hill"
+                  alt="A Sailboat"
                   layout="fill"
                   objectFit="cover"
                 />
@@ -329,11 +335,14 @@ function TheDestination(): JSX.Element {
                 {expanded === 3 ? "Close" : "View"}
               </button>
             </div>
-            <div className="w-full h-101 xs:h-101 sm:h-72 md:h-96">
+            <div
+              className="w-full h-101 xs:h-101 sm:h-72 md:h-96"
+              style={{ maxWidth: "600px" }}
+            >
               <div className="layered-card relative w-full h-full">
                 <Image
                   src={FoodImage}
-                  alt="Inn at Castle Hill"
+                  alt="A lobster roll"
                   layout="fill"
                   objectFit="cover"
                 />

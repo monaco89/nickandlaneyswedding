@@ -1,31 +1,33 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import Image from 'next/image';
-import { useRouter } from 'next/router';
-import NextLink from 'next/link';
-import cn from 'classnames';
-import Logo from '../public/assets/crest.png';
-import MobileMenu from './MobileMenu';
-import { NavItemProps } from '../lib/types';
+import React from "react";
+import { motion } from "framer-motion";
+import Image from "next/image";
+import { useRouter } from "next/router";
+import NextLink from "next/link";
+import cn from "classnames";
+import Logo from "../public/assets/crest.png";
+import MobileMenu from "./MobileMenu";
+import { NavItemProps } from "../lib/types";
 
 function NavItem({ href, text, border }: NavItemProps) {
   const router = useRouter();
   const isActive = router.asPath === href;
 
   return (
-    <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+    <motion.button
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.9 }}
+      style={{ border: text === "tell us" ? "1px solid black" : "none" }}
+    >
       <NextLink href={href}>
         <a
           className={cn(
-            isActive ? 'underline' : 'no-underline',
-            'p-1 sm:px-3 sm:py-2 transition-all hover:underline',
-            border && 'border-2 rounded-none px-4'
+            isActive ? "underline" : "no-underline",
+            "p-1 sm:px-3 sm:py-2 transition-all hover:underline",
+            border && "border-2 rounded-none px-4"
           )}
         >
-          {text === 'tell us' ? (
-            <span style={{ border: '1px solid black', padding: '5px' }}>
-              {text}
-            </span>
+          {text === "tell us" ? (
+            <span style={{ padding: "5px" }}>{text}</span>
           ) : (
             <span>{text}</span>
           )}

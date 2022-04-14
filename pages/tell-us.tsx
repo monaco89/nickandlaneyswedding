@@ -159,8 +159,8 @@ function ThePlan(): JSX.Element {
                     htmlFor="brunch"
                     className="block my-3 text-gray-800 text-2xl font-semibold"
                   >
-                    Are you interested in transportation after the Wedding
-                    Reception?
+                    Are you interested in transportation back to Narragansett
+                    after the Wedding Reception?
                   </label>
                   <RadioInput
                     id="transportation-option-1"
