@@ -36,7 +36,7 @@ function TheDestination(): JSX.Element {
               <h1 className="xs:mb-0 mb-10 xs:mt-10 text-white xs:text-15xl text-8xl sm:text-15xl md:text-15xl">
                 JOIN US IN
               </h1>
-              <h2 className="text-19xl mb-0 mb-4 text-center text-white font-custom xs:text-15xl tracking-widest xs:leading-13 sm:text-15xl md:text-15xl">
+              <h2 className="xs:leading-15 mb-0 mb-4 text-center text-white font-custom xs:text-15xl text-19xl tracking-widest sm:text-15xl md:text-15xl">
                 Rhode Island
               </h2>
             </div>

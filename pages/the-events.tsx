@@ -1,5 +1,5 @@
 import React from "react";
-import { MapPin, Clock } from "react-feather";
+import { MapPin } from "react-feather";
 import { motion } from "framer-motion";
 import Container from "../components/container";
 import Layout from "../components/layout";
@@ -77,14 +77,7 @@ function TheEvents(): JSX.Element {
                     <h2 className="mb-1 text-3xl leading-10">
                       WELCOME COCKTAILS
                     </h2>
-                    <p className="text-2xl">
-                      <Clock
-                        size={18}
-                        className="inline"
-                        style={{ marginTop: "-0.2rem" }}
-                      />{" "}
-                      7:00 PM | The Towers
-                    </p>
+                    <p className="text-2xl">7:00 PM | The Towers</p>
                     <p className="mb-3 text-2xl">
                       <a
                         href="https://goo.gl/maps/cQXpomG2HiDxavjD6"

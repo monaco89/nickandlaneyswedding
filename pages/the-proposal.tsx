@@ -22,19 +22,20 @@ function TheProposal(): JSX.Element {
   return (
     <Layout title="The Proposal">
       <div className="relative mb-20 p-3 w-full h-auto">
-        <h1 className="sm:leading-14 absolute z-10 left-0 right-0 ml-auto xs:mr-10 mr-60 mt-8 w-max text-left text-white font-sans xs:text-15xl text-8xl font-extralight leading-11 xs:leading-13 sm:mr-28 sm:mt-0 sm:mt-8 sm:text-7xl">
+        <h1 className="absolute z-10 left-0 right-0 ml-auto xs:mr-10 mr-60 mt-8 w-max text-left text-white font-sans xs:text-15xl text-8xl font-extralight leading-11 xs:leading-13 sm:mr-28 sm:mt-0 sm:mt-8 sm:text-7xl sm:leading-14">
           THE
           <br /> PROPOSAL
         </h1>
         <h2 className="absolute z-10 left-0 right-0 ml-auto xs:mr-12 mr-52 xs:mt-32 mt-44 w-max text-right text-white font-custom xs:text-5xl text-7xl sm:mr-32 sm:mt-36 sm:text-6xl">
           at Castle Hill Inn
         </h2>
-        <div className="relative mx-auto w-4/5 xs:w-full h-101">
+        <div className="hero relative mx-auto w-4/5 xs:w-full h-101">
           <Image
             src={lighthouseImage}
             alt="Castle Hill Inn"
-            layout="fill"
+            layout="intrinsic"
             objectFit="cover"
+            priority
           />
         </div>
       </div>

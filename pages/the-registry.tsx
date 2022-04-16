@@ -24,7 +24,7 @@ function TheRegistry(): JSX.Element {
         variants={variants}
         className="my-8 text-center text-black font-sans xs:text-3xl font-light lg:text-6xl"
       >
-        Coming 2023.
+        Coming Soon.
       </motion.h2>
     </motion.div>
   );
