@@ -36,6 +36,7 @@ function Index(): JSX.Element {
               // layout="fill"
               alt="Nick holding Delaney"
               objectFit="cover"
+              placeholder="blur"
             />
           </div>
           <div className="relative w-full h-auto">
@@ -44,6 +45,7 @@ function Index(): JSX.Element {
               alt="Nick and Delaney holding hands"
               layout="fill"
               objectFit="cover"
+              placeholder="blur"
             />
           </div>
           <div className="relative w-full h-auto">
@@ -52,6 +54,7 @@ function Index(): JSX.Element {
               alt="Nick and Delaney looking at each other"
               layout="fill"
               objectFit="cover"
+              placeholder="blur"
             />
           </div>
           <div className="relative w-full h-auto">
@@ -60,6 +63,7 @@ function Index(): JSX.Element {
               alt="Nick and Delaney looking at each other"
               layout="fill"
               objectFit="cover"
+              placeholder="blur"
             />
           </div>
           <div className="relative w-full h-auto">
@@ -68,6 +72,7 @@ function Index(): JSX.Element {
               alt="Nick and Delaney sitting"
               layout="fill"
               objectFit="cover"
+              placeholder="blur"
             />
           </div>
         </div>
