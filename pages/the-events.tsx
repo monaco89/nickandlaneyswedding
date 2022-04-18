@@ -35,7 +35,7 @@ function TheEvents(): JSX.Element {
     <Layout title="The Events">
       <Container>
         <h1 className="xs:leading-0 mb-20 text-center xs:text-left text-black font-sans font-sans xs:text-7xl text-8xl font-extralight leading-11 sm:text-7xl md:text-7xl">
-          Wedding Week Events
+          Wedding Week
         </h1>
         <div className="sticky mt-8 lg:w-full">
           <div className="container flex flex-row mx-auto xs:p-1 w-full h-full sm:p-0">
@@ -52,13 +52,13 @@ function TheEvents(): JSX.Element {
                 </div>
                 <div>
                   <h2 className="mb-3 text-3xl leading-10">
-                    N + D ARRIVE IN NARRAGANSETT, RI
+                    WEDDING WEEK KICKOFF
                   </h2>
                   <div className="w-2/3 xs:w-full text-xl">
-                    Nick and Delaney will be staying in Narragansett near
-                    Scarborough Beach. We plan on filling our week with beach
-                    days and afternoon activities. We will be updating this page
-                    with any events we add during the week.
+                    Nick and Delaney will arrive in Narragansett and be staying
+                    near Scarborough Beach. We plan on filling our week with
+                    beach days and afternoon activities. We will be updating
+                    this page with any events we add during the week.
                   </div>
                 </div>
               </div>
@@ -151,8 +151,8 @@ function TheEvents(): JSX.Element {
                   <div>
                     <h2 className="mb-1 text-3xl leading-10">INTERMISSION</h2>
                     <div className="w-2/3 xs:w-full text-xl">
-                      While the bride and groom take their first photos as
-                      husband and wife, we recommend you grab a glass of wine at{" "}
+                      While Delaney and Nick take their first photos as husband
+                      and wife, we recommend you grab a glass of wine at{" "}
                       <a
                         href="https://goo.gl/maps/5evfwSJxofe8ZQuF8"
                         target="_blank"
@@ -165,6 +165,8 @@ function TheEvents(): JSX.Element {
                         />{" "}
                         <mark>Greenvale Vineyards</mark>
                       </a>
+                      . If you need to check into your hotel, this will be a
+                      good time to do so.
                     </div>
                   </div>
                 </div>
@@ -216,16 +218,12 @@ function TheEvents(): JSX.Element {
                     <h2 className="mb-1 text-3xl leading-10">
                       FAREWELL BRUNCH
                     </h2>
-                    <p className="text-2xl">
-                      11:00 AM | The Higgins Beach House
-                    </p>
-                    <p className="mb-3 text-2xl">
-                      Please text Delaney or Nick for the address in
-                      Narragansett, RI 02992
-                    </p>
+                    <p className="text-2xl">11:00 AM | The Higgins House</p>
                     <div className="w-2/3 xs:w-full text-xl">
                       As we say goodbye to the new Mr. and Mrs. Monaco. Join us
-                      for brunch at the Higgins Beach House.
+                      for a casual brunch at the Higgins Beach House in
+                      Narragansett, RI. Please text Delaney or Nick for the
+                      exact address.
                     </div>
                   </div>
                 </div>

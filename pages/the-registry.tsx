@@ -1,7 +1,9 @@
 import React from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import Container from "../components/container";
 import Layout from "../components/layout";
+import PresentImage from "../public/assets/present.png";
 
 const transition = {
   duration: 2,
@@ -22,7 +24,7 @@ function TheRegistry(): JSX.Element {
     <motion.div className="single" initial="exit" animate="enter" exit="exit">
       <motion.h2
         variants={variants}
-        className="my-8 text-center text-black font-sans xs:text-3xl font-light lg:text-6xl"
+        className="text-center text-black font-custom xs:text-6xl font-light lg:text-7xl"
       >
         Coming Soon.
       </motion.h2>
@@ -37,6 +39,16 @@ function TheRegistry(): JSX.Element {
             THE REGISTRY
           </h1>
           {copy}
+          <div className="relative w-full h-auto text-center">
+            <Image
+              src={PresentImage}
+              // layout="fill"
+              alt="a present"
+              objectFit="contain"
+              placeholder="blur"
+              height={300}
+            />
+          </div>
         </section>
       </Container>
     </Layout>

@@ -34,15 +34,15 @@ function Index(): JSX.Element {
             <Image
               src={pic3}
               // layout="fill"
-              alt="Nick holding Delaney"
+              alt="Nick and Delaney holding hands"
               objectFit="cover"
               placeholder="blur"
             />
           </div>
           <div className="relative w-full h-auto">
             <Image
-              src={pic1}
-              alt="Nick and Delaney holding hands"
+              src={pic5}
+              alt="Nick and Delaney holding each other"
               layout="fill"
               objectFit="cover"
               placeholder="blur"
@@ -51,16 +51,7 @@ function Index(): JSX.Element {
           <div className="relative w-full h-auto">
             <Image
               src={pic4}
-              alt="Nick and Delaney looking at each other"
-              layout="fill"
-              objectFit="cover"
-              placeholder="blur"
-            />
-          </div>
-          <div className="relative w-full h-auto">
-            <Image
-              src={pic5}
-              alt="Nick and Delaney looking at each other"
+              alt="Dog sitting looking at the camera"
               layout="fill"
               objectFit="cover"
               placeholder="blur"
@@ -69,7 +60,16 @@ function Index(): JSX.Element {
           <div className="relative w-full h-auto">
             <Image
               src={pic2}
-              alt="Nick and Delaney sitting"
+              alt="Nick and Delaney sitting looking at the camera"
+              layout="fill"
+              objectFit="cover"
+              placeholder="blur"
+            />
+          </div>
+          <div className="relative w-full h-auto">
+            <Image
+              src={pic1}
+              alt="Nick and Delaney looking at each other"
               layout="fill"
               objectFit="cover"
               placeholder="blur"
