@@ -197,8 +197,8 @@ function TheEvents(): JSX.Element {
                       </a>
                     </p>
                     <div className="w-2/3 xs:w-full text-xl">
-                      Black Tie attire. Parking is available on site. Cocktail
-                      hour starts sharply at 5pm.
+                      Parking is available on site. Cocktail hour starts sharply
+                      at 5pm.
                     </div>
                   </div>
                 </div>
