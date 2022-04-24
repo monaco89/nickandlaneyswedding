@@ -17,10 +17,10 @@ function Index(): JSX.Element {
             <h1 className="xs:text-3xl text-6xl">THE WEDDING OF</h1>
             <div className="block xs:h-60 sm:h-80">
               <p className="absolute left-0 right-0 m-auto mt-5 xs:mt-9 font-custom xs:text-13xl text-8xl transform -rotate-8 sm:text-15xl md:text-15xl">
-                Nicholas Monaco
+                Delaney Higgins
               </p>
               <p className="absolute left-0 right-0 m-auto xs:mt-32 mt-40 font-custom xs:text-13xl text-8xl transform -rotate-8 sm:text-15xl md:text-15xl">
-                Delaney Higgins
+                Nicholas Monaco
               </p>
               <p className="my-0 text-white text-11xl xs:text-14xl sm:text-17xl md:text-17xl">
                 &
