@@ -128,7 +128,7 @@ function ThePlan(): JSX.Element {
                 <div className="my-8">
                   <Input
                     id="where"
-                    label="Where are you staying?"
+                    label="Where are you staying? Please tell us the name of the hotel you're staying at or the address of the house you have rented."
                     type="text"
                     name="where"
                     placeholder="Hotel Name or Beach House Location"
@@ -159,8 +159,9 @@ function ThePlan(): JSX.Element {
                     htmlFor="brunch"
                     className="block my-3 text-gray-800 text-2xl font-semibold"
                   >
-                    Are you interested in transportation back to Narragansett
-                    after the Wedding Reception?
+                    We are offering complimentary transportation for our wedding
+                    to any guests staying in Narragensett. Are you interested in
+                    transportation?
                   </label>
                   <RadioInput
                     id="transportation-option-1"
