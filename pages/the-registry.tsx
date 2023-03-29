@@ -1,36 +1,12 @@
 import React from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
 import Container from "../components/container";
 import Layout from "../components/layout";
-import PresentImage from "../public/assets/present.png";
-
-const transition = {
-  duration: 2,
-  ease: [0.43, 0.13, 0.23, 0.96],
-};
-
-const variants = {
-  exit: { y: "50%", opacity: 0, transition },
-  enter: {
-    y: "0%",
-    opacity: 1,
-    transition,
-  },
-};
+import Bl from "../public/assets/bl.png";
+import CB from "../public/assets/cb.png";
+import WS from "../public/assets/ws.png";
 
 function TheRegistry(): JSX.Element {
-  const copy = (
-    <motion.div className="single" initial="exit" animate="enter" exit="exit">
-      <motion.h2
-        variants={variants}
-        className="text-center text-black font-custom xs:text-6xl font-light lg:text-7xl"
-      >
-        Coming Soon.
-      </motion.h2>
-    </motion.div>
-  );
-
   return (
     <Layout title="The Registry">
       <Container>
@@ -38,16 +14,49 @@ function TheRegistry(): JSX.Element {
           <h1 className="xs:leading-0 text-center xs:text-left text-black font-sans xs:text-7xl text-8xl font-extralight leading-11 sm:text-7xl md:text-7xl lg:leading-12">
             THE REGISTRY
           </h1>
-          {copy}
-          <div className="relative w-full h-auto text-center">
-            <Image
-              src={PresentImage}
-              // layout="fill"
-              alt="a present"
-              objectFit="contain"
-              placeholder="blur"
-              height={300}
-            />
+          <div className="relative flex flex-wrap justify-evenly w-full h-auto text-center">
+            <a
+              href="https://www.bloomingdales.com/registry/wedding/registrant"
+              target="_blank"
+            >
+              <Image
+                src={Bl}
+                // layout="fill"
+                alt="a present"
+                objectFit="contain"
+                placeholder="blur"
+                height={250}
+                width={250}
+              />
+            </a>
+            <a
+              href="https://www.crateandbarrel.com/gift-registry/registrant-list/6696561"
+              target="_blank"
+            >
+              <Image
+                src={CB}
+                // layout="fill"
+                alt="a present"
+                objectFit="contain"
+                placeholder="blur"
+                height={200}
+                width={200}
+              />
+            </a>
+            <a
+              href="https://www.williams-sonoma.com/registry/x9vcvn7dbm/registry-list.html"
+              target="_blank"
+            >
+              <Image
+                src={WS}
+                // layout="fill"
+                alt="a present"
+                objectFit="contain"
+                placeholder="blur"
+                height={200}
+                width={200}
+              />
+            </a>
           </div>
         </section>
       </Container>
