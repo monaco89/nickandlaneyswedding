@@ -16,7 +16,7 @@ function TheRegistry(): JSX.Element {
           </h1>
           <div className="relative flex flex-wrap justify-evenly w-full h-auto text-center">
             <a
-              href="https://www.bloomingdales.com/registry/wedding/registrant"
+              href="https://www.bloomingdales.com/registry/wedding/guest/DELANEY-HIGGINS-NICK-MONACO/?registryId=7428453"
               target="_blank"
             >
               <Image
@@ -30,7 +30,7 @@ function TheRegistry(): JSX.Element {
               />
             </a>
             <a
-              href="https://www.crateandbarrel.com/gift-registry/registrant-list/6696561"
+              href="https://www.crateandbarrel.com/gift-registry/delaney-higgins/r6696561"
               target="_blank"
             >
               <Image
