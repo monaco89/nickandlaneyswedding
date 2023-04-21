@@ -5,7 +5,7 @@ import Container from "../components/container";
 import Layout from "../components/layout";
 
 const transition = {
-  duration: 0.7,
+  duration: 0.2,
   ease: [0.43, 0.13, 0.23, 0.96],
 };
 
@@ -78,6 +78,14 @@ function TheEvents(): JSX.Element {
                       WELCOME COCKTAILS
                     </h2>
                     <p className="text-2xl">7:00 PM | The Towers</p>
+                    <p className="py-2 text-xl">
+                      <a
+                        className="hover:underline"
+                        href="/the-attire#cocktail"
+                      >
+                        Costal Cocktail Attire
+                      </a>
+                    </p>
                     <p className="mb-3 text-2xl">
                       <a
                         href="https://goo.gl/maps/cQXpomG2HiDxavjD6"
@@ -179,6 +187,14 @@ function TheEvents(): JSX.Element {
                       WEDDING RECEPTION
                     </h2>
                     <p className="text-2xl">5:00 PM | The Glen Manor House</p>
+                    <p className="py-2 text-xl">
+                      <a
+                        className="hover:underline"
+                        href="/the-attire#black-tie"
+                      >
+                        Black Tie Attire
+                      </a>
+                    </p>
                     <p className="mb-3 text-2xl">
                       <a
                         href="https://goo.gl/maps/Z4bLggL7WH4wM8c96"
