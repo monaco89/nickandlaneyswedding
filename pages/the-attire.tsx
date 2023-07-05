@@ -14,9 +14,9 @@ function TheAttire(): JSX.Element {
             BLACK TIE ATTIRE
           </h1>
           <p className="xs:mb-12 mb-28 mt-16 xs:mt-8 xs:px-0 px-28 text-center xs:text-left text-2xl xs:text-xl sm:px-0 sm:text-xl">
-            Men; black tuxedo or suit, black dress shoes, a white dress shirt,
-            and a black bow tie or tie. Women; an elegant evening gown that is
-            floor length or to the bottom of your ankles.
+            Men; black/navy tuxedo or suit, dress shoes, a dress shirt, and a
+            black bow tie or tie. Women; an elegant evening gown that is floor
+            length or to the bottom of your ankles.
           </p>
           <div className="text-center">
             <Image
@@ -32,10 +32,10 @@ function TheAttire(): JSX.Element {
             COCKTAIL ATTIRE
           </h2>
           <p className="xs:mb-12 mb-28 mt-16 xs:mt-8 xs:px-0 px-28 text-center xs:text-left text-2xl xs:text-xl sm:px-0 sm:text-xl">
-            Blue, White, and Khaki Encouraged. Men; a suit and dress shirt (tie
-            not required) Dress shoes, such as loafers or oxfords. Women; a
-            cocktail dress of any length or a dressy separates outfit with heels
-            or dressy flats
+            Blue, white, and khaki encouraged. Men; a dress shirt (tie not
+            required) and dress pants. Please refrain from wearing sneakers or
+            sandals. Women; a cocktail dress of any length or a dressy separates
+            outfit with heels or dressy flats
           </p>
           <div className="text-center">
             <Image
