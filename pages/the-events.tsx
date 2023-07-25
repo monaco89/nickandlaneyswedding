@@ -70,6 +70,30 @@ function TheEvents(): JSX.Element {
                       className="w-fit text-16xl xs:text-18xl xs:leading-13 leading-6 border-b-8 sm:leading-13 sm:leading-13"
                       style={{ fontFamily: "orpheuspro" }}
                     >
+                      WEDNESDAY, AUG 16
+                    </p>
+                  </div>
+                  <div>
+                    <h2 className="mb-1 text-3xl leading-10">
+                      SEAFOOD COOKOUT
+                    </h2>
+                    <p className="text-2xl">6:00 PM | Higgins Beach House</p>
+                    <div className="w-2/3 xs:w-full text-xl">
+                      Good music, good food, good people.
+                      <br />
+                      Please text Delaney or Nick for the exact address.
+                    </div>
+                  </div>
+                </div>
+              </Box>
+
+              <Box>
+                <div className="wrap items-center xs:mb-32 mb-40 ml-12 font-sans">
+                  <div className="min-w-1/4 mb-4">
+                    <p
+                      className="w-fit text-16xl xs:text-18xl xs:leading-13 leading-6 border-b-8 sm:leading-13 sm:leading-13"
+                      style={{ fontFamily: "orpheuspro" }}
+                    >
                       THURSDAY, AUG 17
                     </p>
                   </div>
@@ -78,7 +102,7 @@ function TheEvents(): JSX.Element {
                       WELCOME COCKTAILS
                     </h2>
                     <p className="text-2xl">7:00 PM | The Towers</p>
-                    <p className="py-2 text-xl">
+                    <p className="py-2 underline text-2xl">
                       <a
                         className="hover:underline"
                         href="/the-attire#cocktail"
@@ -187,7 +211,7 @@ function TheEvents(): JSX.Element {
                       WEDDING RECEPTION
                     </h2>
                     <p className="text-2xl">5:00 PM | The Glen Manor House</p>
-                    <p className="py-2 text-xl">
+                    <p className="py-2 underline text-2xl">
                       <a
                         className="hover:underline"
                         href="/the-attire#black-tie"
@@ -234,7 +258,7 @@ function TheEvents(): JSX.Element {
                     <h2 className="mb-1 text-3xl leading-10">
                       FAREWELL BRUNCH
                     </h2>
-                    <p className="text-2xl">11:00 AM | The Higgins House</p>
+                    <p className="text-2xl">11:00 AM | Higgins Beach House</p>
                     <div className="w-2/3 xs:w-full text-xl">
                       As we say goodbye to the new Mr. and Mrs. Monaco. Join us
                       for a casual brunch at the Higgins Beach House in
