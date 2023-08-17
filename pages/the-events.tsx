@@ -101,7 +101,7 @@ function TheEvents(): JSX.Element {
                     <h2 className="mb-1 text-3xl leading-10">
                       WELCOME COCKTAILS
                     </h2>
-                    <p className="text-2xl">7:00 PM | The Towers</p>
+                    <p className="text-2xl">7:30 PM | The Towers</p>
                     <p className="py-2 underline text-2xl">
                       <a
                         className="hover:underline"
